@@ -15,3 +15,15 @@ Text Domain: yanaf
 @import '../node_modules/foundation-sites/scss/foundation';
 @import '../node_modules/owl-carousel/owl-carousel/owl.carousel';
 @include foundation-everything;
+@import 'icons';
+@import 'type';
+@import 'mixins/sections';
+@import 'objects/header';
+@import 'objects/reviews';
+@import 'objects/footer';
+
+body {
+    background: $bg-body;
+}
+
+@import 'sections/home';
