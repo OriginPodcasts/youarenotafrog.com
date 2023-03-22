@@ -1,7 +1,7 @@
-!/plugins/yanaf-podcast
 .DS_Store
 .sass-cache
 /.docker
 /assets/node_modules
 /plugins/*
+!/plugins/yanaf-podcast
 config.codekit3

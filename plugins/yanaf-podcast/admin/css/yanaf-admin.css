@@ -1,0 +1,20 @@
+body.edit-php.post-type-episode table.wp-list-table.posts {
+    table-layout: auto; 
+}
+
+body.edit-php.post-type-episode table.wp-list-table.posts .column-date {
+    width: 20%;
+}
+
+body.edit-php.post-type-episode table.wp-list-table.posts .column-yanaf-number {
+    width: 5%;
+}
+
+body.edit-php.post-type-episode table.wp-list-table.posts .column-yanaf-type {
+    width: 10%;
+}
+
+body.edit-tags-php.taxonomy-collection .form-field.term-parent-wrap,
+body.term-php.taxonomy-collection .form-field.term-parent-wrap {
+    display: none;
+}
