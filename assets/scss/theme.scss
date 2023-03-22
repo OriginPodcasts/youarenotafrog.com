@@ -11,6 +11,7 @@ Text Domain: yanaf
 */
 
 @charset 'utf-8';
+@import 'settings';
 @import '../node_modules/foundation-sites/scss/foundation';
 @import '../node_modules/owl-carousel/owl-carousel/owl.carousel';
 @include foundation-everything;

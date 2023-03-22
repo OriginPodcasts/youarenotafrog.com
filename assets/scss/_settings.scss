@@ -1,0 +1,23 @@
+// Colours
+$bg-body: #F5F5F0;
+$dark: #707070;
+$border-color: $dark;
+$bg-reviews: #1c5451;
+$text-reviews: #fff;
+$primary-color: #45AFA0;
+$bg-footer: #1c5451;
+
+// Fonts
+$font-family: 'Nunito', sans-serif;
+
+// Menu
+$menu-color: $dark;
+$menu-color-active: darken($dark, 10);
+$menu-font-family: $font-family;
+$menu-font-size: 1.06rem;
+$menu-font-weight: bold;
+
+// Buttons
+$button-radius: 2em;
+$button-padding: 1em 3em;
+$button-background: $primary-color;
