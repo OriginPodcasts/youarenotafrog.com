@@ -1,0 +1,37 @@
+name: Deploy to staging environment
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.STAGING_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.STAGING_HOST }}
+
+      - name: Add known host
+        run: ssh-keyscan -H ${{ secrets.STAGING_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Activate maintenance mode
+        run: ssh root@${{ secrets.STAGING_HOST }} "wp maintenance-mode activate --allow-root --path=/var/www/html/"
+
+      - name: Copy files
+        run: |
+          rsync -ra --delete theme/* root@${{ secrets.STAGING_HOST }}:/var/www/html/wp-content/themes/yanaf/
+          rsync -ra --delete plugins/yanaf-podcast/* root@${{ secrets.STAGING_HOST }}:/var/www/html/wp-content/plugins/yanaf-podcast/
+
+      - name: Flush cache
+        run: ssh root@${{ secrets.STAGING_HOST }} "wp cache flush --allow-root --path=/var/www/html/"
+
+      - name: Flush rewrite rules
+        run: ssh root@${{ secrets.STAGING_HOST }} "wp rewrite flush --allow-root --path=/var/www/html/"
+
+      - name: Deactivate maintenance mode
+        run: ssh root@${{ secrets.STAGING_HOST }} "wp maintenance-mode deactivate --allow-root --path=/var/www/html/"
