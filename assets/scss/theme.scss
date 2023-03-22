@@ -1,0 +1,16 @@
+/*
+Theme Name: You Are Not a Frog
+Author: Mark Steadman
+Author URI: https://origin.fm/services/websites/
+Description: Custom-built theme for the You Are Not a Frog podcast.
+Version: 2023.1
+Requires at least: 5.2
+Tested up to: 6.1
+Requires PHP: 7.0
+Text Domain: yanaf
+*/
+
+@charset 'utf-8';
+@import '../node_modules/foundation-sites/scss/foundation';
+@import '../node_modules/owl-carousel/owl-carousel/owl.carousel';
+@include foundation-everything;
