@@ -1,0 +1,103 @@
+.review-wrapper {
+    background: $bg-reviews;
+    color: $text-reviews;
+    text-align: center;
+    padding: 1.88rem 0;
+
+    .review-list {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+
+        @include breakpoint(medium) {
+            width: 80%;
+        }
+
+        .review {
+            blockquote.review-content {
+                color: $text-reviews;
+                margin: 0;
+                padding: 0;
+                border-width: 0;
+
+                p {
+                    color: $text-reviews;
+                    font-size: 1.19rem;
+                }
+            }
+
+            p.review-author,
+            p.review-role {
+                margin: 0 auto;
+            }
+
+            p.review-author {
+                font-weight: bold;
+            }
+        }
+
+        .owl-pagination {
+            margin: 1.88rem auto 0;
+            text-align: center;
+
+            .owl-page {
+                width: .75rem;
+                height: .75rem;
+                content: ' ';
+                display: inline-block;
+                border: 1px solid $text-reviews;
+                border-radius: 50%;
+                margin-right: .5rem;
+
+                &.active {
+                    background: $text-reviews;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .featured-review {
+        text-align: left;
+
+        @include breakpoint(medium) {
+            .grid-container {
+                width: 80%;
+            }
+        }
+
+        .avatar img {
+            border-radius: 50%;
+            filter: grayscale(100%);
+        }
+
+        blockquote.review-content {
+            color: $text-reviews;
+            margin: 0;
+            padding: 0;
+            border-width: 0;
+
+            p {
+                color: $text-reviews;
+                font-size: 1.19rem;
+            }
+        }
+
+        p.review-author,
+        p.review-role {
+            margin: 0 auto;
+        }
+
+        p.review-author {
+            font-weight: bold;
+        }
+
+        .video-button {
+            margin-top: 1rem;
+            font-size: .56rem;
+        }
+    }
+}

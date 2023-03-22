@@ -1,0 +1,116 @@
+footer {
+    background: $bg-footer;
+    color: $white;
+    padding: 1rem 0;
+
+    .logo-cell {
+        align-items: center;
+    }
+
+    img.yanaf-logo {
+        transform: rotate(-15deg);
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .tags {
+        margin: auto;
+    }
+
+    .tagline {
+        font-size: 1.13rem;
+        font-weight: 900;
+        margin: 0 0 .25rem;
+    }
+
+    .subtag {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    a, label {
+        &, &:active, &:visited, &:hover {
+            color: $white;
+        }
+    }
+
+    .newsletter-cell {
+        a {
+            text-decoration: underline;
+        }
+
+        .fields {
+            display: flex;
+            border-bottom: 1px solid $white;
+            margin-bottom: 1rem;
+
+            input {
+                flex-grow: 1;
+            }
+        }
+
+        input {
+            background: transparent;
+            color: $white;
+            outline: none;
+            margin: 0;
+            padding: 0;
+
+            &, &:active, &:focus {
+                box-shadow: none;
+                border: none;
+            }
+
+            &:active, &:focus {
+                background: darken($bg-footer, 3);
+                outline: 0;
+            }
+        }
+
+        button {
+            background: transparent;
+            padding: 0 1rem;
+            margin: 0;
+        }
+    }
+
+    .legal-menu {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+
+        li {
+            margin: 0 .5rem;
+            display: inline;
+        }
+    }
+
+    ul.follow-menu {
+        list-style-type: none;
+        margin: 0;
+
+        li {
+            display: inline;
+
+            a {
+                display: inline-block;
+                background: #43AEA0;
+                border-radius: 50%;
+                padding: .5rem;
+
+                svg {
+                    height: 1em;
+                    display: block;
+
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

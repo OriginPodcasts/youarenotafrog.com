@@ -1,0 +1,45 @@
+header.site-header {
+    padding-top: 24px;
+    background: #fff;
+    border-bottom: 1px solid $border-color;
+    position: relative;
+
+    img.yanaf-logo {
+        width: 148px;
+        transform: rotate(-15deg);
+        position: absolute;
+    }
+
+    ul.menu {
+        text-align: center;
+        justify-content: center;
+        font-family: $menu-font-family;
+        font-size: $menu-font-size;
+        font-weight: $menu-font-weight;
+        color: $menu-color;
+        letter-spacing: 0px;
+        opacity: 1;
+        color: $menu-color;
+
+        li {
+            a {
+                &:link, &:visited {
+                    color: $menu-color;
+                }
+
+                &:hover, &:active {
+                    color: $menu-color-active;
+                }
+            }
+        }
+
+        &.search-menu {
+            justify-content: end;
+            text-align: right;
+        }
+
+        @include breakpoint(medium) {
+            margin: 30px auto 5px;
+        }
+    }
+}
