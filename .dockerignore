@@ -1,0 +1,10 @@
+.DS_Store
+.github
+.sass-cache
+/.docker
+/assets
+/docker-compose.yml
+/Makefile
+/plugins/hello.php
+/plugins/index.php
+/theme/sass

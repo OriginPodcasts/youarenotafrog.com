@@ -1,0 +1,30 @@
+---
+version: '3.3'
+
+services:
+    mysql:
+        image: mysql:latest
+        volumes:
+            - ./.docker/volumes/mysql:/var/lib/mysql
+        environment:
+            MYSQL_RANDOM_ROOT_PASSWORD: 1
+            MYSQL_DATABASE: wordpress
+            MYSQL_USER: wordpress
+            MYSQL_PASSWORD: wordpress
+    wordpress:
+        image: wordpress:latest
+        restart: always
+        depends_on:
+            - mysql
+        links:
+            - mysql
+        ports:
+            - 8000:80
+        volumes:
+            - ./plugins:/var/www/html/wp-content/plugins
+            - ./theme:/var/www/html/wp-content/themes/yanaf
+        environment:
+            WORDPRESS_DB_HOST: mysql:3306
+            WORDPRESS_DB_USER: wordpress
+            WORDPRESS_DB_PASSWORD: wordpress
+            WORDPRESS_DEBUG: 1
