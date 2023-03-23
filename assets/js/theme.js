@@ -2,3 +2,4 @@
 // @codekit-append '_reviews.js';
 // @codekit-append '_collections.js';
 // @codekit-append '_tags.js';
+// @codekit-append '_sidebar.js';

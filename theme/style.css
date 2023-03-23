@@ -2507,6 +2507,30 @@ header.site-header ul.menu.search-menu { justify-content: end; text-align: right
 
 @media print, screen and (min-width: 40em) { header.site-header ul.menu { margin: 30px auto 5px; } }
 
+aside.sidebar { display: none; }
+
+@media print, screen and (min-width: 40em) { aside.sidebar { display: block; margin: 108px 0 1rem; } }
+
+aside.sidebar h2 { color: #707070; font-size: 1rem; font-weight: 400; padding-bottom: .25rem; border-bottom: 1px solid #707070; margin: 0 0 1rem; }
+
+aside.sidebar .menu { margin: 0; padding: 0; flex-direction: column; }
+
+aside.sidebar .menu li { font-weight: 900; margin-bottom: 1rem; text-transform: uppercase; }
+
+aside.sidebar .menu li:last-child { margin-bottom: 0; }
+
+aside.sidebar .menu li > a { color: #707070; padding: 0; background: transparent; }
+
+aside.sidebar .menu li.active > a { color: #44AFA0; }
+
+aside.sidebar .menu li.has-children > a:after { display: ineline; content: '+'; float: right; }
+
+aside.sidebar .menu li.has-children ul.sub { display: none; }
+
+aside.sidebar .menu li.has-children.active > a:after { content: '-'; }
+
+aside.sidebar .menu li.has-children.active ul.sub { display: flex; margin: 1rem 0 0 1rem; }
+
 .review-wrapper { background: #1c5451; color: #fff; text-align: center; padding: 1.88rem 0; }
 
 .review-wrapper .review-list { list-style-type: none; margin: 0 auto; padding: 0; }

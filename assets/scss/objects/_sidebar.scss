@@ -1,0 +1,72 @@
+aside.sidebar {
+    display: none;
+
+    @include breakpoint(medium) {
+        display: block;
+        margin: 108px 0 1rem;
+    }
+
+    h2 {
+        color: $dark;
+        font-size: 1rem;
+        font-weight: 400;
+        padding-bottom: .25rem;
+        border-bottom: 1px solid $dark;
+        margin: 0 0 1rem;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+
+        li {
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            > a {
+                color: $dark;
+                padding: 0;
+                background: transparent;
+            }
+
+            &.active {
+                > a {
+                    color: #44AFA0;
+                }
+            }
+
+            &.has-children {
+                > a {
+                    &:after {
+                        display: ineline;
+                        content: '+';
+                        float: right;
+                    }
+                }
+
+                ul.sub {
+                    display: none;
+                }
+
+                &.active {
+                    > a {
+                        &:after {
+                            content: '-';
+                        }
+                    }
+
+                    ul.sub {
+                        display: flex;
+                        margin: 1rem 0 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
