@@ -21,7 +21,6 @@ Text Domain: yanaf
 @import 'objects/header';
 @import 'objects/sidebar';
 @import 'objects/search';
-@import 'objects/archive';
 @import 'objects/reviews';
 @import 'objects/footer';
 
@@ -29,4 +28,5 @@ body {
     background: $bg-body;
 }
 
+@import 'sections/archive';
 @import 'sections/home';
