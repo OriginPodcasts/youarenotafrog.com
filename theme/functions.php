@@ -221,3 +221,4 @@ yanaf_init();
 add_filter('use_block_editor_for_post', '__return_false', 10);
 add_filter('yanaf_collection_colour', 'yanaf_darken');
 add_filter('yanaf_resource_colour', 'yanaf_darken');
+add_filter('excerpt_more','__return_false');
