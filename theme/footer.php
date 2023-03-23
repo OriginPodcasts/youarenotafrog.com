@@ -1,4 +1,11 @@
-		<footer>
+		<section class="tags-wrapper">
+            <div class="grid-container">
+                <p class="tags-subtitle">Explore episodes on</p>
+                <?php get_template_part('includes/tag-carousel'); ?>
+            </div>
+        </section>
+
+        <footer>
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
                     <div class="cell medium-4 logo-cell">

@@ -116,13 +116,6 @@ get_header(); ?>
             <?php get_template_part('includes/featured-review'); ?>
         </div>
     </section>
-
-    <section class="tags-wrapper">
-        <div class="grid-container">
-            <p class="tags-subtitle">Explore episodes on</p>
-            <?php get_template_part('includes/tag-carousel'); ?>
-        </div>
-    </section>
 </main>
 
 <?php get_footer();
