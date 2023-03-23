@@ -4,7 +4,7 @@
     <div class="grid-x grid-margin-x">
         <?php get_sidebar(); ?>
 
-        <main class="main archive cell medium-9">
+        <section class="main archive cell medium-9">
             <?php if (is_search()) { ?>
                 <form action="<?php esc_attr_e(home_url()); ?>" class="search-form">
                     <button type="submit" class="button">
@@ -27,16 +27,16 @@
                     </span>
                 </header>
 
-                <div class="grid-x grid-margin-x">
+                <main class="grid-x grid-margin-x">
                     <?php while (have_posts()) {
                         the_post(); ?>
                         <div class="cell medium-4">
-                            <?php get_template_part('entry', 'list'); ?>
+                            <?php get_template_part('includes/entry', 'archive'); ?>
                         </div>
                     <?php } ?>
-                </div>
+                </main>
             <?php } ?>
-        </main>
+        </section>
     </div>
 </div>
 
