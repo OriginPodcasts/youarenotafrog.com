@@ -1,0 +1,45 @@
+form.search-form {
+    display: flex;
+    border-bottom: 1px solid $dark;
+
+    button {
+        padding: 0;
+        margin: 0;
+        background: transparent;
+
+        svg {
+            path {
+                fill: $dark;
+            }
+        }
+
+        &:hover, &:active {
+            background: transparent;
+
+            svg {
+                path {
+                    fill: #000;
+                }
+            }
+        }
+    }
+
+    input {
+        background: transparent;
+        border-width: 0;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+
+        &:focus {
+            background: transparent;
+            border-width: 0;
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+
+    @include breakpoint(medium) {
+        margin: 1rem;
+    }
+}
