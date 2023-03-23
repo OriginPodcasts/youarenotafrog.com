@@ -35,7 +35,9 @@
                         </div>
                     <?php } ?>
                 </main>
-            <?php } ?>
+
+                <?php get_template_part('includes/pagination');
+            } ?>
         </section>
     </div>
 </div>

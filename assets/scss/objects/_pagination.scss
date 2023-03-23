@@ -1,0 +1,19 @@
+.pagination-container {
+    margin: 1rem 0;
+    text-align: center;
+    
+    .pagination {
+        margin: 0 auto;
+        text-align: center;
+
+        li {
+            a {
+                border-radius: 50%;
+            }
+
+            .current {
+                border-bottom: 1px solid $active;
+            }
+        }
+    }
+}
