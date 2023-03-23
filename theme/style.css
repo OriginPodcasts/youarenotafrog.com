@@ -2639,6 +2639,22 @@ body { background: #F5F5F0; }
 
 .cell.archive header .archive-count { margin: 0 0 0 .25rem; color: #707070; line-height: 1; font-weight: 400; }
 
+.cell.archive main .entry { display: block; color: #707070; margin-bottom: 2rem; }
+
+.cell.archive main .entry img { margin-bottom: .5rem; }
+
+.cell.archive main .entry .episode-meta { margin-bottom: .5rem; text-transform: uppercase; }
+
+.cell.archive main .entry .episode-number { font-weight: 900; }
+
+.cell.archive main .entry .episode-date { font-weight: 400; }
+
+.cell.archive main .entry .episode-title { line-height: 1.1; margin-bottom: 0; }
+
+.cell.archive main .entry .episode-guests { margin-top: .25rem; font-weight: 700; line-height: 1.1; }
+
+.cell.archive main .entry .episode-excerpt { font-size: .67rem; }
+
 .hero { background: url("img/home/hero.jpg") no-repeat top center; background-size: cover; display: flex; justify-content: flex-end; flex-direction: column; height: calc(100vh - 100px); }
 
 .hero .h1 { color: #fff; line-height: 1em; margin: 0 0 1.5rem 0; text-align: center; }

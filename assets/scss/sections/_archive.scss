@@ -22,4 +22,44 @@
             font-weight: 400;
         }
     }
+
+    main {
+        .entry {
+            display: block;
+            color: $dark;
+            margin-bottom: 2rem;
+
+            img {
+                margin-bottom: .5rem;
+            }
+
+            .episode-meta {
+                margin-bottom: .5rem;
+                text-transform: uppercase;
+            }
+
+            .episode-number {
+                font-weight: 900;
+            }
+
+            .episode-date {
+                font-weight: 400;
+            }
+
+            .episode-title {
+                line-height: 1.1;
+                margin-bottom: 0;
+            }
+
+            .episode-guests {
+                margin-top: .25rem;
+                font-weight: 700;
+                line-height: 1.1;
+            }
+
+            .episode-excerpt {
+                font-size: .67rem;
+            }
+        }
+    }
 }
