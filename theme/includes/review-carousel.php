@@ -1,7 +1,18 @@
 <?php $query = new WP_Query(
     array(
         'post_type' => 'review',
-        'posts_per_page' => 5
+        'posts_per_page' => 5,
+        'meta_query' => array(
+            'relation' => 'OR',
+            array(
+                'key' => 'video',
+                'compare' => 'NOT EXISTS'
+            ),
+            array(
+                'key' => 'video',
+                'value' => ''
+            )
+        )
     )
 ); ?>
 
