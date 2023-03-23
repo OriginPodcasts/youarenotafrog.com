@@ -2547,6 +2547,14 @@ form.search-form input:focus { background: transparent; border-width: 0; outline
 
 @media print, screen and (min-width: 40em) { form.search-form { margin: 1rem; } }
 
+.cell.archive header { line-height: 1.4; }
+
+@media print, screen and (min-width: 40em) { .cell.archive header { margin: 1rem; } }
+
+.cell.archive header h2.archive-title { color: #44AFA0; font-size: 1rem; text-transform: uppercase; margin: 0; display: inline; line-height: 1; }
+
+.cell.archive header .archive-count { margin: 0 0 0 .25rem; color: #707070; line-height: 1; font-weight: 400; }
+
 .review-wrapper { background: #1c5451; color: #fff; text-align: center; padding: 1.88rem 0; }
 
 .review-wrapper .review-list { list-style-type: none; margin: 0 auto; padding: 0; }
