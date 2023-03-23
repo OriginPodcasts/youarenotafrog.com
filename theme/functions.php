@@ -20,11 +20,13 @@ function yanaf_setup() {
 	add_image_size('f-sm-whole-16x9', 620, 349, true);
 	add_image_size('f-sm-whole-9x16', 349, 539, true);
 	add_image_size('f-sm-third-sq', 206, 206, true);
+	add_image_size('f-sm-third-16x9', 206, 116, true);
 
 	add_image_size('f-md-whole', 1004, 9999);
 	add_image_size('f-md-half', 497, 9999);
 	add_image_size('f-md-half-sq', 497, 497, true);
 	add_image_size('f-md-half-16x9', 497, 280, true);
+	add_image_size('f-md-third-16x9', 254, 143, true);
 	add_image_size('f-md-third-9x16', 254, 393, true);
 	add_image_size('f-md-sixth-sq', 166, 166, true);
 
@@ -32,6 +34,7 @@ function yanaf_setup() {
 	add_image_size('f-lg-half', 585, 9999);
 	add_image_size('f-lg-half-sq', 585, 585, true);
 	add_image_size('f-lg-half-16x9', 585, 329, true);
+	add_image_size('f-lg-third-16x9', 282, 159, true);
 	add_image_size('f-lg-third-9x16', 282, 437, true);
 	add_image_size('f-lg-sixth-sq', 195, 195, true);
 
