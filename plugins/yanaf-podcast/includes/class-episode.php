@@ -9,7 +9,7 @@
                 'description' => 'Podcast episodes',
                 'public' => true,
                 'hierarchical' => false,
-                'supports' => array('title', 'editor', 'thumbnail', 'slug'),
+                'supports' => array('title', 'excerpt', 'editor', 'thumbnail', 'slug'),
                 'taxonomies' => array('post_tag'),
                 'menu_icon' => 'dashicons-microphone',
                 'menu_position' => 4,
