@@ -1,6 +1,7 @@
 <?php function yanaf_updated_collection_image($term_id, $image_id) {
     if (!$image_id) {
         delete_term_meta($term_id, 'colour');
+        do_action('yanaf_update_colours');
         return;
     }
 

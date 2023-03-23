@@ -5,6 +5,7 @@
 
     if (!$meta_value) {
         delete_post_meta($post_id, 'colour');
+        do_action('yanaf_update_colours');
         return;
     }
 
