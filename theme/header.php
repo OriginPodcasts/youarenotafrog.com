@@ -12,7 +12,7 @@
             <div class="grid-container">
                 <div class="grid-x">
                     <div class="medium-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php printf(__('%s logo', 'yanaf'), get_bloginfo('name')); ?>" class="yanaf-logo">
+                        <a href="<?php esc_attr_e(home_url()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php printf(__('%s logo', 'yanaf'), get_bloginfo('name')); ?>" class="yanaf-logo"></a>
                     </div>
                     <div class="medium-8">
                         <?php yanaf_main_menu(); ?>
