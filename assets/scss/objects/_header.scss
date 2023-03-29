@@ -29,7 +29,13 @@ header.site-header {
 
                 &:hover, &:active {
                     color: $menu-color-active;
+                    background: transparent;
                 }
+            }
+
+            &.active a {
+                color: $menu-color-active;
+                background: transparent;
             }
         }
 

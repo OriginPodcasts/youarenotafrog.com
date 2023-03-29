@@ -2501,7 +2501,9 @@ header.site-header ul.menu { text-align: center; justify-content: center; font-f
 
 header.site-header ul.menu li a:link, header.site-header ul.menu li a:visited { color: #707070; }
 
-header.site-header ul.menu li a:hover, header.site-header ul.menu li a:active { color: #575757; }
+header.site-header ul.menu li a:hover, header.site-header ul.menu li a:active { color: #575757; background: transparent; }
+
+header.site-header ul.menu li.active a { color: #575757; background: transparent; }
 
 header.site-header ul.menu.search-menu { justify-content: end; text-align: right; }
 
