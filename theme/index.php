@@ -1,4 +1,21 @@
-<?php get_header(); ?>
+<?php get_header();
+
+if ($collection = yanaf_get_collection()) { ?>
+    <header class="collection-header collection-<?php esc_attr_e($collection->slug); ?>-dark">
+        <div class="grid-container">
+            <h1 class="collection-name"><?php esc_html_e($collection->name); ?></h1>
+            <div class="collection-description">
+                <?php echo wpautop(esc_html($collection->description)); ?>
+            </div>
+
+            <?php if ($image_id = yanaf_get_collection_image_id($collection->term_id)) {
+                if ($image = wp_get_attachment_image_src($image_id, 'f-sm-whole')) { ?>
+                    <img alt="<?php esc_attr_e($collection->name); ?> thumbnail" src="<?php esc_attr_e($image[0]); ?>" width="<?php esc_attr_e($image[1]); ?>" class="collection-image">
+                <?php }
+            } ?>
+        </div>
+    </header>
+<?php } ?>
 
 <div class="grid-container">
     <div class="grid-x grid-margin-x">

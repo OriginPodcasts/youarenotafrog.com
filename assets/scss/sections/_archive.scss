@@ -1,5 +1,29 @@
 .archive.tax-collection {
+    header.collection-header {
+        padding: 2rem 0;
+        text-align: center;
+        color: #fff;
 
+        img.collection-image {
+            width: 294px;
+            max-width: 80%;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .collection-name {
+            font-weight: 400;
+        }
+
+        .collection-description {
+            @include breakpoint(large) {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 .cell.archive {
