@@ -1,5 +1,9 @@
+.archive.tax-collection {
+
+}
+
 .cell.archive {
-    header {
+    .breadcrumb {
         line-height: 1.4;
 
         @include breakpoint(medium) {

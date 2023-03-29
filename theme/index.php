@@ -18,14 +18,14 @@
             <?php }
 
             if (have_posts()) { ?>
-                <header>
+                <section class="breadcrumb">
                     <h2 class="archive-title"><?php yanaf_archive_title(); ?></h2>
                     <span class="archive-count">
                         /
                         <?php echo $wp_query->found_posts; ?>
                         result<?php if ($wp_query->found_posts !== 1) { ?>s<?php } ?>
                     </span>
-                </header>
+                </section>
 
                 <main class="grid-x grid-margin-x">
                     <?php while (have_posts()) {
