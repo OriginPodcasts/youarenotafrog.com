@@ -7,7 +7,7 @@
         line-height: 1.4;
 
         @include breakpoint(medium) {
-            margin: 1rem;
+            margin: 1rem 0;
         }
 
         h2.archive-title {

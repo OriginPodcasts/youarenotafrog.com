@@ -2659,7 +2659,7 @@ body { background: #F5F5F0; }
 
 .cell.archive .breadcrumb { line-height: 1.4; }
 
-@media print, screen and (min-width: 40em) { .cell.archive .breadcrumb { margin: 1rem; } }
+@media print, screen and (min-width: 40em) { .cell.archive .breadcrumb { margin: 1rem 0; } }
 
 .cell.archive .breadcrumb h2.archive-title { color: #44AFA0; font-size: 1rem; text-transform: uppercase; margin: 0; display: inline; line-height: 1; }
 
