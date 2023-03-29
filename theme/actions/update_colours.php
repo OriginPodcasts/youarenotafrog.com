@@ -9,6 +9,11 @@
             $styles["collection-$slug"] = array(
                 sprintf('background-color: %s', $colour)
             );
+
+            $colour = apply_filters('yanaf_collection_colour', $colour);
+            $styles["collection-$slug-dark"] = array(
+                sprintf('background-color: %s', $colour)
+            );
         }
     }
 
@@ -18,6 +23,11 @@
         if ($colour = get_post_meta($post->ID, 'colour', true)) {
             $colour = apply_filters('yanaf_resource_colour', $colour);
             $styles["resource-$slug"] = array(
+                sprintf('background-color: %s', $colour)
+            );
+
+            $colour = apply_filters('yanaf_resource_colour', $colour);
+            $styles["resource-$slug-dark"] = array(
                 sprintf('background-color: %s', $colour)
             );
         }
