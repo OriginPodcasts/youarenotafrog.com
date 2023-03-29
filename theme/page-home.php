@@ -4,7 +4,35 @@ get_header(); ?>
 
 <main>
     <?php while (have_posts()) {
-        the_post(); ?>
+        the_post();
+        
+        if ($hero = get_field('hero_image')) {
+            $hero_sizes = array(
+                '640' => wp_get_attachment_image_src($hero, 'f-sm-whole'),
+                '1024' => wp_get_attachment_image_src($hero, 'f-medium-whole'),
+                '1200' => wp_get_attachment_image_src($hero, 'f-large-whole'),
+                '1440' => wp_get_attachment_image_src($hero, 'f-xlarge-whole')
+            ); ?>
+            
+            <style id="yanaf-hero-styles">
+                <?php foreach ($hero_sizes as $width => $image) {
+                    if ($image) { ?>
+                        @media screen and (max-width: <?php echo $width; ?>px) {
+                            .hero {
+                                background-image: url('<?php echo $image[0]; ?>');
+                            }
+                        }
+                    <?php }
+                }
+
+                if (isset($image)) { ?>
+                    .hero {
+                        background-image: url('<?php echo $image[0]; ?>');
+                        background-position: center;
+                    }
+                <?php } ?>
+            </style>
+        <?php } ?>
 
         <section class="hero">
             <div class="grid-container">
