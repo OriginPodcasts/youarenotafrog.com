@@ -214,6 +214,10 @@ function yanaf_init() {
 	foreach (glob(dirname(__file__) . '/actions/*.php') as $filename) {
 		require_once($filename);
 	}
+
+	foreach (glob(dirname(__file__) . '/filters/*.php') as $filename) {
+		require_once($filename);
+	}
 }
 
 yanaf_init();
