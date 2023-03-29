@@ -5,6 +5,24 @@
     justify-content: flex-end;
     flex-direction: column;
     height: calc(100vh - 100px);
+    position: relative;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: ' ';
+        display: block;
+        background: #0C1D24;
+        background: linear-gradient(0deg, #0C1D24 0%, #0C1D2400 100%);
+        z-index: 0;
+    }
+
+    .grid-container {
+        z-index: 10;
+    }
 
     .h1 {
         color: #fff;
