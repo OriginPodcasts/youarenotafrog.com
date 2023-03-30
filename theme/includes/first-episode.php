@@ -21,7 +21,7 @@ while ($query->have_posts()) {
         ); ?>
 
         <div class="episode-meta">
-            <span class="episode-number">Episode <?php the_episode_number(); ?></span> |
+            <span class="episode-number">Episode <?php yanaf_the_episode_number(); ?></span> |
             <span class="episode-date"><?php the_date('j F'); ?></span>
         </div>
 

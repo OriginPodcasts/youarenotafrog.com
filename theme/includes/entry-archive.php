@@ -13,7 +13,7 @@
     
     <div class="<?php echo $post_type; ?>-meta">
         <?php if ($post_type === 'episode') { ?>
-            <span class="<?php echo $post_type; ?>-number">Episode <?php the_episode_number(); ?></span> |
+            <span class="<?php echo $post_type; ?>-number">Episode <?php yanaf_the_episode_number(); ?></span> |
         <?php } ?>
         <span class="<?php echo $post_type; ?>-date"><?php the_date('j F'); ?></span>
     </div>
