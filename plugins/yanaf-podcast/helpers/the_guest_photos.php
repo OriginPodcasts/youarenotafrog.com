@@ -1,4 +1,4 @@
-<?php function the_guest_photos($post_id=null, $size='full') {
+<?php function yanaf_the_guest_photos($post_id=null, $size='full') {
     if ($post_id === null) {
         $post_id = get_the_ID();
     }

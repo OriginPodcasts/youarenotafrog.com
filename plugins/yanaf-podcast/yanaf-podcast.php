@@ -36,6 +36,7 @@ require plugin_dir_path(__file__) . 'helpers/the_episode_player.php';
 require plugin_dir_path(__file__) . 'helpers/episode_has_guests.php';
 require plugin_dir_path(__file__) . 'helpers/the_episode_number.php';
 require plugin_dir_path(__file__) . 'helpers/the_guest_names.php';
+require plugin_dir_path(__file__) . 'helpers/the_guest_photos.php';
 
 function run_yanaf_podcast() {
 	$plugin = new YANAF_Podcast();
