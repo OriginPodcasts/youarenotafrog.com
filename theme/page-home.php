@@ -109,23 +109,19 @@ get_header(); ?>
         </div>
     </section>
 
-    <?php if ($image_id = get_field('host_photo')) { ?>
-        <div class="host-photo-wrapper">
-            <div class="grid-container">
-                <?php yanaf_img_srcset(
-                    $image_id,
-                    'Host',
-                    array(
-                        'small' => 'f-sm-whole',
-                        'medium' => 'f-medium-whole',
-                        'large' => 'f-large-whole',
-                        'xlarge' => 'f-xlarge-whole'
-                    ),
-                    true
-                ); ?>
-            </div>
-        </div>
-    <?php } ?>
+    <?php if ($image_id = get_field('host_photo')) {
+        yanaf_img_srcset(
+            $image_id,
+            'Host',
+            array(
+                'small' => 'f-sm-whole',
+                'medium' => 'f-medium-whole',
+                'large' => 'f-large-whole',
+                'xlarge' => 'f-xlarge-whole'
+            ),
+            true
+        );
+    } ?>
 
     <section class="host-wrapper">
         <div class="grid-container">
