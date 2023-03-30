@@ -22,7 +22,7 @@
 
     <?php if ($post_type === 'episode') {
         if (yanaf_episode_has_guests()) { ?>
-            <p class="<?php echo $post_type; ?>-guests">With <?php the_guest_names(); ?></p>
+            <p class="<?php echo $post_type; ?>-guests">With <?php yanaf_the_guest_names(); ?></p>
         <?php } else { ?>
             <p class="<?php echo $post_type; ?>-guests">With <?php the_author(); ?></p>
         <?php }
