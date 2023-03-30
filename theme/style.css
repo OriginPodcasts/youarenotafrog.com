@@ -2689,6 +2689,46 @@ body { background: #F5F5F0; }
 
 .cell.archive main .entry .episode-excerpt { font-size: .67rem; }
 
+body.single .episode-header { background: #3EA19B; padding: 4rem 0; text-align: center; color: #fff; }
+
+body.single .episode-header img.episode-image { width: 294px; max-width: 80%; border-radius: 50%; display: block; margin: 0 auto 1rem; }
+
+body.single .episode-header .episode-guest-photos { display: flex; max-width: 294px; margin: 0 auto 1rem; align-items: center; }
+
+body.single .episode-header img.episode-guest-photo { border-radius: 50%; }
+
+body.single .episode-header .episode-date { margin-bottom: 0; }
+
+body.single .episode-header .episode-title { font-weight: 400; line-height: 1.1; margin: .5rem auto; }
+
+@media print, screen and (min-width: 64em) { body.single .episode-header .episode-title { width: 80%; } }
+
+body.single .episode-section { margin-top: 2rem; }
+
+body.single .episode-section:first-child { margin-top: 0; }
+
+body.single .episode-section h2 { margin-bottom: .5rem; }
+
+body.single .episode-section.episode-description { color: #707070; font-weight: 400; font-size: 1.56rem; }
+
+body.single .episode-link, body.single .episode-guest { margin-bottom: 1rem; color: #707070; }
+
+body.single .episode-link a, body.single .episode-guest a { text-decoration: underline; }
+
+body.single .episode-link a:link, body.single .episode-link a:visited, body.single .episode-guest a:link, body.single .episode-guest a:visited { color: #44AFA0; }
+
+body.single .episode-link a:active, body.single .episode-link a:hover, body.single .episode-guest a:active, body.single .episode-guest a:hover { color: #3d9d8f; }
+
+body.single h3.episode-guest-name { color: #707070; font-size: .81rem; font-weight: 900; margin: .5rem auto 0; text-align: center; }
+
+@media print, screen and (min-width: 40em) { body.single aside.sidebar { display: block; margin: 54px 0 1rem; } }
+
+@media print, screen and (min-width: 40em) { .cell.single { margin: 54px auto 1rem; } }
+
+.cell.single h2 { color: #707070; font-size: .81rem; font-weight: 900; text-transform: uppercase; margin: 0 0 1rem; }
+
+.yanaf-episode-player { border-width: 0; border-radius: 6px; display: block; overflow: hidden; width: 100%; }
+
 .hero { background: url("img/home/hero.jpg") no-repeat top center; background-size: cover; display: flex; justify-content: flex-end; flex-direction: column; height: calc(100vh - 100px); position: relative; }
 
 .hero:before { position: absolute; top: 0; right: 0; bottom: 0; left: 0; content: ' '; display: block; background: #0C1D24; background: linear-gradient(0deg, #0C1D24 0%, #0C1D2400 100%); z-index: 0; }
