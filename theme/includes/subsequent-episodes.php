@@ -32,7 +32,7 @@ if ($query->have_posts()) { ?>
                     </div>
 
                     <h3 class="h5 episode-title"><?php the_title(); ?></h3>
-                    <?php if (episode_has_guests()) { ?>
+                    <?php if (yanaf_episode_has_guests()) { ?>
                         <p class="episode-guests">With <?php the_guest_names(); ?></p>
                     <?php } else { ?>
                         <p class="episode-guests">With <?php the_author(); ?></p>

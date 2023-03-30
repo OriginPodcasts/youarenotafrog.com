@@ -1,4 +1,4 @@
-<?php function episode_has_guests($post_id=null) {
+<?php function yanaf_episode_has_guests($post_id=null) {
     if ($post_id === null) {
         $post_id = get_the_ID();
     }

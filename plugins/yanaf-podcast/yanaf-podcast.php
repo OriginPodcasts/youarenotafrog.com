@@ -33,6 +33,7 @@ require plugin_dir_path(__file__) . 'helpers/get_collections.php';
 require plugin_dir_path(__file__) . 'helpers/get_collection_image_id.php';
 require plugin_dir_path(__file__) . 'helpers/get_popular_post_tags.php';
 require plugin_dir_path(__file__) . 'helpers/the_episode_player.php';
+require plugin_dir_path(__file__) . 'helpers/episode_has_guests.php';
 
 function run_yanaf_podcast() {
 	$plugin = new YANAF_Podcast();
