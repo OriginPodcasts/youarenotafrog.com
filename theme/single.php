@@ -84,8 +84,8 @@
 		            	<h2>About the guest<?php echo $guest_count ? 's' : ''; ?></h2>
 		            	<div class="episode-guests">
 		            		<?php foreach(yanaf_get_episode_guests() as $guest) { ?>
-		            			<div class="episode-guests grid-x grid-margin-x">
-		            				<div class="episode-link-icon cell medium-3 text-right">
+		            			<div class="episode-guest grid-x grid-margin-x">
+		            				<div class="episode-guest-photo cell medium-3 text-right">
 		            					<?php if (isset($guest['photo'])) {
 			            					yanaf_img_srcset(
 						                        $guest['photo'],
