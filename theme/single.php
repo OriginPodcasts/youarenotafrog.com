@@ -45,7 +45,7 @@
 			    		<li><a href="#guests">About the guest<?php echo $guest_count ? 's' : ''; ?></a></li>
 			    	<?php }
 
-			    	if ($reasons = get_field('reasons')) { ?>
+			    	if (yanaf_episode_has_reasons()) { ?>
 			    		<li><a href="#reasons">Reasons to listen</a></li>
 			        <?php }
 
@@ -139,12 +139,12 @@
 	            	</section>
 	            <?php }
 
-	            if ($reasons) { ?>
+	            if (yanaf_episode_has_reasons()) { ?>
 	            	<section id="reasons" class="episode-section episode-reasons">
 		            	<h2>Reasons to listen</h2>
 		            	<div class="grid-x grid-margin-x">
 		            		<div class="cell medium-9 medium-offset-3">
-		            			<?php echo apply_filters('the_content', $reasons); ?>
+		            			<?php yanaf_the_episode_reasons(); ?>
 		            		</div>
 		            	</div>
 	            	</section>
