@@ -2743,6 +2743,18 @@ body.single .episode-highlight-description { color: #707070; }
 
 @media print, screen and (min-width: 40em) { body.single aside.sidebar { display: block; margin: 54px 0 1rem; } }
 
+body.single .episode-transcript-text { color: #707070; }
+
+body.single .episode-transcript-excerpt { position: relative; }
+
+body.single .episode-transcript-excerpt .episode-transcript-text { position: relative; z-index: 10; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+
+body.single .episode-transcript-excerpt .episode-transcript-text:after { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(to bottom, #f5f5f000 0%, #f5f5f0 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f5f5f0', endColorstr='#f5f5f0', GradientType=0); content: ' '; display: block; z-index: 20; pointer-events: none; }
+
+body.single .episode-transcript-excerpt .episode-transcript-text p:last-child { margin-bottom: 0; }
+
+body.single .episode-transcript-excerpt .episode-transcript-loader { position: absolute; bottom: 0; left: 0; z-index: 30; margin: 0 auto; }
+
 @media print, screen and (min-width: 40em) { .cell.single { margin: 54px auto 1rem; } }
 
 .cell.single h2 { color: #707070; font-size: .81rem; font-weight: 900; text-transform: uppercase; margin: 0 0 1rem; }
