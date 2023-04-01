@@ -37,6 +37,7 @@ require plugin_dir_path(__file__) . 'helpers/episode_has_guests.php';
 require plugin_dir_path(__file__) . 'helpers/episode_has_highlights.php';
 require plugin_dir_path(__file__) . 'helpers/episode_has_links.php';
 require plugin_dir_path(__file__) . 'helpers/episode_has_reasons.php';
+require plugin_dir_path(__file__) . 'helpers/episode_has_transcript.php';
 require plugin_dir_path(__file__) . 'helpers/get_episode_guest_count.php';
 require plugin_dir_path(__file__) . 'helpers/get_episode_guests.php';
 require plugin_dir_path(__file__) . 'helpers/get_episode_highlights.php';
