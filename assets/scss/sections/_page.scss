@@ -1,0 +1,18 @@
+body.page {
+    .page-header {
+        background: #3EA19B;
+        padding: 4rem 0;
+        text-align: center;
+        color: #fff;
+
+        .page-title {
+            font-weight: 400;
+            line-height: 1.1;
+            margin: .5rem auto;
+
+            @include breakpoint(large) {
+                width: 80%;
+            }
+        }
+    }
+}

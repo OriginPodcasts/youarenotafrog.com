@@ -1,22 +1,25 @@
-<?php get_header();
+<?php get_header(); ?>
 
-if (have_posts()) :
-	while (have_posts()) : the_post(); ?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header class="header">
-				<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1> <?php edit_post_link(); ?>
-			</header>
-			<div class="entry-content" itemprop="mainContentOfPage">
-				<?php if (has_post_thumbnail()) { the_post_thumbnail('full', array('itemprop' => 'image')); } ?>
-				<?php the_content(); ?>
-				<div class="entry-links"><?php wp_link_pages(); ?></div>
-			</div>
-		</article>
-		
-		<?php if (comments_open() && !post_password_required()) {
-			comments_template('', true);
-		}
-	endwhile;
-endif;
+<main>
+    <?php if (have_posts()) {
+        while (have_posts()) {
+            the_post(); ?>
 
-get_footer();
+            <header class="page-header">
+                <div class="grid-container">
+                    <h1 class="page-title"><?php the_title(); ?></h1>
+                </div>
+            </header>
+        <?php }
+    } ?>
+
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <article class="main single cell medium-9">
+                <?php the_content(); ?>
+            </article>
+        </div>
+    </div>
+</main>
+
+<?php get_footer();
