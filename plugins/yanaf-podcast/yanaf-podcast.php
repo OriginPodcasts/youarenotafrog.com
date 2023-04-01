@@ -34,6 +34,7 @@ require plugin_dir_path(__file__) . 'helpers/get_collection_image_id.php';
 require plugin_dir_path(__file__) . 'helpers/get_popular_post_tags.php';
 require plugin_dir_path(__file__) . 'helpers/the_episode_player.php';
 require plugin_dir_path(__file__) . 'helpers/episode_has_guests.php';
+require plugin_dir_path(__file__) . 'helpers/episode_has_highlights.php';
 require plugin_dir_path(__file__) . 'helpers/episode_has_links.php';
 require plugin_dir_path(__file__) . 'helpers/get_episode_guest_count.php';
 require plugin_dir_path(__file__) . 'helpers/get_episode_guests.php';
