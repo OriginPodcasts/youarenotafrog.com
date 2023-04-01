@@ -2753,7 +2753,7 @@ body.single .episode-transcript-excerpt .episode-transcript-text:after { positio
 
 body.single .episode-transcript-excerpt .episode-transcript-text p:last-child { margin-bottom: 0; }
 
-body.single .episode-transcript-excerpt .episode-transcript-loader { position: absolute; bottom: 0; left: 0; z-index: 30; margin: 0 auto; }
+body.single .episode-transcript-excerpt .episode-transcript-loader { position: absolute; bottom: 0; left: 0; z-index: 30; margin: 0 auto; background: #fefefe; border: 1px solid #45AFA0; color: #45AFA0; }
 
 @media print, screen and (min-width: 40em) { .cell.single { margin: 54px auto 1rem; } }
 

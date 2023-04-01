@@ -181,7 +181,7 @@
 		            			<div class="episode-transcript-<?php echo isset($_GET['transcript']) && $_GET['transcript'] === 'full' ? 'full' : 'excerpt'; ?>">
 		            				<div class="episode-transcript-text"><?php $excerpt = yanaf_the_episode_transcript(); ?></div>
 		            				<?php if ($excerpt === 'excerpt') { ?>
-		            					<a href="?transcript=full#transcript" rel="noindex" class="button episode-transcript-loader">Read the full transcript</a>
+		            					<a href="?transcript=full#transcript" rel="noindex" class="small episode-transcript-loader button">Show more</a>
 		            				<?php } ?>
 		            			</div>
 		            		</div>

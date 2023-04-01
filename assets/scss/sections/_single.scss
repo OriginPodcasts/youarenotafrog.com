@@ -185,6 +185,9 @@ body.single {
             left: 0;
             z-index: 30;
             margin: 0 auto;
+            background: $white;
+            border: 1px solid $button-background;
+            color: $button-background;
         }
     }
 }
