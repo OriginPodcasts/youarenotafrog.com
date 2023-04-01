@@ -136,7 +136,7 @@
                                 "mastodon": "Mastodon",
                                 "globe": "Website"
                             },
-                            "default_value": false,
+                            "default_value": "globe",
                             "return_format": "value",
                             "multiple": 0,
                             "allow_null": 0,
@@ -164,8 +164,7 @@
             },
             "layout": "table",
             "pagination": 0,
-            "min": 0,
-            "max": 0,
+            "min": 0,            "max": 0,
             "collapsed": "field_640720f33aa04",
             "button_label": "Add Link",
             "rows_per_page": 20,
