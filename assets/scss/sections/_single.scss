@@ -41,9 +41,14 @@ body.single {
 
     .episode-section {
         margin-top: 2rem;
+        border-bottom: 1px solid $dark;
 
         &:first-child {
             margin-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: 0;
         }
 
         h2 {
