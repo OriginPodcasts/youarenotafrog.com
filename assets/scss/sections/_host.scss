@@ -1,0 +1,56 @@
+body.page-template-page-host-php {
+    header.page-header {
+        background: black no-repeat center;
+        background-size: cover;
+        display: flex;
+        position: relative;
+
+        @include breakpoint(medium) {
+            height: 85vh;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: -moz-linear-gradient(right, #00000000 0%, #00000000 20%, #000000 100%);
+                background: -webkit-linear-gradient(right, #00000000 0%, #00000000 20%, #000000 100%);
+                background: linear-gradient(to left, #00000000 0%, #00000000 20%, #000000 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000', endColorstr='#00000000', GradientType=1);
+                z-index: 10;
+                display: block;
+                content: ' ';
+            }
+        }
+
+        .grid-container {
+            margin-top: auto;
+            margin-bottom: auto;
+            z-index: 20;
+        }
+
+        .page-header-container {
+            display: flex;
+            flex-flow: column;
+            margin: auto 0;
+
+            @include breakpoint(medium) {
+                width: 50%;
+            }
+        }
+
+        h1.page-title {
+            margin: 0 auto 2rem;
+            font-size: .69rem;
+            text-aligin: center;
+        }
+
+        p.page-greeting {
+            font-size: 7.69rem;
+            font-weight: 900;
+            margin: 0 0 1rem 0;
+            line-height: 1;
+        }
+    }
+}

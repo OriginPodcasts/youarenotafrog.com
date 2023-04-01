@@ -2495,7 +2495,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: 'Nunito', sa
 
 header.site-header { padding-top: 24px; background: #fff; border-bottom: 1px solid #707070; position: relative; }
 
-header.site-header img.yanaf-logo { width: 148px; -webkit-transform: rotate(-15deg); transform: rotate(-15deg); position: absolute; }
+header.site-header img.yanaf-logo { width: 148px; -webkit-transform: rotate(-15deg); transform: rotate(-15deg); position: absolute; z-index: 30; }
 
 header.site-header ul.menu { text-align: center; justify-content: center; font-family: "Nunito", sans-serif; font-size: 1.06rem; font-weight: bold; color: #707070; letter-spacing: 0px; opacity: 1; color: #707070; }
 
@@ -2908,3 +2908,17 @@ a.first-episode.first-episode .episode-guests, a.subsequent-episode.first-episod
 @media print, screen and (min-width: 64em) { .host-wrapper .host-bio { margin: 0 auto; width: 80%; } }
 
 @media screen and (min-width: 75em) { .host-wrapper .host-bio { width: 60%; } }
+
+body.page-template-page-host-php header.page-header { background: black no-repeat center; background-size: cover; display: flex; position: relative; }
+
+@media print, screen and (min-width: 40em) { body.page-template-page-host-php header.page-header { height: 85vh; } body.page-template-page-host-php header.page-header:after { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(to left, #00000000 0%, #00000000 20%, #000000 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000', endColorstr='#00000000', GradientType=1); z-index: 10; display: block; content: ' '; } }
+
+body.page-template-page-host-php header.page-header .grid-container { margin-top: auto; margin-bottom: auto; z-index: 20; }
+
+body.page-template-page-host-php header.page-header .page-header-container { display: flex; flex-flow: column; margin: auto 0; }
+
+@media print, screen and (min-width: 40em) { body.page-template-page-host-php header.page-header .page-header-container { width: 50%; } }
+
+body.page-template-page-host-php header.page-header h1.page-title { margin: 0 auto 2rem; font-size: .69rem; text-aligin: center; }
+
+body.page-template-page-host-php header.page-header p.page-greeting { font-size: 7.69rem; font-weight: 900; margin: 0 0 1rem 0; line-height: 1; }
