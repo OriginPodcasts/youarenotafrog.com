@@ -44,6 +44,7 @@ require plugin_dir_path(__file__) . 'helpers/get_episode_highlights.php';
 require plugin_dir_path(__file__) . 'helpers/get_episode_links.php';
 require plugin_dir_path(__file__) . 'helpers/the_episode_number.php';
 require plugin_dir_path(__file__) . 'helpers/the_episode_reasons.php';
+require plugin_dir_path(__file__) . 'helpers/the_episode_transcript.php';
 require plugin_dir_path(__file__) . 'helpers/the_guest_names.php';
 require plugin_dir_path(__file__) . 'helpers/the_guest_photos.php';
 
