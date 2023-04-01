@@ -115,7 +115,7 @@
                     "sub_fields": [
                         {
                             "key": "field_640722486876e",
-                            "label": "Icon",
+                            "label": "Site",
                             "name": "icon",
                             "aria-label": "",
                             "type": "select",
@@ -149,8 +149,7 @@
                 }
             ]
         },
-        {
-            "key": "field_640720d53aa01",
+        {            "key": "field_640720d53aa01",
             "label": "Links",
             "name": "links",
             "aria-label": "",
