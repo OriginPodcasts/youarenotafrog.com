@@ -39,11 +39,15 @@
 
 			    	<?php if (yanaf_episode_has_links()) { ?>
 			    		<li><a href="#links">Links</a></li>
-			    	<?php } ?>
+			    	<?php }
 
-			    	<?php if ($guest_count = yanaf_get_episode_guest_count()) { ?>
+			    	if ($guest_count = yanaf_get_episode_guest_count()) { ?>
 			    		<li><a href="#guests">About the guest<?php echo $guest_count ? 's' : ''; ?></a></li>
-			    	<?php } ?>
+			    	<?php }
+
+			    	if ($reasons = get_field('reasons')) { ?>
+			    		<li><a href="#reasons">Reasons to listen</a></li>
+			        <?php } ?>
 			    </ul>
 			</aside>
 
@@ -128,6 +132,17 @@
 		            			</div>
 			            	<?php } ?>
 	            		</div>
+	            	</section>
+	            <?php }
+
+	            if ($reasons) { ?>
+	            	<section id="reasons" class="episode-section episode-reasons">
+		            	<h2>Reasons to listen</h2>
+		            	<div class="grid-x grid-margin-x">
+		            		<div class="cell medium-9 medium-offset-3">
+		            			<?php echo apply_filters('the_content', $reasons); ?>
+		            		</div>
+		            	</div>
 	            	</section>
 	            <?php } ?>
 	        </article>

@@ -50,8 +50,12 @@ body.single {
             margin-bottom: .5rem;
         }
 
-        &.episode-description {
+        &.episode-description,
+        &.episode-reasons {
             color: $dark;
+        }
+
+        &.episode-description {
             font-weight: 400;
             font-size: 1.56rem;
         }
