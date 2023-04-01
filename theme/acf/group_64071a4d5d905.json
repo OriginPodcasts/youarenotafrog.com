@@ -128,11 +128,12 @@
                                 "id": ""
                             },
                             "choices": {
-                                "Facebook": "Facebook",
+                                "facebook": "Facebook",
                                 "instagram": "Instagram",
                                 "linkedin": "LinkedIn",
-                                "TikTok": "TikTok",
+                                "tiktok": "TikTok",
                                 "twitter": "Twitter",
+                                "mastodon": "Mastodon",
                                 "globe": "Website"
                             },
                             "default_value": false,
@@ -156,8 +157,7 @@
             "type": "repeater",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
+            "conditional_logic": 0,            "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
