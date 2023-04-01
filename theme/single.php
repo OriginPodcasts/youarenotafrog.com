@@ -47,6 +47,10 @@
 
 			    	if ($reasons = get_field('reasons')) { ?>
 			    		<li><a href="#reasons">Reasons to listen</a></li>
+			        <?php }
+
+			        if (yanaf_episode_has_highlights()) { ?>
+			    		<li><a href="#highlights">Highlights</a></li>
 			        <?php } ?>
 			    </ul>
 			</aside>
@@ -143,6 +147,25 @@
 		            			<?php echo apply_filters('the_content', $reasons); ?>
 		            		</div>
 		            	</div>
+	            	</section>
+	            <?php }
+
+	            if (yanaf_episode_has_highlights()) { ?>
+	            	<section id="highlights" class="episode-section episode-highlights">
+		            	<h2>Episode highlights</h2>
+		            	<?php foreach (yanaf_get_episode_highlights() as $highlight) { ?>
+        					<div class="grid-x grid-margin-x">
+        						<div class="cell medium-3 text-right episode-highlight-timestamp">
+        							<code><?php esc_html_e($highlight['timestamp']); ?></code>
+       							</div>
+        						<div class="cell medium-9 episode-highlight-description">
+        							<?php echo apply_filters(
+    									'the_content',
+    									isset($highlight['description']) ? $highlight['description'] : ''
+    								); ?>
+        						</div>
+        					</div>
+            			<?php } ?>
 	            	</section>
 	            <?php } ?>
 	        </article>

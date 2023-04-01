@@ -2735,6 +2735,10 @@ body.single ul.episode-guest-links li a svg { display: block; margin: 0 auto; he
 
 body.single ul.episode-guest-links li a:hover { background: #000; }
 
+body.single .episode-highlight-timestamp code { border-width: 0; background: transparent; padding: 0; }
+
+body.single .episode-highlight-description { color: #707070; }
+
 @media print, screen and (min-width: 40em) { body.single aside.sidebar { display: block; margin: 54px 0 1rem; } }
 
 @media print, screen and (min-width: 40em) { .cell.single { margin: 54px auto 1rem; } }

@@ -124,6 +124,16 @@ body.single {
         }
     }
 
+    .episode-highlight-timestamp code {
+        border-width: 0;
+        background: transparent;
+        padding: 0;
+    }
+
+    .episode-highlight-description {
+        color: $dark;
+    }
+
     aside.sidebar {
         @include breakpoint(medium) {
             display: block;
