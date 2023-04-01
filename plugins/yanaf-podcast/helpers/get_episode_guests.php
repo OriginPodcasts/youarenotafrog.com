@@ -20,7 +20,23 @@
                 $guest['bio'] = $bio;
             }
 
-            if ($links = get_post_meta($post_id, sprintf('guests_%d_links', $i), true)) {
+            if ($link_count = get_post_meta($post_id, sprintf('guests_%d_links', $i), true)) {
+                $links = array();
+
+                for($x = 0; $x < intVal($link_count); $x ++) {
+                    $link = array();
+                    
+                    if ($icon = get_post_meta($post_id, sprintf('guests_%d_links_%d_icon', $i, $x), true)) {
+                        $link['icon'] = $icon;
+                    }
+
+                    if ($url = get_post_meta($post_id, sprintf('guests_%d_links_%d_url', $i, $x), true)) {
+                        $link['url'] = $url;
+                    }
+
+                    $links[] = $link;
+                }
+
                 $guest['links'] = $links;
             }
 
