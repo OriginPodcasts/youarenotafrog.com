@@ -144,27 +144,48 @@
                             "ajax": 0,
                             "placeholder": "",
                             "parent_repeater": "field_640722406876d"
+                        },
+                        {
+                            "key": "field_6427fba2289af",
+                            "label": "URL",
+                            "name": "url",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "parent_repeater": "field_640722406876d"
                         }
                     ],
                     "parent_repeater": "field_64072047d1b55"
                 }
             ]
         },
-        {            "key": "field_640720d53aa01",
+        {
+            "key": "field_640720d53aa01",
             "label": "Links",
             "name": "links",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,            "wrapper": {
+            "conditional_logic": 0,
+            "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
             "layout": "table",
             "pagination": 0,
-            "min": 0,            "max": 0,
+            "min": 0,
+            "max": 0,
             "collapsed": "field_640720f33aa04",
             "button_label": "Add Link",
             "rows_per_page": 20,
@@ -346,5 +367,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680087132
+    "modified": 1680341980
 }
