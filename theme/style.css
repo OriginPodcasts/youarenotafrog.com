@@ -2761,11 +2761,13 @@ body.single .episode-transcript-excerpt .episode-transcript-loader { position: a
 
 .yanaf-episode-player { border-width: 0; border-radius: 6px; display: block; overflow: hidden; width: 100%; }
 
-body.page .page-header { background: #3EA19B; padding: 4rem 0; text-align: center; color: #fff; }
+body.page .page-header, body.error404 .page-header { background: #3EA19B; padding: 4rem 0; text-align: center; color: #fff; }
 
-body.page .page-header .page-title { font-weight: 400; line-height: 1.1; margin: .5rem auto; }
+body.page .page-header .page-title, body.error404 .page-header .page-title { font-weight: 400; line-height: 1.1; margin: .5rem auto; }
 
-@media print, screen and (min-width: 64em) { body.page .page-header .page-title { width: 80%; } }
+@media print, screen and (min-width: 64em) { body.page .page-header .page-title, body.error404 .page-header .page-title { width: 80%; } }
+
+body.error404 .search-form { margin: 0 0 1rem; }
 
 .hero { background: url("img/home/hero.jpg") no-repeat top center; background-size: cover; display: flex; justify-content: flex-end; flex-direction: column; height: calc(100vh - 100px); position: relative; }
 

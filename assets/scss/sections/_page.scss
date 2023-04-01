@@ -1,4 +1,4 @@
-body.page {
+body.page, body.error404 {
     .page-header {
         background: #3EA19B;
         padding: 4rem 0;
@@ -14,5 +14,11 @@ body.page {
                 width: 80%;
             }
         }
+    }
+}
+
+body.error404 {
+    .search-form {
+        margin: 0 0 1rem;
     }
 }
