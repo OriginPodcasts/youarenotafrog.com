@@ -107,7 +107,23 @@
 		            				<div class="episode-link-content cell medium-9">
 		            					<?php if (isset($guest['bio'])) {
 			            					echo apply_filters('the_content', $guest['bio']);
-			            				} ?>
+			            				}
+
+			            				if ($links = (isset($guest['links']) && is_array($guest['links'])) ? $guest['links'] : array()) {
+			            					if (count($links)) { ?>
+			            						<h4 class="episode-guest-links-header">Follow <?php esc_html_e($guest['name']); ?></h4>
+			            					<?php } ?>
+
+			            					<ul class="episode-guest-links">
+			            						<?php foreach ($links as $link) { ?>
+			            							<li>
+			            								<a href="<?php esc_attr_e($link['url']); ?>" title="<?php esc_attr_e(strtoupper(substr($link['icon'], 0, 1)) . substr($link['icon'], 1)); ?>" target="_blank">
+			            									<?php echo apply_filters('yanaf_website_icon', $link['icon']); ?>
+			            								</a>
+			            							</li>
+			            						<?php } ?>
+			            					</ul>
+			            				<?php } ?>
 		            				</div>
 		            			</div>
 			            	<?php } ?>

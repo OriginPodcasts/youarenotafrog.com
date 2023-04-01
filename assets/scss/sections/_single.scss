@@ -83,6 +83,43 @@ body.single {
         text-align: center;
     }
 
+    h4.episode-guest-links-header {
+        color: $dark;
+        font-size: .81rem;
+        font-weight: 900;
+        margin: .5rem 0;
+    }
+
+    ul.episode-guest-links {
+        margin: 0 0 1rem;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            display: inline;
+
+            a {
+                display: inline-block;
+                background: $dark;
+                padding: .5rem;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 1rem;
+
+                svg {
+                    display: block;
+                    margin: 0 auto;
+                    height: 1rem;
+                    fill: $white;
+                }
+
+                &:hover {
+                    background: #000;
+                }
+            }
+        }
+    }
+
     aside.sidebar {
         @include breakpoint(medium) {
             display: block;

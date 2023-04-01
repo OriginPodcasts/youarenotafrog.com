@@ -2721,6 +2721,18 @@ body.single .episode-link a:active, body.single .episode-link a:hover, body.sing
 
 body.single h3.episode-guest-name { color: #707070; font-size: .81rem; font-weight: 900; margin: .5rem auto 0; text-align: center; }
 
+body.single h4.episode-guest-links-header { color: #707070; font-size: .81rem; font-weight: 900; margin: .5rem 0; }
+
+body.single ul.episode-guest-links { margin: 0 0 1rem; padding: 0; list-style-type: none; }
+
+body.single ul.episode-guest-links li { display: inline; }
+
+body.single ul.episode-guest-links li a { display: inline-block; background: #707070; padding: .5rem; border-radius: 50%; text-align: center; line-height: 1rem; }
+
+body.single ul.episode-guest-links li a svg { display: block; margin: 0 auto; height: 1rem; fill: #fefefe; }
+
+body.single ul.episode-guest-links li a:hover { background: #000; }
+
 @media print, screen and (min-width: 40em) { body.single aside.sidebar { display: block; margin: 54px 0 1rem; } }
 
 @media print, screen and (min-width: 40em) { .cell.single { margin: 54px auto 1rem; } }
