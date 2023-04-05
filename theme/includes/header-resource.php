@@ -2,7 +2,7 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell medium-7 align-self-middle">
-                <p class="post-type resource-type"><?php the_resource_type(); ?></p>
+                <p class="post-type resource-type"><?php the_resource_type(null, true); ?></p>
                 <h1 class="post-title resource-title"><?php the_title(); ?></h1>
                 <div class="post excerpt resource-excerpt"><?php the_excerpt(); ?></div>
                 <a href="<?php the_resource_download_url(); ?>" class="button" download>Download</a>
