@@ -27,7 +27,8 @@
 }
 
 .archive.post-type-archive-resource,
-.archive.tax-resource_type {
+.archive.tax-resource_type,
+.archive.tax-resource_category {
     header.resources-header {
         padding: 2rem 0;
         text-align: center;
@@ -85,7 +86,8 @@
             margin-bottom: 2rem;
 
             .archive.post-type-archive-resource &,
-            .archive.tax-resource_type & {
+            .archive.tax-resource_type &,
+            .archive.tax-resource_category & {
                 display: flex;
 
                 a:link, a:visited {

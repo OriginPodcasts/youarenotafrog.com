@@ -6,7 +6,8 @@ aside.sidebar {
         margin: 108px 0 1rem;
 
         body.archive.post-type-archive.post-type-archive-resource &,
-        body.archive.tax-resource_type & {
+        body.archive.tax-resource_type &,
+        body.archive.tax-resource_category & {
             margin-top: 1rem;
         }
     }

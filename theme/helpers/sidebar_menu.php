@@ -2,7 +2,7 @@
     $categories = array();
     $html = '<ul class="menu">';
     $episode_list = (is_post_type_archive() && get_query_var('post_type') === 'episode') || get_query_var('tag') || is_tax('collection');
-    $resource_list = (is_post_type_archive() && get_query_var('post_type') === 'resource') || is_tax('resource_type');
+    $resource_list = (is_post_type_archive() && get_query_var('post_type') === 'resource') || is_tax('resource_type') || is_tax('resource_category');
 
     if ($episode_list) {
         foreach (yanaf_get_popular_post_tags() as $tag) {
@@ -35,10 +35,10 @@
     }
 
     if ($resource_list) {
-        foreach (yanaf_get_resource_types() as $type) {
+        foreach (yanaf_get_resource_categories() as $category) {
             $items[] = array(
-                'title' => $type->name,
-                'url' => get_term_link($type->term_id)
+                'title' => $category->name,
+                'url' => get_term_link($category->term_id)
             );
         }
     }

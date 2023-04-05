@@ -15,7 +15,7 @@ if ($collection = yanaf_get_collection()) { ?>
             } ?>
         </div>
     </header>
-<?php } else if (is_archive() && (get_query_var('post_type') === 'resource' || get_query_var('resource_type'))) { ?>
+<?php } else if (is_archive() && (get_query_var('post_type') === 'resource' || get_query_var('resource_type') || get_query_var('resource_category'))) { ?>
     <header class="resources-header">
         <div class="grid-container">
             <h1 class="list-title"><?php the_field('resources_title', 'option'); ?></h1>
