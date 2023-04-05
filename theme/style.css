@@ -2511,7 +2511,7 @@ header.site-header ul.menu.search-menu { justify-content: end; text-align: right
 
 aside.sidebar { display: none; }
 
-@media print, screen and (min-width: 40em) { aside.sidebar { display: block; margin: 108px 0 1rem; } }
+@media print, screen and (min-width: 40em) { aside.sidebar { display: block; margin: 108px 0 1rem; } body.archive.post-type-archive.post-type-archive-resource aside.sidebar, body.archive.tax-resource_type aside.sidebar { margin-top: 1rem; } }
 
 aside.sidebar h2 { color: #707070; font-size: 1rem; font-weight: 400; padding-bottom: .25rem; border-bottom: 1px solid #707070; margin: 0 0 1rem; }
 
@@ -2665,6 +2665,14 @@ body { background: #F5F5F0; }
 
 @media print, screen and (min-width: 64em) { .archive.tax-collection header.collection-header .collection-description { width: 80%; margin: 0 auto; } }
 
+.archive.post-type-archive-resource header.resources-header, .archive.tax-resource_type header.resources-header { padding: 2rem 0; text-align: center; color: #707070; }
+
+.archive.post-type-archive-resource header.resources-header .list-title, .archive.tax-resource_type header.resources-header .list-title { font-weight: 400; line-height: 1.1; }
+
+.archive.post-type-archive-resource header.resources-header .list-subtitle, .archive.tax-resource_type header.resources-header .list-subtitle { margin-top: 1rem; }
+
+@media print, screen and (min-width: 64em) { .archive.post-type-archive-resource header.resources-header .list-subtitle, .archive.post-type-archive-resource header.resources-header .list-title, .archive.tax-resource_type header.resources-header .list-subtitle, .archive.tax-resource_type header.resources-header .list-title { width: 60%; margin-left: auto; margin-right: auto; } }
+
 .cell.archive .breadcrumb { line-height: 1.4; }
 
 @media print, screen and (min-width: 40em) { .cell.archive .breadcrumb { margin: 1rem 0; } }
@@ -2674,6 +2682,24 @@ body { background: #F5F5F0; }
 .cell.archive .breadcrumb .archive-count { margin: 0 0 0 .25rem; color: #707070; line-height: 1; font-weight: 400; }
 
 .cell.archive main .entry { display: block; color: #707070; margin-bottom: 2rem; }
+
+.archive.post-type-archive-resource .cell.archive main .entry, .archive.tax-resource_type .cell.archive main .entry { display: flex; }
+
+.archive.post-type-archive-resource .cell.archive main .entry a:link, .archive.post-type-archive-resource .cell.archive main .entry a:visited, .archive.tax-resource_type .cell.archive main .entry a:link, .archive.tax-resource_type .cell.archive main .entry a:visited { color: #707070; }
+
+.archive.post-type-archive-resource .cell.archive main .entry a:link.button, .archive.post-type-archive-resource .cell.archive main .entry a:visited.button, .archive.tax-resource_type .cell.archive main .entry a:link.button, .archive.tax-resource_type .cell.archive main .entry a:visited.button { color: #fefefe; }
+
+.archive.post-type-archive-resource .cell.archive main .entry a:hover, .archive.post-type-archive-resource .cell.archive main .entry a:active, .archive.tax-resource_type .cell.archive main .entry a:hover, .archive.tax-resource_type .cell.archive main .entry a:active { color: #575757; }
+
+.archive.post-type-archive-resource .cell.archive main .entry a:hover.button, .archive.post-type-archive-resource .cell.archive main .entry a:active.button, .archive.tax-resource_type .cell.archive main .entry a:hover.button, .archive.tax-resource_type .cell.archive main .entry a:active.button { color: #fefefe; }
+
+.archive.post-type-archive-resource .cell.archive main .entry .resource-title, .archive.tax-resource_type .cell.archive main .entry .resource-title { font-size: 1.44rem; font-weight: 700; margin-bottom: 0; }
+
+.archive.post-type-archive-resource .cell.archive main .entry .resource-meta, .archive.tax-resource_type .cell.archive main .entry .resource-meta { margin-bottom: 1rem; }
+
+.archive.post-type-archive-resource .cell.archive main .entry .resource-meta .resource-author, .archive.tax-resource_type .cell.archive main .entry .resource-meta .resource-author { font-weight: 700; }
+
+.archive.post-type-archive-resource .cell.archive main .entry .resource-excerpt, .archive.tax-resource_type .cell.archive main .entry .resource-excerpt { font-size: .69rem; }
 
 .cell.archive main .entry img { margin-bottom: .5rem; }
 

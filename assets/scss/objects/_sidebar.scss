@@ -4,6 +4,11 @@ aside.sidebar {
     @include breakpoint(medium) {
         display: block;
         margin: 108px 0 1rem;
+
+        body.archive.post-type-archive.post-type-archive-resource &,
+        body.archive.tax-resource_type & {
+            margin-top: 1rem;
+        }
     }
 
     h2 {

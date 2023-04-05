@@ -15,6 +15,13 @@ if ($collection = yanaf_get_collection()) { ?>
             } ?>
         </div>
     </header>
+<?php } else if (is_archive() && (get_query_var('post_type') === 'resource' || get_query_var('resource_type'))) { ?>
+    <header class="resources-header">
+        <div class="grid-container">
+            <h1 class="list-title"><?php the_field('resources_title', 'option'); ?></h1>
+            <div class="list-subtitle"><?php the_field('resources_subtitle', 'option'); ?></div>
+        </div>
+    </header>
 <?php } ?>
 
 <div class="grid-container">
@@ -44,16 +51,8 @@ if ($collection = yanaf_get_collection()) { ?>
                     </span>
                 </section>
 
-                <main class="grid-x grid-margin-x">
-                    <?php while (have_posts()) {
-                        the_post(); ?>
-                        <div class="cell medium-4">
-                            <?php get_template_part('includes/entry', get_post_type()); ?>
-                        </div>
-                    <?php } ?>
-                </main>
-
-                <?php get_template_part('includes/pagination');
+                <?php get_template_part('includes/loop', get_post_type());
+                get_template_part('includes/pagination');
             } ?>
         </section>
     </div>
