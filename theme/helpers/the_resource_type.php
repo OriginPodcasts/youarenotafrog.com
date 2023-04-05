@@ -6,7 +6,12 @@
     $terms = get_the_terms($post_id, 'resource_type');
     if (is_array($terms)) {
         foreach ($terms as $term) {
-            esc_html_e($term->name);
+            foreach (get_term_meta($term->term_id, 'singular_name') as $name) {
+                esc_html_e($name);
+                return;
+            }
+
+            esc_html_e(strtolower($term->name));
             return;
         }
     }
