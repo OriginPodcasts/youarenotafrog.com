@@ -8,7 +8,7 @@ function yanaf_pre_get_posts($query) {
         $post_types = $query->get('post_type');
 
         if (!$post_types || (is_array($post_types) && !count($post_types))) {
-            $post_types = array('post', 'episode');
+            $post_types = array('post', 'episode', 'resource');
         } else if (is_array($post_types)) {
             $post_types[] = 'episode';
         }
