@@ -1,5 +1,5 @@
 <?php function yanaf_init_theme() {
-	$subdirs = array('classes', 'helpers', 'post_types', 'actions', 'filters');
+	$subdirs = array('classes', 'helpers', 'post_types', 'taxonomies', 'actions', 'filters');
 	$mydir = dirname(__file__);
 
 	foreach ($subdirs as $subdir) {
