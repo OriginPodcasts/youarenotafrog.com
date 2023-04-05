@@ -31,7 +31,6 @@ require plugin_dir_path(__file__) . 'includes/class-yanaf-podcast.php';
 
 require plugin_dir_path(__file__) . 'helpers/get_collections.php';
 require plugin_dir_path(__file__) . 'helpers/get_collection_image_id.php';
-require plugin_dir_path(__file__) . 'helpers/get_popular_post_tags.php';
 require plugin_dir_path(__file__) . 'helpers/the_episode_player.php';
 require plugin_dir_path(__file__) . 'helpers/episode_has_guests.php';
 require plugin_dir_path(__file__) . 'helpers/episode_has_highlights.php';
