@@ -6,8 +6,13 @@
         'public' => true,
         'hierarchical' => false,
         'menu_icon' => 'dashicons-open-folder',
-        'exclude_from_search' => true,
-        'publicly_queryable' => false,
-        'supports' => array('title', 'editor', 'thumbnail', 'author')
+        'supports' => array('title', 'editor', 'thumbnail', 'author'),
+        'has_archive' => true,
+        'rewrite' => array(
+            'slug' => 'resources',
+            'with_front' => false,
+            'feeds' => false
+        ),
+        'delete_with_user' => false
     )
 );
