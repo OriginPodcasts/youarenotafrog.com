@@ -5,5 +5,7 @@ function yanaf_manage_review_posts_custom_column($column, $post_id) {
         $truncated_content = wp_trim_words($content, 20, '...');
         $edit_url = get_edit_post_link($post_id);
         echo '<a href="' . esc_url($edit_url) . '" class="row-title">' . strip_tags($truncated_content) . '</a>';
+    } else if ($column == 'reviewer') {
+        echo get_post_meta($post_id, 'author', true);
     }
 }
