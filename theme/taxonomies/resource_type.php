@@ -23,7 +23,11 @@
         ),
         'description' => 'Types of resource',
         'public' => true,
-        'publicly_queryable' => false,
-        'hierarchical' => true
+        'publicly_queryable' => true,
+        'hierarchical' => true,
+        'rewrite' => array(
+            'slug' => 'resources-types',
+            'with_front' => false
+        )
     )
 );
