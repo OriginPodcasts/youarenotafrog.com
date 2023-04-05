@@ -3,194 +3,28 @@
 <main>
 	<?php if (have_posts()) {
 		while (have_posts()) {
-			the_post(); ?>
+			the_post();
+			get_template_part('includes/header', get_post_type()); ?>
 
-			<header class="episode-header">
-			    <div class="grid-container">
-			    	<p class="episode-date"><?php the_date('jS F, Y'); ?></p>
-			        <h1 class="episode-title"><?php the_title(); ?></h1>
+			<div class="grid-container">
+			    <div class="grid-x grid-margin-x">
+			        <aside class="sidebar cell medium-3">
+					    <?php get_template_part('includes/sidebar-menu', get_post_type()); ?>
+					</aside>
 
-			        <?php if (yanaf_episode_has_guests()) { ?>
-			            <p class="episode-guests">With <?php yanaf_the_guest_names(); ?></p>
-			            <?php if (!yanaf_the_guest_photos(get_the_ID(), 'f-sm-whole')) {
-			            	if ($image = get_the_post_thumbnail_url(get_the_ID(), 'f-sm-whole')) { ?>
-				                <img alt="Episode thumbnail" src="<?php esc_attr_e($image); ?>" class="episode-image">
-				            <?php }
-			            }
-			        } else { ?>
-			            <p class="episode-guests">With <?php the_author(); ?></p>
-
-			            <?php if ($image = get_the_post_thumbnail_url(get_the_ID(), 'f-sm-whole')) { ?>
-			                <img alt="Episode thumbnail" src="<?php esc_attr_e($image); ?>" class="episode-image">
-			            <?php }
-			        } ?>
+			        <article class="main single cell medium-9">
+			            <?php get_template_part('includes/player', get_post_type());
+			            get_template_part('includes/description', get_post_type());
+			            get_template_part('includes/links', get_post_type());
+			            get_template_part('includes/guests', get_post_type());
+			            get_template_part('includes/reasons', get_post_type());
+			            get_template_part('includes/highlights', get_post_type());
+			            get_template_part('includes/transcript', get_post_type()); ?>
+			        </article>
 			    </div>
-			</header>
+			</div>
 		<?php }
 	} ?>
-
-	<div class="grid-container">
-	    <div class="grid-x grid-margin-x">
-	        <aside class="sidebar cell medium-3">
-			    <h2>Filter</h2>
-			    <ul class="menu">
-			    	<li><a href="#player">Listen</a></li>
-			    	<li><a href="#description">Description</a></li>
-
-			    	<?php if (yanaf_episode_has_links()) { ?>
-			    		<li><a href="#links">Links</a></li>
-			    	<?php }
-
-			    	if ($guest_count = yanaf_get_episode_guest_count()) { ?>
-			    		<li><a href="#guests">About the guest<?php echo $guest_count ? 's' : ''; ?></a></li>
-			    	<?php }
-
-			    	if (yanaf_episode_has_reasons()) { ?>
-			    		<li><a href="#reasons">Reasons to listen</a></li>
-			        <?php }
-
-			        if (yanaf_episode_has_highlights()) { ?>
-			    		<li><a href="#highlights">Highlights</a></li>
-			        <?php }
-
-			        if (yanaf_episode_has_transcript()) { ?>
-			    		<li><a href="#transcript">Transcript</a></li>
-			        <?php } ?>
-			    </ul>
-			</aside>
-
-	        <article class="main single cell medium-9">
-	            <section id="player" class="episode-section episode-player">
-	            	<h2>Listen to this episode</h2>
-	            	<?php yanaf_the_episode_player(); ?>
-            	</section>
-
-            	<section id="description" class="episode-section episode-description">
-	            	<h2>On this episode</h2>
-	            	<?php the_content(); ?>
-            	</section>
-
-            	<?php if (yanaf_episode_has_links()) { ?>
-	            	<section id="links" class="episode-section episode-links">
-		            	<h2>Show links</h2>
-		            	<div class="episode-links">
-		            		<?php foreach(yanaf_get_episode_links() as $link) { ?>
-		            			<div class="episode-link grid-x grid-margin-x">
-		            				<?php if (isset($link['icon'])) { ?>
-		            					<div class="episode-link-icon cell medium-3 text-right">
-		            						<?php echo apply_filters('yanaf_episode_icon', $link['icon']); ?>
-		            					</div>
-		            				<?php } ?>
-
-		            				<div class="episode-link-content cell medium-9">
-		            					<?php echo apply_filters('the_content', $link['content']); ?>
-		            				</div>
-		            			</div>
-			            	<?php } ?>
-	            		</div>
-	            	</section>
-	            <?php }
-
-	            if ($guest_count) { ?>
-	            	<section id="guests" class="episode-section episode-guests">
-		            	<h2>About the guest<?php echo $guest_count ? 's' : ''; ?></h2>
-		            	<div class="episode-guests">
-		            		<?php foreach(yanaf_get_episode_guests() as $guest) { ?>
-		            			<div class="episode-guest grid-x grid-margin-x">
-		            				<div class="episode-guest-photo cell medium-3 text-right">
-		            					<?php if (isset($guest['photo'])) {
-			            					yanaf_img_srcset(
-						                        $guest['photo'],
-						                        sprintf('%s photo', $guest['name']),
-						                        array(
-						                            'small' => 'f-sm-third-sq' /* Third-width on small devices */,
-						                            'medium' => 'f-md-sixth-sq' /* Sixth-width on medium devices */,
-						                            'large' => 'f-lg-sixth-sq' /* Sixth-width on large devices */
-						                        ),
-						                        true
-						                    );
-			            				}
-
-			            				if ($guest_count > 1) { ?>
-				            				<h3 class="episode-guest-name"><?php esc_html_e($guest['name']); ?></h3>
-				            			<?php } ?>
-		            				</div>
-
-		            				<div class="episode-link-content cell medium-9">
-		            					<?php if (isset($guest['bio'])) {
-			            					echo apply_filters('the_content', $guest['bio']);
-			            				}
-
-			            				if ($links = (isset($guest['links']) && is_array($guest['links'])) ? $guest['links'] : array()) {
-			            					if (count($links)) { ?>
-			            						<h4 class="episode-guest-links-header">Follow <?php esc_html_e($guest['name']); ?></h4>
-			            					<?php } ?>
-
-			            					<ul class="episode-guest-links">
-			            						<?php foreach ($links as $link) { ?>
-			            							<li>
-			            								<a href="<?php esc_attr_e($link['url']); ?>" title="<?php esc_attr_e(strtoupper(substr($link['icon'], 0, 1)) . substr($link['icon'], 1)); ?>" target="_blank">
-			            									<?php echo apply_filters('yanaf_website_icon', $link['icon']); ?>
-			            								</a>
-			            							</li>
-			            						<?php } ?>
-			            					</ul>
-			            				<?php } ?>
-		            				</div>
-		            			</div>
-			            	<?php } ?>
-	            		</div>
-	            	</section>
-	            <?php }
-
-	            if (yanaf_episode_has_reasons()) { ?>
-	            	<section id="reasons" class="episode-section episode-reasons">
-		            	<h2>Reasons to listen</h2>
-		            	<div class="grid-x grid-margin-x">
-		            		<div class="cell medium-9 medium-offset-3">
-		            			<?php yanaf_the_episode_reasons(); ?>
-		            		</div>
-		            	</div>
-	            	</section>
-	            <?php }
-
-	            if (yanaf_episode_has_highlights()) { ?>
-	            	<section id="highlights" class="episode-section episode-highlights">
-		            	<h2>Episode highlights</h2>
-		            	<?php foreach (yanaf_get_episode_highlights() as $highlight) { ?>
-        					<div class="grid-x grid-margin-x">
-        						<div class="cell medium-3 text-right episode-highlight-timestamp">
-        							<code><?php esc_html_e($highlight['timestamp']); ?></code>
-       							</div>
-        						<div class="cell medium-9 episode-highlight-description">
-        							<?php echo apply_filters(
-    									'the_content',
-    									isset($highlight['description']) ? $highlight['description'] : ''
-    								); ?>
-        						</div>
-        					</div>
-            			<?php } ?>
-	            	</section>
-	            <?php }
-
-	            if (yanaf_episode_has_transcript()) { ?>
-	            	<section id="transcript" class="episode-section episode-transcript">
-		            	<h2>Episode transcript</h2>
-		            	<div class="grid-x grid-margin-x">
-		            		<div class="cell medium-9 medium-offset-3">
-		            			<div class="episode-transcript-<?php echo isset($_GET['transcript']) && $_GET['transcript'] === 'full' ? 'full' : 'excerpt'; ?>">
-		            				<div class="episode-transcript-text"><?php $excerpt = yanaf_the_episode_transcript(); ?></div>
-		            				<?php if ($excerpt === 'excerpt') { ?>
-		            					<a href="?transcript=full#transcript" rel="noindex" class="small episode-transcript-loader button">Show more</a>
-		            				<?php } ?>
-		            			</div>
-		            		</div>
-		            	</div>
-	            	</section>
-	            <?php } ?>
-	        </article>
-	    </div>
-	</div>
 </main>
 
 <?php get_footer();

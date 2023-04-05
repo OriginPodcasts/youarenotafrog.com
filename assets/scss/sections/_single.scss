@@ -1,34 +1,15 @@
 body.single {
-    .episode-header {
-        background: #3EA19B;
+    .post-header {
+        background: $dark;
         padding: 4rem 0;
         text-align: center;
         color: #fff;
 
-        img.episode-image {
-            width: 294px;
-            max-width: 80%;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 1rem;
-        }
-
-        .episode-guest-photos {
-            display: flex;
-            max-width: 294px;
-            margin: 0 auto 1rem;
-            align-items: center;
-        }
-
-        img.episode-guest-photo {
-            border-radius: 50%;
-        }
-
-        .episode-date {
+        .post-date {
             margin-bottom: 0;
         }
 
-        .episode-title {
+        .post-title {
             font-weight: 400;
             line-height: 1.1;
             margin: .5rem auto;
@@ -37,9 +18,16 @@ body.single {
                 width: 80%;
             }
         }
+
+        img.post-image {
+            width: 294px;
+            max-width: 80%;
+            display: block;
+            margin: 0 auto 1rem;
+        }
     }
 
-    .episode-section {
+    .post-section {
         margin-top: 2rem;
         border-bottom: 1px solid $dark;
 
@@ -55,139 +43,17 @@ body.single {
             margin-bottom: .5rem;
         }
 
-        &.episode-description,
-        &.episode-reasons {
-            color: $dark;
-        }
-
-        &.episode-description {
+        &.post-description {
+            color: $dark;   
             font-weight: 400;
             font-size: 1.56rem;
         }
-    }
-
-    .episode-link,
-    .episode-guest {
-        margin-bottom: 1rem;
-        color: $dark;
-
-        a {
-            text-decoration: underline;
-
-            &:link, &:visited {
-                color: #44AFA0;
-            }
-
-            &:active, &:hover {
-                color: darken(#44AFA0, 5);
-            }
-        }
-    }
-
-    h3.episode-guest-name {
-        color: $dark;
-        font-size: .81rem;
-        font-weight: 900;
-        margin: .5rem auto 0;
-        text-align: center;
-    }
-
-    h4.episode-guest-links-header {
-        color: $dark;
-        font-size: .81rem;
-        font-weight: 900;
-        margin: .5rem 0;
-    }
-
-    ul.episode-guest-links {
-        margin: 0 0 1rem;
-        padding: 0;
-        list-style-type: none;
-
-        li {
-            display: inline;
-
-            a {
-                display: inline-block;
-                background: $dark;
-                padding: .5rem;
-                border-radius: 50%;
-                text-align: center;
-                line-height: 1rem;
-
-                svg {
-                    display: block;
-                    margin: 0 auto;
-                    height: 1rem;
-                    fill: $white;
-                }
-
-                &:hover {
-                    background: #000;
-                }
-            }
-        }
-    }
-
-    .episode-highlight-timestamp code {
-        border-width: 0;
-        background: transparent;
-        padding: 0;
-    }
-
-    .episode-highlight-description {
-        color: $dark;
     }
 
     aside.sidebar {
         @include breakpoint(medium) {
             display: block;
             margin: 54px 0 1rem;
-        }
-    }
-
-    .episode-transcript-text {
-        color: $dark;
-    }
-
-    .episode-transcript-excerpt {
-        position: relative;
-
-        .episode-transcript-text {
-            position: relative;
-            z-index: 10;
-            user-select: none;
-
-            &:after {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background: -moz-linear-gradient(top, #f5f5f000 0%, #f5f5f0 100%);
-                background: -webkit-linear-gradient(top, #f5f5f000 0%, #f5f5f0 100%);
-                background: linear-gradient(to bottom, #f5f5f000 0%, #f5f5f0 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f5f5f0', endColorstr='#f5f5f0', GradientType=0);
-                content: ' ';
-                display: block;
-                z-index: 20;
-                pointer-events: none;
-            }
-
-            p:last-child {
-                margin-bottom: 0;
-            }
-        }
-
-        .episode-transcript-loader {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 30;
-            margin: 0 auto;
-            background: $white;
-            border: 1px solid $button-background;
-            color: $button-background;
         }
     }
 }
@@ -204,12 +70,4 @@ body.single {
         text-transform: uppercase;
         margin: 0 0 1rem;
     }
-}
-
-.yanaf-episode-player {
-    border-width: 0;
-    border-radius: 6px;
-    display: block;
-    overflow: hidden;
-    width: 100%;
 }

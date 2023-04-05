@@ -2689,77 +2689,31 @@ body { background: #F5F5F0; }
 
 .cell.archive main .entry .episode-excerpt { font-size: .67rem; }
 
-body.single .episode-header { background: #3EA19B; padding: 4rem 0; text-align: center; color: #fff; }
+body.single .post-header { background: #707070; padding: 4rem 0; text-align: center; color: #fff; }
 
-body.single .episode-header img.episode-image { width: 294px; max-width: 80%; border-radius: 50%; display: block; margin: 0 auto 1rem; }
+body.single .post-header .post-date { margin-bottom: 0; }
 
-body.single .episode-header .episode-guest-photos { display: flex; max-width: 294px; margin: 0 auto 1rem; align-items: center; }
+body.single .post-header .post-title { font-weight: 400; line-height: 1.1; margin: .5rem auto; }
 
-body.single .episode-header img.episode-guest-photo { border-radius: 50%; }
+@media print, screen and (min-width: 64em) { body.single .post-header .post-title { width: 80%; } }
 
-body.single .episode-header .episode-date { margin-bottom: 0; }
+body.single .post-header img.post-image { width: 294px; max-width: 80%; display: block; margin: 0 auto 1rem; }
 
-body.single .episode-header .episode-title { font-weight: 400; line-height: 1.1; margin: .5rem auto; }
+body.single .post-section { margin-top: 2rem; border-bottom: 1px solid #707070; }
 
-@media print, screen and (min-width: 64em) { body.single .episode-header .episode-title { width: 80%; } }
+body.single .post-section:first-child { margin-top: 0; }
 
-body.single .episode-section { margin-top: 2rem; border-bottom: 1px solid #707070; }
+body.single .post-section:last-child { border-bottom: 0; }
 
-body.single .episode-section:first-child { margin-top: 0; }
+body.single .post-section h2 { margin-bottom: .5rem; }
 
-body.single .episode-section:last-child { border-bottom: 0; }
-
-body.single .episode-section h2 { margin-bottom: .5rem; }
-
-body.single .episode-section.episode-description, body.single .episode-section.episode-reasons { color: #707070; }
-
-body.single .episode-section.episode-description { font-weight: 400; font-size: 1.56rem; }
-
-body.single .episode-link, body.single .episode-guest { margin-bottom: 1rem; color: #707070; }
-
-body.single .episode-link a, body.single .episode-guest a { text-decoration: underline; }
-
-body.single .episode-link a:link, body.single .episode-link a:visited, body.single .episode-guest a:link, body.single .episode-guest a:visited { color: #44AFA0; }
-
-body.single .episode-link a:active, body.single .episode-link a:hover, body.single .episode-guest a:active, body.single .episode-guest a:hover { color: #3d9d8f; }
-
-body.single h3.episode-guest-name { color: #707070; font-size: .81rem; font-weight: 900; margin: .5rem auto 0; text-align: center; }
-
-body.single h4.episode-guest-links-header { color: #707070; font-size: .81rem; font-weight: 900; margin: .5rem 0; }
-
-body.single ul.episode-guest-links { margin: 0 0 1rem; padding: 0; list-style-type: none; }
-
-body.single ul.episode-guest-links li { display: inline; }
-
-body.single ul.episode-guest-links li a { display: inline-block; background: #707070; padding: .5rem; border-radius: 50%; text-align: center; line-height: 1rem; }
-
-body.single ul.episode-guest-links li a svg { display: block; margin: 0 auto; height: 1rem; fill: #fefefe; }
-
-body.single ul.episode-guest-links li a:hover { background: #000; }
-
-body.single .episode-highlight-timestamp code { border-width: 0; background: transparent; padding: 0; }
-
-body.single .episode-highlight-description { color: #707070; }
+body.single .post-section.post-description { color: #707070; font-weight: 400; font-size: 1.56rem; }
 
 @media print, screen and (min-width: 40em) { body.single aside.sidebar { display: block; margin: 54px 0 1rem; } }
-
-body.single .episode-transcript-text { color: #707070; }
-
-body.single .episode-transcript-excerpt { position: relative; }
-
-body.single .episode-transcript-excerpt .episode-transcript-text { position: relative; z-index: 10; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
-
-body.single .episode-transcript-excerpt .episode-transcript-text:after { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(to bottom, #f5f5f000 0%, #f5f5f0 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f5f5f0', endColorstr='#f5f5f0', GradientType=0); content: ' '; display: block; z-index: 20; pointer-events: none; }
-
-body.single .episode-transcript-excerpt .episode-transcript-text p:last-child { margin-bottom: 0; }
-
-body.single .episode-transcript-excerpt .episode-transcript-loader { position: absolute; bottom: 0; left: 0; z-index: 30; margin: 0 auto; background: #fefefe; border: 1px solid #45AFA0; color: #45AFA0; }
 
 @media print, screen and (min-width: 40em) { .cell.single { margin: 54px auto 1rem; } }
 
 .cell.single h2 { color: #707070; font-size: .81rem; font-weight: 900; text-transform: uppercase; margin: 0 0 1rem; }
-
-.yanaf-episode-player { border-width: 0; border-radius: 6px; display: block; overflow: hidden; width: 100%; }
 
 body.page .page-header, body.error404 .page-header { background: #3EA19B; padding: 4rem 0; text-align: center; color: #fff; }
 
@@ -2954,3 +2908,51 @@ body.page-template-page-host-php .host-link-buttons { margin: 2rem 0 0; padding:
 body.page-template-page-host-php .host-link-buttons li { display: inline; }
 
 body.page-template-page-host-php .host-link-buttons li a.button:link, body.page-template-page-host-php .host-link-buttons li a.button:visited, body.page-template-page-host-php .host-link-buttons li a.button:active, body.page-template-page-host-php .host-link-buttons li a.button:hover { background: #05205f; }
+
+body.single.single-episode .post-header { background: #3EA19B; }
+
+body.single.single-episode .post-header img.episode-image { border-radius: 50%; }
+
+body.single.single-episode .post-header .episode-guest-photos { display: flex; max-width: 294px; margin: 0 auto 1rem; align-items: center; border-radius: 50%; }
+
+body.single.single-episode .post-section.episode-reasons { color: #707070; }
+
+body.single.single-episode .episode-link, body.single.single-episode .episode-guest { margin-bottom: 1rem; color: #707070; }
+
+body.single.single-episode .episode-link a, body.single.single-episode .episode-guest a { text-decoration: underline; }
+
+body.single.single-episode .episode-link a:link, body.single.single-episode .episode-link a:visited, body.single.single-episode .episode-guest a:link, body.single.single-episode .episode-guest a:visited { color: #44AFA0; }
+
+body.single.single-episode .episode-link a:active, body.single.single-episode .episode-link a:hover, body.single.single-episode .episode-guest a:active, body.single.single-episode .episode-guest a:hover { color: #3d9d8f; }
+
+body.single.single-episode h3.episode-guest-name { color: #707070; font-size: .81rem; font-weight: 900; margin: .5rem auto 0; text-align: center; }
+
+body.single.single-episode h4.episode-guest-links-header { color: #707070; font-size: .81rem; font-weight: 900; margin: .5rem 0; }
+
+body.single.single-episode ul.episode-guest-links { margin: 0 0 1rem; padding: 0; list-style-type: none; }
+
+body.single.single-episode ul.episode-guest-links li { display: inline; }
+
+body.single.single-episode ul.episode-guest-links li a { display: inline-block; background: #707070; padding: .5rem; border-radius: 50%; text-align: center; line-height: 1rem; }
+
+body.single.single-episode ul.episode-guest-links li a svg { display: block; margin: 0 auto; height: 1rem; fill: #fefefe; }
+
+body.single.single-episode ul.episode-guest-links li a:hover { background: #000; }
+
+body.single.single-episode .episode-highlight-timestamp code { border-width: 0; background: transparent; padding: 0; }
+
+body.single.single-episode .episode-highlight-description { color: #707070; }
+
+body.single.single-episode .yanaf-episode-player { border-width: 0; border-radius: 6px; display: block; overflow: hidden; width: 100%; }
+
+body.single.single-episode .episode-transcript-text { color: #707070; }
+
+body.single.single-episode .episode-transcript-excerpt { position: relative; }
+
+body.single.single-episode .episode-transcript-excerpt .episode-transcript-text { position: relative; z-index: 10; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+
+body.single.single-episode .episode-transcript-excerpt .episode-transcript-text:after { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(to bottom, #f5f5f000 0%, #f5f5f0 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f5f5f0', endColorstr='#f5f5f0', GradientType=0); content: ' '; display: block; z-index: 20; pointer-events: none; }
+
+body.single.single-episode .episode-transcript-excerpt .episode-transcript-text p:last-child { margin-bottom: 0; }
+
+body.single.single-episode .episode-transcript-excerpt .episode-transcript-loader { position: absolute; bottom: 0; left: 0; z-index: 30; margin: 0 auto; background: #fefefe; border: 1px solid #45AFA0; color: #45AFA0; }
