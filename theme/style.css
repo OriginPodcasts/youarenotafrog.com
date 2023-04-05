@@ -2956,3 +2956,23 @@ body.single.single-episode .episode-transcript-excerpt .episode-transcript-text:
 body.single.single-episode .episode-transcript-excerpt .episode-transcript-text p:last-child { margin-bottom: 0; }
 
 body.single.single-episode .episode-transcript-excerpt .episode-transcript-loader { position: absolute; bottom: 0; left: 0; z-index: 30; margin: 0 auto; background: #fefefe; border: 1px solid #45AFA0; color: #45AFA0; }
+
+body.single.single-resource .post-header { background: #04205F; padding-bottom: 1rem; }
+
+body.single.single-resource .post-header .post-type { margin-bottom: 0; }
+
+@media print, screen and (min-width: 40em) { body.single.single-resource .post-header .grid-x { width: 80%; margin-left: auto; margin-right: auto; } body.single.single-resource .post-header img.responsive-img { width: 80%; display: block; margin: 0 0 0 auto; } }
+
+body.single.single-resource .post-header a.button:link, body.single.single-resource .post-header a.button:visited { border: 1px solid #fefefe; color: #fefefe; background: transparent; }
+
+body.single.single-resource .post-header a.button:hover, body.single.single-resource .post-header a.button:active { background: #02102e; }
+
+body.single.single-resource .post-header .scroll-link-container { text-align: left; margin-top: 2rem; }
+
+body.single.single-resource .post-header .scroll-link-container a { color: #fefefe; }
+
+body.single.single-resource .resource-link-buttons { margin: 2rem 0 0; padding: 0; list-style-type: none; }
+
+body.single.single-resource .resource-link-buttons li { display: inline; }
+
+body.single.single-resource .resource-link-buttons li a.button:link, body.single.single-resource .resource-link-buttons li a.button:visited, body.single.single-resource .resource-link-buttons li a.button:active, body.single.single-resource .resource-link-buttons li a.button:hover { background: #05205f; }

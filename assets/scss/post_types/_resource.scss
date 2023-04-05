@@ -1,0 +1,61 @@
+body.single.single-resource {
+    .post-header {
+        background: #04205F;
+        padding-bottom: 1rem;
+
+        .post-type {
+            margin-bottom: 0;
+        }
+
+        @include breakpoint(medium) {
+            .grid-x {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            img.responsive-img {
+                width: 80%;
+                display: block;
+                margin: 0 0 0 auto;
+            }
+        }
+
+        a.button {
+            &:link, &:visited {
+                border: 1px solid $white;
+                color: $white;
+                background: transparent;
+            }
+
+            &:hover, &:active {
+                background: darken(#04205F, 10);
+            }
+        }
+
+        .scroll-link-container {
+            text-align: left;
+            margin-top: 2rem;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    .resource-link-buttons {
+        margin: 2rem 0 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            display: inline;
+
+            a.button {
+                &:link, &:visited, &:active, &:hover {
+                    background: #05205f;
+                }
+            }
+        }
+    }
+}

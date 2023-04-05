@@ -15,11 +15,13 @@
 			        <article class="main single cell medium-9">
 			            <?php get_template_part('includes/player', get_post_type());
 			            get_template_part('includes/description', get_post_type());
+			            get_template_part('includes/about', get_post_type());
 			            get_template_part('includes/links', get_post_type());
 			            get_template_part('includes/guests', get_post_type());
 			            get_template_part('includes/reasons', get_post_type());
 			            get_template_part('includes/highlights', get_post_type());
-			            get_template_part('includes/transcript', get_post_type()); ?>
+			            get_template_part('includes/transcript', get_post_type());
+			            get_template_part('includes/buttons', get_post_type()); ?>
 			        </article>
 			    </div>
 			</div>
