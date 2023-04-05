@@ -2922,3 +2922,35 @@ body.page-template-page-host-php header.page-header .page-header-container { dis
 body.page-template-page-host-php header.page-header h1.page-title { margin: 0 auto 2rem; font-size: .69rem; text-aligin: center; }
 
 body.page-template-page-host-php header.page-header p.page-greeting { font-size: 7.69rem; font-weight: 900; margin: 0 0 1rem 0; line-height: 1; }
+
+body.page-template-page-host-php header.page-header ul.host-social-links { margin: 2rem 0 0; padding: 0; list-style-type: none; }
+
+body.page-template-page-host-php header.page-header ul.host-social-links li { display: inline; }
+
+body.page-template-page-host-php header.page-header ul.host-social-links li a { display: inline-block; background: #fefefe; padding: .5rem; border-radius: 50%; text-align: center; line-height: 1rem; }
+
+body.page-template-page-host-php header.page-header ul.host-social-links li a svg { display: block; margin: 0 auto; height: 1rem; fill: #0a0a0a; }
+
+body.page-template-page-host-php header.page-header ul.host-social-links li a:hover { background: transparent; }
+
+body.page-template-page-host-php header.page-header ul.host-social-links li a:hover svg { fill: #fefefe; }
+
+body.page-template-page-host-php .profile-section { margin-top: 2rem; border-bottom: 1px solid #707070; }
+
+body.page-template-page-host-php .profile-section:first-child { margin-top: 0; }
+
+body.page-template-page-host-php .profile-section:last-child { border-bottom: 0; }
+
+body.page-template-page-host-php .profile-section h2 { margin-bottom: .5rem; }
+
+body.page-template-page-host-php .profile-section.host-bio, body.page-template-page-host-php .profile-section.host-story, body.page-template-page-host-php .profile-section.host-experience { color: #707070; }
+
+body.page-template-page-host-php .profile-section.host-bio { font-weight: 400; font-size: 1.56rem; }
+
+@media print, screen and (min-width: 40em) { body.page-template-page-host-php .profile-section.host-experience ul { margin-left: 8rem; } }
+
+body.page-template-page-host-php .host-link-buttons { margin: 2rem 0 0; padding: 0; list-style-type: none; }
+
+body.page-template-page-host-php .host-link-buttons li { display: inline; }
+
+body.page-template-page-host-php .host-link-buttons li a.button:link, body.page-template-page-host-php .host-link-buttons li a.button:visited, body.page-template-page-host-php .host-link-buttons li a.button:active, body.page-template-page-host-php .host-link-buttons li a.button:hover { background: #05205f; }
