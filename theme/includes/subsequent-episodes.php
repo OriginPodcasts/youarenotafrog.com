@@ -35,7 +35,7 @@ if ($query->have_posts()) { ?>
                     <?php if (yanaf_episode_has_guests()) { ?>
                         <p class="episode-guests">With <?php yanaf_the_guest_names(); ?></p>
                     <?php } else { ?>
-                        <p class="episode-guests">With <?php the_author(); ?></p>
+                        <p class="episode-guests">With Rachel Morris</p>
                     <?php } ?>
                 </div>
             </a>
