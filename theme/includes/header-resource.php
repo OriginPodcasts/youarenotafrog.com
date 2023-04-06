@@ -5,7 +5,7 @@
                 <p class="post-type resource-type"><?php the_resource_type(null, true); ?></p>
                 <h1 class="post-title resource-title"><?php the_title(); ?></h1>
                 <div class="post excerpt resource-excerpt"><?php the_excerpt(); ?></div>
-                <a href="<?php the_resource_download_url(); ?>" class="button" download>Download</a>
+                <a href="<?php the_resource_cta_url(); ?>" class="button" download>Download</a>
             </div>
 
             <div class="cell medium-5">

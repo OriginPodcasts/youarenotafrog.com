@@ -23,6 +23,6 @@
         </a>
 
         <div class="resource-excerpt"><?php the_excerpt(); ?></div>
-        <a href="<?php the_resource_download_url(); ?>" class="button" download>Download</a>
+        <a href="<?php the_resource_cta_url(); ?>" class="button" download>Download</a>
     </div>
 </div>
