@@ -3,4 +3,41 @@ body.page-template-page-contact {
         background: transparent;
         color: $dark;
     }
+
+    aside.sidebar {
+        @include breakpoint(medium) {
+            margin-top: 0;
+        }
+
+        .menu {
+            li {
+                text-transform: none;
+
+                > a {
+                    &:link, &:visited, &:hover, &:active {
+                        display: block;
+                        color: $dark;
+                        padding: 1rem;
+                        border: 1px solid $dark;
+                        border-radius: 2rem;
+                        text-align: center;
+                    }
+                }
+
+                &.active {
+                    > a {
+                        &:link, &:visited, &:hover, &:active {
+                            background: $active;
+                            border-color: $active;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cell.single {
+        margin-top: 0;
+    }
 }
