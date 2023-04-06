@@ -1,6 +1,6 @@
 <?php add_action('pre_get_posts', 'yanaf_pre_get_posts');
 function yanaf_pre_get_posts($query) {
-    if (is_admin() || !$query->is_main_query() || is_post_type_archive()) {
+    if (is_admin()) {
         return;
     }
 
@@ -14,5 +14,23 @@ function yanaf_pre_get_posts($query) {
         }
 
         $query->set('post_type', $post_types);
+    }
+
+    if (is_internal_resource_query($query)) {
+        $query->set(
+            'meta_query',
+            array(
+                'relation' => 'OR',
+                array(
+                    'key' => 'external',
+                    'value' => true,
+                    'compare' => '!='
+                ),
+                array(
+                    'key' => 'external',
+                    'compare' => 'NOT EXISTS'
+                )
+            )
+        );
     }
 }
