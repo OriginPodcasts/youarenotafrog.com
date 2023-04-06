@@ -2939,6 +2939,8 @@ body.page-template-page-host-php .host-link-buttons li { display: inline; }
 
 body.page-template-page-host-php .host-link-buttons li a.button:link, body.page-template-page-host-php .host-link-buttons li a.button:visited, body.page-template-page-host-php .host-link-buttons li a.button:active, body.page-template-page-host-php .host-link-buttons li a.button:hover { background: #05205f; }
 
+body.page-template-page-contact .page-header { background: transparent; color: #707070; }
+
 body.single.single-episode .post-header { background: #3EA19B; }
 
 body.single.single-episode .post-header img.episode-image { border-radius: 50%; }
