@@ -2597,6 +2597,8 @@ form.search-form input:focus { background: transparent; border-width: 0; outline
 
 .acf-hidden { display: none; }
 
+.af-submit { padding: 0 !important; margin: 1rem 0 0; }
+
 .acf-fields { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
 
 .acf-fields .af-field { flex-basis: 100%; }
