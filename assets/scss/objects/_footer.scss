@@ -118,7 +118,12 @@ footer {
         }
     }
 
-    .legal-menu {
+    ul.menu {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    ul.legal-menu {
         text-align: center;
         list-style-type: none;
         margin: 0;
@@ -127,6 +132,10 @@ footer {
             margin: 0 .5rem;
             display: inline;
         }
+    }
+
+    .newsletter-cell {
+        padding: 1rem 0;
     }
 
     ul.follow-menu {

@@ -2641,9 +2641,13 @@ footer .newsletter-cell input:active, footer .newsletter-cell input:focus { back
 
 footer .newsletter-cell button { background: transparent; padding: 0 1rem; margin: 0; }
 
-footer .legal-menu { text-align: center; list-style-type: none; margin: 0; }
+footer ul.menu { display: block; margin-top: 1rem; }
 
-footer .legal-menu li { margin: 0 .5rem; display: inline; }
+footer ul.legal-menu { text-align: center; list-style-type: none; margin: 0; }
+
+footer ul.legal-menu li { margin: 0 .5rem; display: inline; }
+
+footer .newsletter-cell { padding: 1rem 0; }
 
 footer ul.follow-menu { list-style-type: none; margin: 0; }
 
