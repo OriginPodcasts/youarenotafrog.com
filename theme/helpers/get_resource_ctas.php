@@ -20,14 +20,22 @@
             break;
 
         default:
-            foreach (get_post_meta($post_id, 'media') as $media_id) {
+            if (get_post_meta($post_id, 'external', true)) {
                 $links[] = array(
-                    'url' => home_url(sprintf('/download/%s/', $post_id)),
-                    'label' => $full ? 'Signup and download' : 'Download',
-                    'external' => false
+                    'url' => get_post_meta($post_id, 'download_url', true),
+                    'label' => 'Download',
+                    'external' => true
                 );
+            } else {
+                foreach (get_post_meta($post_id, 'media') as $media_id) {
+                    $links[] = array(
+                        'url' => home_url(sprintf('/download/%s/', $post_id)),
+                        'label' => $full ? 'Signup and download' : 'Download',
+                        'external' => false
+                    );
 
-                break;
+                    break;
+                }
             }
     }
 
