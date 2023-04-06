@@ -2,7 +2,8 @@
     $categories = array();
     $html = '<ul class="menu">';
     $episode_list = (is_post_type_archive() && get_query_var('post_type') === 'episode') || get_query_var('tag') || is_tax('collection');
-    $resource_list = (is_post_type_archive() && get_query_var('post_type') === 'resource') || is_tax('resource_type') || is_tax('resource_category');
+    $resource_list = is_internal_resource_query();
+    $recommends_list = is_external_resource_query();
 
     if ($episode_list) {
         foreach (yanaf_get_popular_post_tags() as $tag) {
@@ -25,6 +26,11 @@
             'url' => get_post_type_archive_link('resource'),
             'title' => 'Most recent'
         );
+    } else if ($recommends_list) {
+        $items[] = array(
+            'url' => home_url('/recommends/'),
+            'title' => 'Most recent'
+        );
     }
 
     if (count($categories)) {
@@ -35,10 +41,19 @@
     }
 
     if ($resource_list) {
-        foreach (yanaf_get_resource_categories() as $category) {
+        foreach (yanaf_get_resource_categories(false) as $category) {
             $items[] = array(
                 'title' => $category->name,
                 'url' => get_term_link($category->term_id)
+            );
+        }
+    } else if ($recommends_list) {
+        foreach (yanaf_get_resource_categories(true) as $category) {
+            $items[] = array(
+                'title' => $category->name,
+                'url' => home_url(
+                    sprintf('/recommends-categories/%s/', $category->slug)
+                )
             );
         }
     }
