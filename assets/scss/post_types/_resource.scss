@@ -58,4 +58,26 @@ body.single.single-resource {
             }
         }
     }
+
+    &.resource-cta-event {
+        .post-header {
+            background: #6E032C;
+
+            a.button {
+                &:hover, &:active {
+                    background: darken(#6E032C, 10);
+                }
+            }
+        }
+
+        .resource-link-buttons {
+            li {
+                a.button {
+                    &:link, &:visited, &:active, &:hover {
+                        background: #6E032C;
+                    }
+                }
+            }
+        }
+    }
 }

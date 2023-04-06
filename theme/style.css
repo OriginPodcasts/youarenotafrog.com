@@ -3002,3 +3002,9 @@ body.single.single-resource .resource-link-buttons { margin: 2rem 0 0; padding: 
 body.single.single-resource .resource-link-buttons li { display: inline; }
 
 body.single.single-resource .resource-link-buttons li a.button:link, body.single.single-resource .resource-link-buttons li a.button:visited, body.single.single-resource .resource-link-buttons li a.button:active, body.single.single-resource .resource-link-buttons li a.button:hover { background: #05205f; }
+
+body.single.single-resource.resource-cta-event .post-header { background: #6E032C; }
+
+body.single.single-resource.resource-cta-event .post-header a.button:hover, body.single.single-resource.resource-cta-event .post-header a.button:active { background: #3c0218; }
+
+body.single.single-resource.resource-cta-event .resource-link-buttons li a.button:link, body.single.single-resource.resource-cta-event .resource-link-buttons li a.button:visited, body.single.single-resource.resource-cta-event .resource-link-buttons li a.button:active, body.single.single-resource.resource-cta-event .resource-link-buttons li a.button:hover { background: #6E032C; }
