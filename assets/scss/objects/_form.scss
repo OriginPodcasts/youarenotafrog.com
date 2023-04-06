@@ -1,0 +1,43 @@
+.acf-hidden {
+    display: none;
+}
+
+.acf-fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .af-field {
+        flex-basis: 100%;
+
+        &.af-field-first-name,
+        &.af-field-last-name {
+            flex-basis: calc(50% - .5rem);
+        }
+
+        &.af-field-type-message,
+        &.af-field-type-true-false {
+            .af-label {
+                display: none;
+            }
+        }
+
+        &.af-field-type-true-false {
+            .acf-true-false {
+                label {
+                    display: flex;
+
+                    > input[type="checkbox"] {
+                        transform: scale(1.5);
+                        margin: 0 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .acf-button {
+        @include button;
+    }
+}
