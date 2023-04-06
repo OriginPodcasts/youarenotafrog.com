@@ -54,5 +54,6 @@
         $html .= yanaf_get_menu_item_html($item);
     }
 
+    $html .= '</ul>';
     echo $html;
 }
