@@ -1,4 +1,8 @@
 <?php function yanaf_menu_item_is_active($item) {
+    if (isset($item['active'])) {
+        return $item['active'];
+    }
+
     $current_uri = 'http' . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];    
 
     if (isset($item['url'])) {
