@@ -2,7 +2,17 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell medium-7 align-self-middle">
-                <p class="post-type resource-type"><?php the_resource_type(null, true); ?></p>
+                <?php switch (get_field('cta')) {
+                    case 'attend': ?>
+                        <p class="post-date resource-date">
+                            Event | <?php the_field('date'); ?>
+                        </p>
+                        <?php break;
+
+                    default: ?>
+                        <p class="post-type resource-type"><?php the_resource_type(null, true); ?></p>
+                    <?php break;
+                } ?>
                 <h1 class="post-title resource-title"><?php the_title(); ?></h1>
                 <div class="post excerpt resource-excerpt"><?php the_excerpt(); ?></div>
                 <?php foreach (get_resource_ctas(null, false) as $cta) { ?>

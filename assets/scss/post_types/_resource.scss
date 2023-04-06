@@ -3,7 +3,8 @@ body.single.single-resource {
         background: #04205F;
         padding-bottom: 1rem;
 
-        .post-type {
+        .post-type,
+        .post-date {
             margin-bottom: 0;
             text-transform: uppercase;
             font-weight: 700;
