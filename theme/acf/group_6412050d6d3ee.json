@@ -23,6 +23,26 @@
             "delay": 0
         },
         {
+            "key": "field_642e94bcbfd1c",
+            "label": "External",
+            "name": "external",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This is an external product\/service recommendation",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_642e84273c186",
             "label": "Call-to-action",
             "name": "cta",
@@ -62,6 +82,11 @@
                         "field": "field_642e84273c186",
                         "operator": "==",
                         "value": "download"
+                    },
+                    {
+                        "field": "field_642e94bcbfd1c",
+                        "operator": "!=",
+                        "value": "1"
                     }
                 ]
             ],
@@ -75,6 +100,36 @@
             "min_size": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_642e9564e5b7f",
+            "label": "Download URL",
+            "name": "download_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_642e84273c186",
+                        "operator": "==",
+                        "value": "download"
+                    },
+                    {
+                        "field": "field_642e94bcbfd1c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         },
         {
             "key": "field_642e849afc93e",
@@ -229,5 +284,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680770470
+    "modified": 1680774742
 }
