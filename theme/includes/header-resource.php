@@ -5,7 +5,11 @@
                 <p class="post-type resource-type"><?php the_resource_type(null, true); ?></p>
                 <h1 class="post-title resource-title"><?php the_title(); ?></h1>
                 <div class="post excerpt resource-excerpt"><?php the_excerpt(); ?></div>
-                <a href="<?php the_resource_cta_url(); ?>" class="button" download>Download</a>
+                <?php foreach (get_resource_ctas(null, false) as $cta) { ?>
+                    <a href="<?php echo $cta['url']; ?>"<?php if ($cta['external']) { ?> target="_blank"<?php } ?> class="button">
+                        <?php esc_html_e($cta['label']); ?>
+                    </a>
+                <?php } ?>
             </div>
 
             <div class="cell medium-5">

@@ -23,6 +23,10 @@
         </a>
 
         <div class="resource-excerpt"><?php the_excerpt(); ?></div>
-        <a href="<?php the_resource_cta_url(); ?>" class="button" download>Download</a>
+        <?php foreach (get_resource_ctas(null, false) as $cta) { ?>
+            <a href="<?php echo $cta['url']; ?>"<?php if ($cta['external']) { ?> target="_blank"<?php } ?> class="small button">
+                <?php esc_html_e($cta['label']); ?>
+            </a>
+        <?php } ?>
     </div>
 </div>
