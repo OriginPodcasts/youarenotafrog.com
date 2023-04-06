@@ -5,6 +5,8 @@ body.single.single-resource {
 
         .post-type {
             margin-bottom: 0;
+            text-transform: uppercase;
+            font-weight: 700;
         }
 
         @include breakpoint(medium) {

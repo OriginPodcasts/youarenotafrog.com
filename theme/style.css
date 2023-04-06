@@ -2985,7 +2985,7 @@ body.single.single-episode .episode-transcript-excerpt .episode-transcript-loade
 
 body.single.single-resource .post-header { background: #04205F; padding-bottom: 1rem; }
 
-body.single.single-resource .post-header .post-type { margin-bottom: 0; }
+body.single.single-resource .post-header .post-type { margin-bottom: 0; text-transform: uppercase; font-weight: 700; }
 
 @media print, screen and (min-width: 40em) { body.single.single-resource .post-header .grid-x { width: 80%; margin-left: auto; margin-right: auto; } body.single.single-resource .post-header img.responsive-img { width: 80%; display: block; margin: 0 0 0 auto; } }
 
