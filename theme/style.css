@@ -2939,17 +2939,15 @@ body.page-template-page-host-php .host-link-buttons li { display: inline; }
 
 body.page-template-page-host-php .host-link-buttons li a.button:link, body.page-template-page-host-php .host-link-buttons li a.button:visited, body.page-template-page-host-php .host-link-buttons li a.button:active, body.page-template-page-host-php .host-link-buttons li a.button:hover { background: #05205f; }
 
-body.page-template-page-contact .page-header { background: transparent; color: #707070; }
-
-@media print, screen and (min-width: 40em) { body.page-template-page-contact aside.sidebar { margin-top: 0; } }
-
-body.page-template-page-contact aside.sidebar .menu li { text-transform: none; }
+body.page-template-page-contact aside.sidebar .menu li { text-transform: none; font-size: .56rem; }
 
 body.page-template-page-contact aside.sidebar .menu li > a:link, body.page-template-page-contact aside.sidebar .menu li > a:visited, body.page-template-page-contact aside.sidebar .menu li > a:hover, body.page-template-page-contact aside.sidebar .menu li > a:active { display: block; color: #707070; padding: 1rem; border: 1px solid #707070; border-radius: 2rem; text-align: center; }
 
 body.page-template-page-contact aside.sidebar .menu li.active > a:link, body.page-template-page-contact aside.sidebar .menu li.active > a:visited, body.page-template-page-contact aside.sidebar .menu li.active > a:hover, body.page-template-page-contact aside.sidebar .menu li.active > a:active { background: #44AFA0; border-color: #44AFA0; color: #fefefe; }
 
-body.page-template-page-contact .cell.single { margin-top: 0; }
+body.page-template-page-contact .page-header { background: transparent; color: #707070; padding: 108px 0 1rem; }
+
+body.page-template-page-contact .cell.single { margin: 0 0 1rem; }
 
 body.single.single-episode .post-header { background: #3EA19B; }
 

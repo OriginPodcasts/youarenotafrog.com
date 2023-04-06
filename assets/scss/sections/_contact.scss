@@ -1,17 +1,9 @@
 body.page-template-page-contact {
-    .page-header {
-        background: transparent;
-        color: $dark;
-    }
-
     aside.sidebar {
-        @include breakpoint(medium) {
-            margin-top: 0;
-        }
-
         .menu {
             li {
                 text-transform: none;
+                font-size: .56rem;
 
                 > a {
                     &:link, &:visited, &:hover, &:active {
@@ -37,7 +29,13 @@ body.page-template-page-contact {
         }
     }
 
+    .page-header {
+        background: transparent;
+        color: $dark;
+        padding: 108px 0 1rem;
+    }
+
     .cell.single {
-        margin-top: 0;
+        margin: 0 0 1rem;
     }
 }
