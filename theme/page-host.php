@@ -52,42 +52,42 @@ if ($image_id = get_field('image')) {
                     </div>
                 </div>
             </header>
+
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+                    <div class="main single cell medium-9">
+                        <section class="profile-section host-bio"><?php the_content(); ?></section>
+
+                        <?php if ($story = get_field('story')) { ?>
+                            <section class="profile-section host-story">
+                                <h2>My story</h2>
+                                <?php echo apply_filters('the_content', $story); ?>
+                            </section>
+                        <?php }
+
+                        if ($experience = get_field('experience')) { ?>
+                            <section class="profile-section host-experience">
+                                <h2>Qualifications + experience</h2>
+                                <?php echo apply_filters('the_content', $experience); ?>
+                            </section>
+                        <?php } 
+
+                        if ($links = get_field('links')) { ?>
+                            <ul class="host-link-buttons">
+                                <?php foreach ($links as $link) { ?>
+                                    <li>
+                                        <a href="<?php esc_attr_e($link['url']); ?>" class="small button">
+                                            <?php esc_html_e($link['label']); ?>
+                                        </a>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
         <?php }
     } ?>
-
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <div class="main single cell medium-9">
-                <section class="profile-section host-bio"><?php the_content(); ?></section>
-
-                <?php if ($story = get_field('story')) { ?>
-                    <section class="profile-section host-story">
-                        <h2>My story</h2>
-                        <?php echo apply_filters('the_content', $story); ?>
-                    </section>
-                <?php }
-
-                if ($experience = get_field('experience')) { ?>
-                    <section class="profile-section host-experience">
-                        <h2>Qualifications + experience</h2>
-                        <?php echo apply_filters('the_content', $experience); ?>
-                    </section>
-                <?php } 
-
-                if ($links = get_field('links')) { ?>
-                    <ul class="host-link-buttons">
-                        <?php foreach ($links as $link) { ?>
-                            <li>
-                                <a href="<?php esc_attr_e($link['url']); ?>" class="small button">
-                                    <?php esc_html_e($link['label']); ?>
-                                </a>
-                            </li>
-                        <?php } ?>
-                    </ul>
-                <?php } ?>
-            </div>
-        </div>
-    </div>
 </main>
 
 <?php get_footer();

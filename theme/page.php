@@ -10,16 +10,16 @@
                     <h1 class="page-title"><?php the_title(); ?></h1>
                 </div>
             </header>
+
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+                    <article class="main single cell medium-9">
+                        <?php the_content(); ?>
+                    </article>
+                </div>
+            </div>
         <?php }
     } ?>
-
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <article class="main single cell medium-9">
-                <?php the_content(); ?>
-            </article>
-        </div>
-    </div>
 </main>
 
 <?php get_footer();
