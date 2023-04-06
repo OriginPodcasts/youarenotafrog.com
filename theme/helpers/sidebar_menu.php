@@ -1,6 +1,5 @@
 <?php function yanaf_sidebar_menu() {
     $categories = array();
-    $html = '<ul class="menu">';
     $episode_list = (is_post_type_archive() && get_query_var('post_type') === 'episode') || get_query_var('tag') || is_tax('collection');
     $resource_list = is_internal_resource_query();
     $recommends_list = is_external_resource_query();
@@ -65,6 +64,13 @@
         );
     }
 
+    if (is_page()) {
+        foreach (yanaf_get_page_menu_items() as $item) {
+            $items[] = $item;
+        }
+    }
+
+    $html = '<ul class="menu">';
     foreach ($items as $item) {
         $html .= yanaf_get_menu_item_html($item);
     }
