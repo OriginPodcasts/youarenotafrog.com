@@ -15,11 +15,18 @@ if ($collection = yanaf_get_collection()) { ?>
             } ?>
         </div>
     </header>
-<?php } else if (is_archive() && (get_query_var('post_type') === 'resource' || get_query_var('resource_type') || get_query_var('resource_category'))) { ?>
+<?php } else if (is_internal_resource_query()) { ?>
     <header class="resources-header">
         <div class="grid-container">
             <h1 class="list-title"><?php the_field('resources_title', 'option'); ?></h1>
             <div class="list-subtitle"><?php the_field('resources_subtitle', 'option'); ?></div>
+        </div>
+    </header>
+<?php } else if (is_external_resource_query()) { ?>
+    <header class="resources-header">
+        <div class="grid-container">
+            <h1 class="list-title"><?php the_field('recommends_title', 'option'); ?></h1>
+            <div class="list-subtitle"><?php the_field('recommends_subtitle', 'option'); ?></div>
         </div>
     </header>
 <?php } ?>

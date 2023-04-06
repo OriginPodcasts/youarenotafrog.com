@@ -32,5 +32,16 @@ function yanaf_pre_get_posts($query) {
                 )
             )
         );
+    } else if (is_external_resource_query($query)) {
+        $query->set(
+            'meta_query',
+            array(
+                'relation' => 'OR',
+                array(
+                    'key' => 'external',
+                    'value' => true
+                )
+            )
+        );
     }
 }
