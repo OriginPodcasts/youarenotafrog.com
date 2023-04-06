@@ -1,4 +1,4 @@
-<?php function get_resource_ctas($post_id=null) {
+<?php function get_resource_ctas($post_id=null, $full=true) {
     if ($post_id === null) {
         $post_id = get_the_ID();
     }
@@ -23,7 +23,7 @@
             foreach (get_post_meta($post_id, 'media') as $media_id) {
                 $links[] = array(
                     'url' => home_url(sprintf('/download/%s/', $post_id)),
-                    'label' => 'Signup and download',
+                    'label' => $full ? 'Signup and download' : 'Download',
                     'external' => false
                 );
 
