@@ -1,5 +1,11 @@
 <?php function yanaf_img_srcset($image_id, $alt='', $sizes=array(), $responsive=false) {
-    if (is_object($image_id) && $image_id instanceof WP_Post) {
+    if (is_array($image_id) && array_key_exists('ID', $image_id)) {
+        if (array_key_exists('title', $image_id) && !$alt) {
+            $alt = $image_id['title'];
+        }
+
+        $image_id = $image_id['ID'];
+    } else if (is_object($image_id) && $image_id instanceof WP_Post) {
         $image_id = $image_id->ID;
     }
 
