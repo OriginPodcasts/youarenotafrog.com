@@ -9,4 +9,6 @@ function yanaf_wp_head() {
     if ($css = get_option('yanaf_colours_css')) {
         printf('<style id="yanaf-collection-styles">%s</style>', $css);
     }
+
+    print('<script>window.ajaxurl = \'' . admin_url('admin-ajax.php') . '\';</script>');
 }
