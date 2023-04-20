@@ -32,6 +32,37 @@ get_header(); ?>
                         </header>
 
                         <article><?php the_content(); ?></article>
+
+                        <?php if ($gallery = get_field('press_photos')) { ?>
+                            <div class="grid-x grid-margin-x small-up-1 medium-up-2 gallery">
+                                <?php foreach($gallery as $i => $photo) {
+                                    $last = $i === count($gallery) - 1;
+                                    $even = !($i % 2 == 1);
+
+                                    if ($last && !$even) {
+                                        $last = false;
+                                    }
+
+                                    $sizes = array(
+                                        'small' => !$last ? 'f-sm-whole-sq' : 'f-sm-whole',
+                                        'medium' => !$last ? 'f-md-whole-sq' : 'f-md-whole',
+                                        'large' => !$last ? 'f-md-whole-sq' : 'f-lg-whole',
+                                        'xlarge' => !$last ? 'f-md-whole-sq' : 'f-xlarge-whole'
+                                    ); ?>
+
+                                    <div class="cell <?php echo $even ? 'even' : 'odd'; ?>">
+                                        <a href="<?php esc_attr_e($photo['url']); ?>" download>
+                                            <?php yanaf_img_srcset(
+                                                $photo,
+                                                null,
+                                                $sizes
+                                            ); ?>
+                                            <span class="button">Download</span>
+                                        </a>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
