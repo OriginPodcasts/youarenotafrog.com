@@ -21,11 +21,13 @@ get_header(); ?>
                                     <p class="page-subtitle"><?php esc_html_e($subtitle); ?></p>
                                 <?php }
 
-                                if ($cta = get_field('cta')) { ?>
-                                    <a href="<?php esc_attr_e($cta['url']); ?>" class="button" rel="external" target="_blank">
-                                        <?php esc_html_e($cta['label']); ?>
-                                    </a>
-                                <?php } ?>
+                                if ($cta = get_field('cta')) {
+                                    if (is_array($cta) && isset($cta['url']) && $cta['url'] && isset($cta['label']) && $cta['label']) { ?>
+                                        <a href="<?php esc_attr_e($cta['url']); ?>" class="button" rel="external" target="_blank">
+                                            <?php esc_html_e($cta['label']); ?>
+                                        </a>
+                                    <?php }
+                                } ?>
                             </div>
                         </header>
 
