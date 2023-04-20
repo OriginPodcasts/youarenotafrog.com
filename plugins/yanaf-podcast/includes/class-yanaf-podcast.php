@@ -47,6 +47,8 @@
 			);
 
 			$this->loader->add_action('wp_head', $post_type, 'wp_head');
+			$this->loader->add_action('template_redirect', $post_type, 'template_redirect');
+			$this->loader->add_filter('query_vars', $post_type, 'query_vars');
 		}
 
 		$this->collections = array(

@@ -48,6 +48,8 @@
                 'delete_with_user' => false
             )
         );
+
+        add_rewrite_rule('^episode-(\d+)$', 'index.php?episode_redirect=$matches[1]', 'top');
     }
 
     public function add_admin_columns($columns) {
@@ -70,5 +72,33 @@
 
     public function wp_head() {
         
+    }
+
+    public function query_vars($query_vars) {
+        $query_vars[] = 'episode_redirect';
+        return $query_vars;
+    }
+
+    public function template_redirect() {
+        if ($episode_number = get_query_var('episode_redirect')) {
+            $query = new WP_Query(
+                array(
+                    'post_type' => 'episode',
+                    'meta_key' => 'itunes_number',
+                    'meta_value' => intVal($episode_number),
+                    'posts_per_page' => 1
+                )
+            );
+
+            if ($query->have_posts()) {
+                wp_redirect(get_permalink($query->post->ID), 301);
+                exit;
+            }
+
+            global $wp_query;
+            $wp_query->set_404();
+            status_header(404);
+            nocache_headers();
+        }
     }
 }
