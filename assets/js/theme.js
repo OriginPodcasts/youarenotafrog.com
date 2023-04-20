@@ -4,3 +4,4 @@
 // @codekit-append '_tags.js';
 // @codekit-append '_sidebar.js';
 // @codekit-append '_transcript.js';
+// @codekit-append '_newsletter-form.js';
