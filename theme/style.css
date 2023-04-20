@@ -2973,6 +2973,10 @@ body.page-template-page-contact .page-header { background: transparent; color: #
 
 body.page-template-page-contact .cell.single { margin: 0 0 1rem; }
 
+body.page-template-page-contact .cell.single .newsletter-form label.checkbox-label { display: flex; margin-bottom: 1rem; }
+
+body.page-template-page-contact .cell.single .newsletter-form label.checkbox-label > input[type="checkbox"] { -webkit-transform: scale(1.5); transform: scale(1.5); margin: 0 1rem 0; }
+
 body.single.single-episode .post-header { background: #3EA19B; }
 
 body.single.single-episode .post-header img.episode-image { border-radius: 50%; }
