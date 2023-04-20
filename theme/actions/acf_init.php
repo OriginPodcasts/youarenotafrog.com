@@ -10,4 +10,15 @@ function yanaf_acf_init() {
             'redirect' => false
         )
     );
+
+    acf_add_options_page(
+        array(
+            'page_title' => __('Newsletter Form Settings'),
+            'menu_title' => __('Newsletter'),
+            'menu_slug' => 'newsletter-form-settings',
+            'parent_slug' => 'options-general.php',
+            'capability' => 'manage_options',
+            'redirect' => false
+        )
+    );
 }
