@@ -29,13 +29,7 @@
                             <h2>Connect</h2>
                             <p>Receive updates from You Are Not a Frog (YANAF) straight to your inbox.</p>
                                 
-                            <form class="newsletter-form">
-                                <label for="id_email">Email</label>
-                                <div class="fields">
-                                    <input type="email" id="id_email" name="email" placeholder="Enter your email address..." required>
-                                    <button type="submit" class="button" title="Subscribe">&rarr;</button>
-                                </div>
-                            </form>
+                            <?php get_template_part('includes/newsletter-form'); ?>
                             <p>By submitting, I am agreeing to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.</p>
                         </div>
 
