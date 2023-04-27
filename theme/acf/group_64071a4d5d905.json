@@ -204,11 +204,12 @@
                         "class": "",
                         "id": ""
                     },
+                    "hide_admin": 0,
                     "choices": {
                         "calendar": "Calendar",
                         "pin": "Map pin",
                         "bookmark": "Bookmark",
-                        "microphone": "microphone"
+                        "microphone": "Microphone"
                     },
                     "default_value": false,
                     "return_format": "value",
@@ -367,5 +368,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680341980
+    "modified": 1682592421
 }
