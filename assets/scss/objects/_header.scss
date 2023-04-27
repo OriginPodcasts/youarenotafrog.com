@@ -5,7 +5,12 @@ header.site-header {
     position: relative;
 
     img.yanaf-logo {
-        width: 148px;
+        width: 72px;
+
+        @include breakpoint(medium) {
+            width: 148px;
+        }
+
         transform: rotate(-15deg);
         position: absolute;
         z-index: 30;
@@ -21,6 +26,11 @@ header.site-header {
         letter-spacing: 0px;
         opacity: 1;
         color: $menu-color;
+        margin-bottom: 1rem;
+
+        @include breakpoint(medium) {
+            margin-bottom: 0;
+        }
 
         li {
             a {
@@ -40,7 +50,7 @@ header.site-header {
             }
         }
 
-        &.search-menu {
+        &.search-and-toggle {
             justify-content: end;
             text-align: right;
         }

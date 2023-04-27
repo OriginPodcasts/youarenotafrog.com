@@ -21,6 +21,13 @@ $menu-font-family: $font-family;
 $menu-font-size: 1.06rem;
 $menu-font-weight: bold;
 
+// Title bar
+$titlebar-background: transparent;
+$titlebar-color: $dark;
+$titlebar-padding: 0;
+$titlebar-icon-color: $dark;
+$titlebar-icon-color-hover: darken($dark, 10);
+
 // Buttons
 $button-radius: 2em;
 $button-padding: 1em 3em;

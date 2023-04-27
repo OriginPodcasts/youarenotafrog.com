@@ -11,16 +11,19 @@
         <header class="site-header">
             <div class="grid-container">
                 <div class="grid-x">
-                    <div class="medium-2">
+                    <div class="small-3 medium-2">
                         <a href="<?php esc_attr_e(home_url()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php printf(__('%s logo', 'yanaf'), get_bloginfo('name')); ?>" class="yanaf-logo"></a>
                     </div>
-                    <div class="medium-8">
+                    <div class="small-6 medium-8">
                         <?php yanaf_main_menu(); ?>
                     </div>
-                    <div class="medium-2">
-                        <ul class="menu search-menu">
+                    <div class="small-3 medium-2">
+                        <ul class="menu search-and-toggle">
                             <li>
                                 <a href="#search"><i class="fi-magnifying-glass"></i></a>
+                            </li>
+                            <li class="title-bar hide-for-medium" data-responsive-toggle="menu-primary-menu" data-hide-for="medium">
+                                <button class="menu-icon" type="button" data-toggle="menu-primary-menu"></button>
                             </li>
                         </ul>
                     </div>
