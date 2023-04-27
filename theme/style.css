@@ -2705,9 +2705,9 @@ body { background: #F5F5F0; }
 
 @media print, screen and (min-width: 64em) { .archive.post-type-archive-resource header.resources-header .list-subtitle, .archive.post-type-archive-resource header.resources-header .list-title, .archive.tax-resource_type header.resources-header .list-subtitle, .archive.tax-resource_type header.resources-header .list-title, .archive.tax-resource_category header.resources-header .list-subtitle, .archive.tax-resource_category header.resources-header .list-title { width: 60%; margin-left: auto; margin-right: auto; } }
 
-.cell.archive .breadcrumb { line-height: 1.4; }
+.cell.archive .breadcrumb { margin: 2rem 0; line-height: 1.4; text-align: center; }
 
-@media print, screen and (min-width: 40em) { .cell.archive .breadcrumb { margin: 1rem 0; } }
+@media print, screen and (min-width: 40em) { .cell.archive .breadcrumb { margin: 1rem 0; text-align: left; } }
 
 .cell.archive .breadcrumb h2.archive-title { color: #44AFA0; font-size: 1rem; text-transform: uppercase; margin: 0; display: inline; line-height: 1; }
 
@@ -2973,7 +2973,9 @@ body.page-template-page-contact aside.sidebar .menu li > a:link, body.page-templ
 
 body.page-template-page-contact aside.sidebar .menu li.active > a:link, body.page-template-page-contact aside.sidebar .menu li.active > a:visited, body.page-template-page-contact aside.sidebar .menu li.active > a:hover, body.page-template-page-contact aside.sidebar .menu li.active > a:active { background: #44AFA0; border-color: #44AFA0; color: #fefefe; }
 
-body.page-template-page-contact .page-header { background: transparent; color: #707070; padding: 108px 0 1rem; }
+body.page-template-page-contact .page-header { background: transparent; color: #707070; padding: 2rem 0 1rem; }
+
+@media print, screen and (min-width: 40em) { body.page-template-page-contact .page-header { padding-top: 108px; } }
 
 body.page-template-page-contact .cell.single { margin: 0 0 1rem; }
 

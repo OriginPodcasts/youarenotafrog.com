@@ -56,10 +56,13 @@
 
 .cell.archive {
     .breadcrumb {
+        margin: 2rem 0;
         line-height: 1.4;
+        text-align: center;
 
         @include breakpoint(medium) {
             margin: 1rem 0;
+            text-align: left;
         }
 
         h2.archive-title {

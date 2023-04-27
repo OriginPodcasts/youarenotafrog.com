@@ -32,7 +32,11 @@ body.page-template-page-contact {
     .page-header {
         background: transparent;
         color: $dark;
-        padding: 108px 0 1rem;
+        padding: 2rem 0 1rem;
+
+        @include breakpoint(medium) {
+            padding-top: 108px;
+        }
     }
 
     .cell.single {
