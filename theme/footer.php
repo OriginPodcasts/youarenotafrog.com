@@ -28,7 +28,6 @@
                         <div class="newsletter-cell">
                             <h2>Connect</h2>
                             <p>Receive updates from You Are Not a Frog (YANAF) straight to your inbox.</p>
-                                
                             <?php get_template_part('includes/newsletter-form'); ?>
                             <p>By submitting, I am agreeing to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.</p>
                         </div>
@@ -91,14 +90,7 @@
                 </div>
             </div>
         </footer>
-        
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
-        <script>
-            $(document).foundation();
-        </script>
-		
+
 		<?php wp_footer(); ?>
 	</body>
 </html>
