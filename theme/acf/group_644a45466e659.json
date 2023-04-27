@@ -1,0 +1,43 @@
+{
+    "key": "group_644a45466e659",
+    "title": "Episode essentials",
+    "fields": [
+        {
+            "key": "field_644a4546157e3",
+            "label": "Player URL",
+            "name": "player_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": "https:\/\/player.captivate.fm\/episode\/12a3bc4d-efg5-67h8-i901-jk2l34mno56p\/"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "episode"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1682589157
+}
