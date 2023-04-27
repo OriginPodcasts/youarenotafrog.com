@@ -2643,7 +2643,9 @@ footer { background: #1c5451; color: #fefefe; padding: 1rem 0; }
 
 footer .logo-cell { align-items: center; }
 
-footer img.yanaf-logo { -webkit-transform: rotate(-15deg); transform: rotate(-15deg); margin-top: 20px; position: relative; }
+footer img.yanaf-logo { -webkit-transform: rotate(-15deg); transform: rotate(-15deg); max-width: 100%; }
+
+@media print, screen and (min-width: 40em) { footer img.yanaf-logo { margin-top: 20px; position: relative; } }
 
 footer .tags { margin: auto; }
 
@@ -2669,13 +2671,17 @@ footer .newsletter-cell input:active, footer .newsletter-cell input:focus { back
 
 footer .newsletter-cell button { background: transparent; padding: 0 1rem; margin: 0; }
 
-footer ul.menu { display: block; margin-top: 1rem; }
+footer ul.menu { display: block; margin: 1rem 0 2rem 0; text-align: center; }
+
+@media print, screen and (min-width: 40em) { footer ul.menu { margin: 1rem 0; text-align: left; } }
 
 footer ul.legal-menu { text-align: center; list-style-type: none; margin: 0; }
 
 footer ul.legal-menu li { margin: 0 .5rem; display: inline; }
 
-footer .newsletter-cell { padding: 1rem 0; }
+footer .newsletter-cell, footer .follow-cell { padding: 1rem 0; text-align: center; }
+
+@media print, screen and (min-width: 40em) { footer .newsletter-cell, footer .follow-cell { text-align: left; } }
 
 footer ul.follow-menu { list-style-type: none; margin: 0; }
 
@@ -2686,6 +2692,10 @@ footer ul.follow-menu li a { display: inline-block; background: #43AEA0; border-
 footer ul.follow-menu li a svg { height: 1em; display: block; }
 
 footer ul.follow-menu li a svg path { fill: #fff; }
+
+footer .copyright { margin: 1rem auto; text-align: center; }
+
+@media print, screen and (min-width: 40em) { footer .copyright { margin: 0 auto; text-align: left; } }
 
 body { background: #F5F5F0; }
 

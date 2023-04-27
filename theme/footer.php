@@ -10,10 +10,10 @@
                 <div class="grid-x grid-margin-x">
                     <div class="cell medium-4 logo-cell">
                         <div class="grid-x grid-margin-x">
-                            <div class="cell medium-4">
+                            <div class="cell small-4">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php printf(__('%s logo', 'yanaf'), get_bloginfo('name')); ?>" class="yanaf-logo">
                             </div>
-                            <div class="cell medium-8 tags">
+                            <div class="cell small-8 tags">
                                 <p class="tagline"><?php bloginfo('description'); ?></p>
                                 <p class="subtag">Beat burnout. Work happier</p>
                             </div>
@@ -74,7 +74,7 @@
             <div class="grid-container">
                 <div class="grid-x">
                     <div class="cell medium-4">
-                        &copy; <?php echo date('Y'); ?> Wild Monday
+                        <div class="copyright">&copy; <?php echo date('Y'); ?> Wild Monday</div>
                     </div>
 
                     <div class="cell medium-4">

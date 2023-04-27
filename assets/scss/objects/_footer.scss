@@ -49,8 +49,12 @@ footer {
 
     img.yanaf-logo {
         transform: rotate(-15deg);
-        margin-top: 20px;
-        position: relative;
+        max-width: 100%;
+
+        @include breakpoint(medium) {
+            margin-top: 20px;
+            position: relative;
+        }
     }
 
     .tags {
@@ -120,7 +124,13 @@ footer {
 
     ul.menu {
         display: block;
-        margin-top: 1rem;
+        margin: 1rem 0 2rem 0;
+        text-align: center;
+
+        @include breakpoint(medium) {
+            margin: 1rem 0;
+            text-align: left;
+        }
     }
 
     ul.legal-menu {
@@ -134,8 +144,13 @@ footer {
         }
     }
 
-    .newsletter-cell {
+    .newsletter-cell, .follow-cell {
         padding: 1rem 0;
+        text-align: center;
+
+        @include breakpoint(medium) {
+            text-align: left;
+        }
     }
 
     ul.follow-menu {
@@ -160,6 +175,16 @@ footer {
                     }
                 }
             }
+        }
+    }
+
+    .copyright {
+        margin: 1rem auto;
+        text-align: center;
+
+        @include breakpoint(medium) {
+            margin: 0 auto;
+            text-align: left;
         }
     }
 }
