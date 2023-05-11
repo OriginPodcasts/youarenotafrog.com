@@ -11,7 +11,10 @@ body.single.single-episode {
             max-width: 294px;
             margin: 0 auto 1rem;
             align-items: center;
-            border-radius: 50%;
+
+            img.episode-guest-photo {
+                border-radius: 50%;
+            }
         }
     }
 
