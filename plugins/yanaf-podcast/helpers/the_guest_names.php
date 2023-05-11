@@ -8,10 +8,8 @@
         if ($guests = intVal($guests)) {
             for($i = 0; $i < $guests; $i ++) {
                 if ($name = get_post_meta($post_id, sprintf('guests_%d_name', $i), true)) {
-                    if ($i === $guests - 1) {
+                    if ($i && $i === $guests - 1) {
                         $names[] = sprintf('and %s', $name);
-                    } else if ($i) {
-                        $names[] = sprintf('%s', $name);
                     } else {
                         $names[] = $name;
                     }
