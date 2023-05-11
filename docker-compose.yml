@@ -23,6 +23,7 @@ services:
         volumes:
             - ./plugins:/var/www/html/wp-content/plugins
             - ./theme:/var/www/html/wp-content/themes/yanaf
+            - ./.docker/uploads:/var/www/html/wp-content/uploads
         environment:
             WORDPRESS_DB_HOST: mysql:3306
             WORDPRESS_DB_USER: wordpress
