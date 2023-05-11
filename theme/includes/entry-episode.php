@@ -1,7 +1,7 @@
 <a href="<?php the_permalink(); ?>" class="episode entry">
-    <?php if (yanaf_episode_has_guests()) {
+    <?php if ($thumbnail_id = get_post_thumbnail_id(get_the_ID())) {
         yanaf_img_srcset(
-            get_post_thumbnail_id(get_the_ID()),
+            $thumbnail_id,
             get_the_title(),
             array(
                 'small' => 'f-sm-whole-16x9' /* Full-width on small devices */,
