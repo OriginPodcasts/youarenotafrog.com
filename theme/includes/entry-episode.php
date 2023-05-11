@@ -1,15 +1,19 @@
 <a href="<?php the_permalink(); ?>" class="episode entry">
-    <?php yanaf_img_srcset(
-        get_post_thumbnail_id(get_the_ID()),
-        get_the_title(),
-        array(
-            'small' => 'f-sm-whole-16x9' /* Full-width on small devices */,
-            'medium' => 'f-md-third-16x9' /* Sixth-width on medium devices */,
-            'large' => 'f-lg-third-16x9' /* Sixth-width on large devices */
-        ),
-        true
-    ); ?>
-    
+    <?php if (yanaf_episode_has_guests()) {
+        yanaf_img_srcset(
+            get_post_thumbnail_id(get_the_ID()),
+            get_the_title(),
+            array(
+                'small' => 'f-sm-whole-16x9' /* Full-width on small devices */,
+                'medium' => 'f-md-third-16x9' /* Sixth-width on medium devices */,
+                'large' => 'f-lg-third-16x9' /* Sixth-width on large devices */
+            ),
+            true
+        );
+    } else { ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/no-guest.jpg" alt="Dr Rachel Morris">
+    <?php } ?>
+
     <div class="episode-meta">
         <span class="episode-number">Episode <?php yanaf_the_episode_number(); ?></span> |
         <span class="episode-date"><?php the_date('j F'); ?></span>
