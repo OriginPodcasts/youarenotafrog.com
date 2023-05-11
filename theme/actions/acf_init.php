@@ -21,4 +21,15 @@ function yanaf_acf_init() {
             'redirect' => false
         )
     );
+
+    acf_add_options_page(
+        array(
+            'page_title' => __('Social Media Links'),
+            'menu_title' => __('Social Links'),
+            'menu_slug' => 'social-media-links',
+            'parent_slug' => 'themes.php',
+            'capability' => 'manage_options',
+            'redirect' => false
+        )
+    );
 }
