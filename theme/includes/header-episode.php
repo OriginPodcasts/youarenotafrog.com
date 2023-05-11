@@ -12,12 +12,7 @@
             }
         } else { ?>
             <p class="episode-guests">With Rachel Morris</p>
-
-            <?php if ($image = get_the_post_thumbnail_url(get_the_ID(), 'f-sm-whole')) { ?>
-                <img alt="Episode thumbnail" src="<?php esc_attr_e($image); ?>" class="post-image episode-image">
-            <?php } else { ?>
-                <img alt="Dr Rachel Morris" src="<?php echo get_template_directory_uri(); ?>/img/no-guest-single.jpg" class="post-image episode-image">
-            <?php }
-        } ?>
+            <img alt="Dr Rachel Morris" src="<?php echo get_template_directory_uri(); ?>/img/no-guest-single.jpg" class="post-image episode-image">
+        <?php } ?>
     </div>
 </header>
