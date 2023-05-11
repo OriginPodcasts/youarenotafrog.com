@@ -14,16 +14,7 @@ if ($query->have_posts()) { ?>
 
             <a href="<?php the_permalink(); ?>" class="grid-x grid-margin-x grid-margin-y subsequent-episode">
                 <div class="cell small-2">
-                    <?php yanaf_img_srcset(
-                        get_post_thumbnail_id(get_the_ID()),
-                        get_the_title(),
-                        array(
-                            'small' => 'f-sm-third-sq' /* Third-width on small devices */,
-                            'medium' => 'f-md-sixth-sq' /* Sixth-width on medium devices */,
-                            'large' => 'f-lg-sixth-sq' /* Sixth-width on large devices */
-                        ),
-                        true
-                    ); ?>
+                    <?php yanaf_episode_square_thumbnail(); ?>
                 </div>
                 <div class="cell small-10">
                     <div class="episode-meta">
