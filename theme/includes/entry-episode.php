@@ -11,7 +11,7 @@
             true
         );
     } else { ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/no-guest.jpg" alt="Dr Rachel Morris">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/no-guest-list.jpg" alt="Dr Rachel Morris">
     <?php } ?>
 
     <div class="episode-meta">
