@@ -5,8 +5,8 @@
 
         <?php if (yanaf_episode_has_guests()) { ?>
             <p class="episode-guests">With <?php yanaf_the_guest_names(); ?></p>
-            <?php if (!yanaf_the_guest_photos(get_the_ID(), 'f-sm-whole')) {
-                if ($image = get_the_post_thumbnail_url(get_the_ID(), 'f-sm-whole')) { ?>
+            <?php if (!yanaf_the_guest_photos(get_the_ID(), 'f-sm-whole-sq')) {
+                if ($image = get_the_post_thumbnail_url(get_the_ID(), 'f-sm-whole-sq')) { ?>
                     <img alt="Episode thumbnail" src="<?php esc_attr_e($image); ?>" class="episode-image">
                 <?php }
             }
