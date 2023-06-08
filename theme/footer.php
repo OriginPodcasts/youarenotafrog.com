@@ -25,28 +25,7 @@
                     </div>
 
                     <div class="cell medium-4">
-                        <div class="newsletter-cell">
-                            <h2>Connect</h2>
-                            <p>Receive updates from You Are Not a Frog (YANAF) straight to your inbox.</p>
-                            <?php get_template_part('includes/newsletter-form'); ?>
-                            <p>By submitting, I am agreeing to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.</p>
-                        </div>
-
-                        <div class="follow-cell">
-                            <h2>Follow</h2>
-                            <ul class="follow-menu">
-                                <?php foreach (yanaf_get_social_links() as $link) { ?>
-                                    <li>
-                                        <a href="<?php esc_attr_e($link['url']); ?>" class="<?php esc_attr_e($link['slug']); ?>" title="<?php esc_attr_e($link['name']); ?>" rel="me external" target="_blank">
-                                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <title><?php esc_html_e($link['name']); ?></title>
-                                                <?php echo $link['icon']; ?>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                <?php } ?>
-                            </ul>
-                        </div>
+                        <?php get_sidebar('footer'); ?>
                     </div>
                 </div>
             </div>
