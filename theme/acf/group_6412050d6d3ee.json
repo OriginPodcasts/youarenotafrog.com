@@ -3,6 +3,24 @@
     "title": "Resources",
     "fields": [
         {
+            "key": "field_6481f08244aeb",
+            "label": "External webpage URL",
+            "name": "redirect",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "When supplied, there's no need to fill in the rest of the resource info. All inks for this resource will point to the URL you specify here, so there won't be a landing page on this site for the resource.\r\n\r\nIf you need to link to an external webpage but you also want a landing page, leave this box blank and fill in the URL under the appropriate \"Call-to-action\" dropdown.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_642d5e904cfa7",
             "label": "About",
             "name": "about",
@@ -284,5 +302,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680774742
+    "modified": 1686237873
 }
