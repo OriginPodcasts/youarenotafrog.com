@@ -1,3 +1,22 @@
+.app-links-wrapper {
+    background: #fff;
+    @include section-wrapper;
+
+    .apps-subtitle {
+        text-align: center;
+        @include section-subtitle;
+    }
+
+    p.app-links {
+        margin-top: 1rem;
+        text-align: center;
+
+        img {
+            margin: 0 .5rem;
+        }
+    }
+}
+
 footer {
     background: $bg-footer;
     color: $white;

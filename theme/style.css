@@ -2623,6 +2623,14 @@ form.search-form input:focus { background: transparent; border-width: 0; outline
 
 .acf-fields .acf-button:hover, .acf-fields .acf-button:focus { background-color: #3b9588; color: #fefefe; }
 
+.app-links-wrapper { background: #fff; color: #707070; padding: 2.6rem 0; }
+
+.app-links-wrapper .apps-subtitle { text-align: center; text-transform: uppercase; font-size: .69rem; margin: 0 auto .5rem; color: #707070; }
+
+.app-links-wrapper p.app-links { margin-top: 1rem; text-align: center; }
+
+.app-links-wrapper p.app-links img { margin: 0 .5rem; }
+
 footer { background: #1c5451; color: #fefefe; padding: 1rem 0; }
 
 footer .logo-cell { align-items: center; }

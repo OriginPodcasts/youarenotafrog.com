@@ -1,9 +1,9 @@
-		<!-- <section class="tags-wrapper">
+		<section class="app-links-wrapper">
             <div class="grid-container">
-                <p class="tags-subtitle">Explore episodes on</p>
-                <?php get_template_part('includes/tag-carousel'); ?>
+                <p class="apps-subtitle">Follow the podcast</p>
+                <?php yanaf_subscription_buttons(false, 'small'); ?>
             </div>
-        </section> -->
+        </section>
 
         <footer>
             <div class="grid-container">
