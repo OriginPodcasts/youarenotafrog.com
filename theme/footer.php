@@ -1,9 +1,9 @@
-		<section class="tags-wrapper">
+		<!-- <section class="tags-wrapper">
             <div class="grid-container">
                 <p class="tags-subtitle">Explore episodes on</p>
                 <?php get_template_part('includes/tag-carousel'); ?>
             </div>
-        </section>
+        </section> -->
 
         <footer>
             <div class="grid-container">
