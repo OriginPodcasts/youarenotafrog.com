@@ -134,11 +134,7 @@ get_header(); ?>
             </div>
         </section>
 
-        <section class="review-wrapper">
-            <div class="grid-container">
-                <?php get_template_part('includes/featured-review'); ?>
-            </div>
-        </section>
+        <?php get_template_part('includes/featured-review'); ?>
     <?php } ?>
 </main>
 
