@@ -10,4 +10,6 @@ function yanaf_widgets_init() {
             'after_title' => '</h2>'
         )
     );
+
+    register_widget('YANAF_Follow_Widget');
 }

@@ -59,4 +59,6 @@ function yanaf_after_setup_theme() {
             'footer-menu' => esc_html__('Footer Menu', 'yanaf')
         )
     );
+
+    remove_theme_support('widgets-block-editor');
 }
