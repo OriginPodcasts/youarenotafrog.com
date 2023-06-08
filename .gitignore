@@ -4,4 +4,5 @@
 /assets/node_modules
 /plugins/*
 !/plugins/yanaf-podcast
+!/plugins/yanaf-kajabi-forms.php
 config.codekit3
