@@ -11,7 +11,7 @@ Requires PHP: 7.0
 Text Domain: yanaf
 */
 /** Foundation for Sites Version 6.7.5 https://get.foundation Licensed under MIT Open Source */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap");
 @media print, screen and (min-width: 40em) { .reveal.large, .reveal.small, .reveal.tiny, .reveal { right: auto; left: auto; margin: 0 auto; } }
 
 /*  Core Owl Carousel CSS File v1.3.2 */
@@ -2491,7 +2491,7 @@ html.is-reveal-open body { overflow-y: hidden; }
 
 .fi-zoom-out:before { content: '\f21a'; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: 'Nunito', sans-serif; font-weight: 900; letter-spacing: -.02em; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: 'Montserrat', sans-serif; font-weight: 900; letter-spacing: -.02em; }
 
 header.site-header { padding-top: 24px; background: #fff; border-bottom: 1px solid #707070; position: relative; }
 
@@ -2499,7 +2499,7 @@ header.site-header img.yanaf-logo { width: 72px; -webkit-transform: rotate(-15de
 
 @media print, screen and (min-width: 40em) { header.site-header img.yanaf-logo { width: 148px; } }
 
-header.site-header ul.menu { text-align: center; justify-content: center; font-family: "Nunito", sans-serif; font-size: 1.06rem; font-weight: bold; color: #707070; letter-spacing: 0px; opacity: 1; color: #707070; margin-bottom: 1rem; }
+header.site-header ul.menu { text-align: center; justify-content: center; font-family: "Montserrat", sans-serif; font-size: 1.06rem; font-weight: bold; color: #707070; letter-spacing: 0px; opacity: 1; color: #707070; margin-bottom: 1rem; }
 
 @media print, screen and (min-width: 40em) { header.site-header ul.menu { margin-bottom: 0; } }
 
@@ -2809,7 +2809,7 @@ body.admin-bar .hero { height: calc(100vh - 132px); }
 
 .mission-wrapper .mission-subtitle { text-transform: uppercase; font-size: .69rem; margin: 0 auto .5rem; color: #707070; }
 
-.mission-wrapper .mission-heading { font-family: "Nunito", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; }
+.mission-wrapper .mission-heading { font-family: "Montserrat", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; }
 
 .mission-wrapper .mission-statement { margin: 1rem auto 0; }
 
@@ -2817,7 +2817,7 @@ body.admin-bar .hero { height: calc(100vh - 132px); }
 
 .episodes-wrapper .episodes-subtitle { text-align: center; text-transform: uppercase; font-size: .69rem; margin: 0 auto .5rem; color: #707070; }
 
-.episodes-wrapper .episodes-heading p { text-align: center; font-family: "Nunito", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; }
+.episodes-wrapper .episodes-heading p { text-align: center; font-family: "Montserrat", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; }
 
 @media print, screen and (min-width: 64em) { .episodes-wrapper .episodes-heading p { margin: 0 auto 1rem; width: 90%; } }
 
@@ -2843,7 +2843,7 @@ a.first-episode.first-episode .episode-guests, a.subsequent-episode.first-episod
 
 .collections-wrapper .collections-subtitle { text-align: center; text-transform: uppercase; font-size: .69rem; margin: 0 auto .5rem; color: #707070; }
 
-.collections-wrapper .collections-heading p { text-align: center; font-family: "Nunito", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; }
+.collections-wrapper .collections-heading p { text-align: center; font-family: "Montserrat", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; }
 
 @media print, screen and (min-width: 64em) { .collections-wrapper .collections-heading p { margin: 0 auto 1rem; width: 90%; } }
 
@@ -2869,7 +2869,7 @@ a.first-episode.first-episode .episode-guests, a.subsequent-episode.first-episod
 
 .resources-wrapper .resources-subtitle { text-align: center; text-transform: uppercase; font-size: .69rem; margin: 0 auto .5rem; color: #707070; }
 
-.resources-wrapper .resources-heading p { text-align: center; font-family: "Nunito", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; }
+.resources-wrapper .resources-heading p { text-align: center; font-family: "Montserrat", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; }
 
 @media print, screen and (min-width: 64em) { .resources-wrapper .resources-heading p { margin: 0 auto 1rem; width: 64%; } }
 
@@ -2911,7 +2911,7 @@ a.first-episode.first-episode .episode-guests, a.subsequent-episode.first-episod
 
 .host-wrapper .host-subtitle { text-transform: uppercase; font-size: .69rem; margin: 0 auto .5rem; color: #707070; }
 
-.host-wrapper .host-heading { font-family: "Nunito", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; margin-bottom: 1rem; }
+.host-wrapper .host-heading { font-family: "Montserrat", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; margin-bottom: 1rem; }
 
 @media print, screen and (min-width: 64em) { .host-wrapper .host-heading { margin: 0 auto 1rem; width: 80%; } }
 
