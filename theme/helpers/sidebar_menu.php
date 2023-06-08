@@ -5,7 +5,7 @@
     $recommends_list = is_external_resource_query();
 
     if ($episode_list) {
-        foreach (yanaf_get_popular_post_tags() as $tag) {
+        foreach (yanaf_get_collections() as $tag) {
             $categories[] = array(
                 'title' => $tag->name,
                 'url' => get_term_link($tag->term_id)
@@ -34,7 +34,7 @@
 
     if (count($categories)) {
         $items[] = array(
-            'title' => 'By category',
+            'title' => 'Playlists',
             'children' => $categories
         );
     }
