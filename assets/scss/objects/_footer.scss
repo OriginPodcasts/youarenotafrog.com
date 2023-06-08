@@ -36,6 +36,19 @@ footer {
         }
     }
 
+    a.wildmonday-link {
+        img.wildmonday-logo {
+            opacity: .75;
+            transition: opacity .3s ease;
+        }
+
+        &:hover {
+            img.wildmonday-logo {
+                opacity: 1;
+            }
+        }
+    }
+
     .tags {
         margin: auto;
     }

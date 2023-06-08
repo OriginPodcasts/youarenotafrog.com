@@ -2639,6 +2639,10 @@ footer img.yanaf-logo { -webkit-transform: rotate(-15deg); transform: rotate(-15
 
 @media print, screen and (min-width: 40em) { footer img.yanaf-logo { margin-top: 20px; position: relative; } }
 
+footer a.wildmonday-link img.wildmonday-logo { opacity: .75; transition: opacity .3s ease; }
+
+footer a.wildmonday-link:hover img.wildmonday-logo { opacity: 1; }
+
 footer .tags { margin: auto; }
 
 footer .tagline { font-size: 1.13rem; font-weight: 900; margin: 0 0 .25rem; }
