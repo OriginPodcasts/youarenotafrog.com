@@ -21,9 +21,27 @@
             "placeholder": ""
         },
         {
-            "key": "field_6481dc805da02",
-            "label": "Spotify",
-            "name": "podcast_link_spotify",
+            "key": "field_6481e55fd4055",
+            "label": "Amazon Music",
+            "name": "podcast_link_amazon",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6481e5319ef62",
+            "label": "CastBox",
+            "name": "podcast_link_castbox",
             "aria-label": "",
             "type": "url",
             "instructions": "",
@@ -57,6 +75,24 @@
             "placeholder": ""
         },
         {
+            "key": "field_6481dc9c5da04",
+            "label": "Pocket Casts",
+            "name": "podcast_link_pocketcasts",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_6481dca65da05",
             "label": "Podcast Addict",
             "name": "podcast_link_podcastaddict",
@@ -75,9 +111,9 @@
             "placeholder": ""
         },
         {
-            "key": "field_6481dc9c5da04",
-            "label": "Pocket Casts",
-            "name": "podcast_link_pocketcasts",
+            "key": "field_6481dc805da02",
+            "label": "Spotify",
+            "name": "podcast_link_spotify",
             "aria-label": "",
             "type": "url",
             "instructions": "",
@@ -111,5 +147,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686232324
+    "modified": 1686234486
 }
