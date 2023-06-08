@@ -18,7 +18,7 @@ function yanaf_after_setup_theme() {
     add_image_size('f-sm-whole', 620, 9999);
     add_image_size('f-sm-whole-sq', 620, 620, true);
     add_image_size('f-sm-whole-16x9', 620, 349, true);
-    add_image_size('f-sm-whole-9x16', 349, 539, true);
+    add_image_size('f-sm-whole-9x16', 620, 1102, true);
     add_image_size('f-sm-third-sq', 206, 206, true);
     add_image_size('f-sm-third-16x9', 206, 116, true);
 
