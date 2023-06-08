@@ -36,7 +36,7 @@
                 'public' => true,
                 'hierarchical' => false,
                 'supports' => array('title', 'excerpt', 'editor', 'thumbnail', 'slug'),
-                'taxonomies' => array('post_tag'),
+                // 'taxonomies' => array('post_tag'),
                 'menu_icon' => 'dashicons-microphone',
                 'menu_position' => 4,
                 'has_archive' => true,
