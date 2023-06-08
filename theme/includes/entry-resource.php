@@ -1,7 +1,8 @@
-<?php $post_type = get_post_type(); ?>
+<?php $post_type = get_post_type();
+$redirect = get_field('redirect'); ?>
 <div class="resource entry grid-x grid-margin-x">
     <div class="cell medium-3">
-        <a href="<?php the_permalink(); ?>">
+        <a href="<?php if ($redirect) { echo $redirect; } else { the_permalink(); } ?>">
             <?php yanaf_img_srcset(
                 get_post_thumbnail_id(get_the_ID()),
                 get_the_title(),
@@ -14,7 +15,7 @@
         </a>
     </div>
     <div class="cell medium-6 align-self-middle">
-        <a href="<?php the_permalink(); ?>">
+        <a href="<?php if ($redirect) { echo $redirect; } else { the_permalink(); } ?>">
             <h3 class="h5 resource-title"><?php the_title(); ?></h3>
             <div class="resource-meta">
                 <span class="resource-author">Created by <?php the_author(); ?></span> /
@@ -23,10 +24,12 @@
         </a>
 
         <div class="resource-excerpt"><?php the_excerpt(); ?></div>
-        <?php foreach (get_resource_ctas(null, false) as $cta) { ?>
-            <a href="<?php echo $cta['url']; ?>"<?php if ($cta['external']) { ?> target="_blank"<?php } ?> class="small button">
-                <?php esc_html_e($cta['label']); ?>
-            </a>
-        <?php } ?>
+        <?php if (!$redirect) {
+            foreach (get_resource_ctas(null, false) as $cta) { ?>
+                <a href="<?php echo $cta['url']; ?>"<?php if ($cta['external']) { ?> target="_blank"<?php } ?> class="small button">
+                    <?php esc_html_e($cta['label']); ?>
+                </a>
+            <?php }
+        } ?>
     </div>
 </div>
