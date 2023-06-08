@@ -2623,22 +2623,6 @@ form.search-form input:focus { background: transparent; border-width: 0; outline
 
 .acf-fields .acf-button:hover, .acf-fields .acf-button:focus { background-color: #3b9588; color: #fefefe; }
 
-.tags-wrapper { background: #fff; color: #707070; padding: 2.6rem 0; }
-
-.tags-wrapper .tags-subtitle { text-align: center; text-transform: uppercase; font-size: .69rem; margin: 0 auto .5rem; color: #707070; }
-
-.tags-wrapper .tags-carousel { margin-top: 1rem; text-align: center; }
-
-.tags-wrapper .tags-carousel .button { background: transparent; border-color: #707070; color: #707070; }
-
-.tags-wrapper .tags-carousel .owl-pagination { display: flex; justify-content: center; }
-
-.tags-wrapper .tags-carousel .owl-pagination .owl-page span:after { margin: .88rem; display: block; font-size: 2rem; }
-
-.tags-wrapper .tags-carousel .owl-pagination .owl-page:first-child span:after { content: '←'; }
-
-.tags-wrapper .tags-carousel .owl-pagination .owl-page:last-child span:after { content: '→'; }
-
 footer { background: #1c5451; color: #fefefe; padding: 1rem 0; }
 
 footer .logo-cell { align-items: center; }
