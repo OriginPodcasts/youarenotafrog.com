@@ -2679,9 +2679,9 @@ footer ul.legal-menu { text-align: center; list-style-type: none; margin: 0; }
 
 footer ul.legal-menu li { margin: 0 .5rem; display: inline; }
 
-footer .newsletter-cell, footer .follow-cell { padding: 1rem 0; text-align: center; }
+footer .footer-widget { padding: 1rem 0; text-align: center; }
 
-@media print, screen and (min-width: 40em) { footer .newsletter-cell, footer .follow-cell { text-align: left; } }
+@media print, screen and (min-width: 40em) { footer .footer-widget { text-align: left; } }
 
 footer ul.follow-menu { list-style-type: none; margin: 0; }
 

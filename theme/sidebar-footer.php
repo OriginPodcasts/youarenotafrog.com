@@ -1,5 +1,5 @@
 <?php if (!dynamic_sidebar('footer')) { ?>
-    <div class="follow-cell">
+    <div class="footer-widget">
         <h2>Follow</h2>
         <ul class="follow-menu">
             <?php foreach (yanaf_get_social_links() as $link) { ?>

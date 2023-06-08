@@ -4,8 +4,8 @@ function yanaf_widgets_init() {
         array(
             'name' => __('Footer', 'yanaf'),
             'id' => 'sidebar-1',
-            'before_widget' => '',
-            'after_widget' => '',
+            'before_widget' => '<div class="footer-widget">',
+            'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',
             'after_title' => '</h2>'
         )

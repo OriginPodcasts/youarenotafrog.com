@@ -23,24 +23,24 @@
     }
 
     public function widget($args, $instance) {
-        echo $args['before_widget']; ?>
-        <div class="follow-cell">
-            <?php if (!empty($instance['title'])) {
-                echo $args['before_title'] . apply_filters('widget_title', $instance['title']) . $args['after_title'];
-            } ?>
-            <ul class="follow-menu">
-                <?php foreach (yanaf_get_social_links() as $link) { ?>
-                    <li>
-                        <a href="<?php esc_attr_e($link['url']); ?>" class="<?php esc_attr_e($link['slug']); ?>" title="<?php esc_attr_e($link['name']); ?>" rel="me external" target="_blank">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <title><?php esc_html_e($link['name']); ?></title>
-                                <?php echo $link['icon']; ?>
-                            </svg>
-                        </a>
-                    </li>
-                <?php } ?>
-            </ul>
-        </div>
+        echo $args['before_widget'];
+
+        if (!empty($instance['title'])) {
+            echo $args['before_title'] . apply_filters('widget_title', $instance['title']) . $args['after_title'];
+        } ?>
+
+        <ul class="follow-menu">
+            <?php foreach (yanaf_get_social_links() as $link) { ?>
+                <li>
+                    <a href="<?php esc_attr_e($link['url']); ?>" class="<?php esc_attr_e($link['slug']); ?>" title="<?php esc_attr_e($link['name']); ?>" rel="me external" target="_blank">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title><?php esc_html_e($link['name']); ?></title>
+                            <?php echo $link['icon']; ?>
+                        </svg>
+                    </a>
+                </li>
+            <?php } ?>
+        </ul>
         <?php echo $args['after_widget'];
     }
 }
