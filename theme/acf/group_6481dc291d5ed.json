@@ -1,0 +1,115 @@
+{
+    "key": "group_6481dc291d5ed",
+    "title": "App Links",
+    "fields": [
+        {
+            "key": "field_6481dc295da00",
+            "label": "Apple Podcasts",
+            "name": "podcast_link_apple",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6481dc805da02",
+            "label": "Spotify",
+            "name": "podcast_link_spotify",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6481dc8c5da03",
+            "label": "Google Podcasts",
+            "name": "podcast_link_google",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6481dca65da05",
+            "label": "Podcast Addict",
+            "name": "podcast_link_podcastaddict",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6481dc9c5da04",
+            "label": "Pocket Casts",
+            "name": "podcast_link_pocketcasts",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "subscription-links"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1686232324
+}

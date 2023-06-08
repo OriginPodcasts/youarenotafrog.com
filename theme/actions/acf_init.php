@@ -24,6 +24,17 @@ function yanaf_acf_init() {
 
     acf_add_options_page(
         array(
+            'page_title' => __('App Links'),
+            'menu_title' => __('App Links'),
+            'menu_slug' => 'subscription-links',
+            'parent_slug' => 'edit.php?post_type=episode',
+            'capability' => 'manage_options',
+            'redirect' => false
+        )
+    );
+
+    acf_add_options_page(
+        array(
             'page_title' => __('Social Media Links'),
             'menu_title' => __('Social Links'),
             'menu_slug' => 'social-media-links',
