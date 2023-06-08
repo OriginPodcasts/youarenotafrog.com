@@ -26,6 +26,7 @@ jobs:
         run: |
           rsync -ra --delete theme/* root@${{ secrets.STAGING_HOST }}:/var/www/html/wp-content/themes/yanaf/
           rsync -ra --delete plugins/yanaf-podcast/* root@${{ secrets.STAGING_HOST }}:/var/www/html/wp-content/plugins/yanaf-podcast/
+          rsync plugins/yanaf-kajabi-forms.php root@${{ secrets.STAGING_HOST }}:/var/www/html/wp-content/plugins/
 
       - name: Flush cache
         run: ssh root@${{ secrets.STAGING_HOST }} "wp cache flush --allow-root --path=/var/www/html/"
