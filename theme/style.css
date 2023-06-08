@@ -768,9 +768,9 @@ ul.no-bullet, ol.no-bullet { margin-left: 0; list-style: none; }
 
 .button.expanded { display: block; width: 100%; margin-right: 0; margin-left: 0; }
 
-.button, .button.disabled, .button[disabled], .button.disabled:hover, .button[disabled]:hover, .button.disabled:focus, .button[disabled]:focus { background-color: #45AFA0; color: #fefefe; }
+.button, .button.disabled, .button[disabled], .button.disabled:hover, .button[disabled]:hover, .button.disabled:focus, .button[disabled]:focus { background-color: #6FB52B; color: #fefefe; }
 
-.button:hover, .button:focus { background-color: #3b9588; color: #fefefe; }
+.button:hover, .button:focus { background-color: #5e9a25; color: #fefefe; }
 
 .button.primary, .button.primary.disabled, .button.primary[disabled], .button.primary.disabled:hover, .button.primary[disabled]:hover, .button.primary.disabled:focus, .button.primary[disabled]:focus { background-color: #1779ba; color: #fefefe; }
 
@@ -794,9 +794,9 @@ ul.no-bullet, ol.no-bullet { margin-left: 0; list-style: none; }
 
 .button.hollow, .button.hollow:hover, .button.hollow:focus, .button.hollow.disabled, .button.hollow.disabled:hover, .button.hollow.disabled:focus, .button.hollow[disabled], .button.hollow[disabled]:hover, .button.hollow[disabled]:focus { background-color: transparent; }
 
-.button.hollow, .button.hollow.disabled, .button.hollow[disabled], .button.hollow.disabled:hover, .button.hollow[disabled]:hover, .button.hollow.disabled:focus, .button.hollow[disabled]:focus { border: 1px solid #45AFA0; color: #45AFA0; }
+.button.hollow, .button.hollow.disabled, .button.hollow[disabled], .button.hollow.disabled:hover, .button.hollow[disabled]:hover, .button.hollow.disabled:focus, .button.hollow[disabled]:focus { border: 1px solid #6FB52B; color: #6FB52B; }
 
-.button.hollow:hover, .button.hollow:focus { border-color: #235850; color: #235850; }
+.button.hollow:hover, .button.hollow:focus { border-color: #385b16; color: #385b16; }
 
 .button.hollow.primary, .button.hollow.primary.disabled, .button.hollow.primary[disabled], .button.hollow.primary.disabled:hover, .button.hollow.primary[disabled]:hover, .button.hollow.primary.disabled:focus, .button.hollow.primary[disabled]:focus { border: 1px solid #1779ba; color: #1779ba; }
 
@@ -820,9 +820,9 @@ ul.no-bullet, ol.no-bullet { margin-left: 0; list-style: none; }
 
 .button.clear, .button.clear:hover, .button.clear:focus, .button.clear.disabled, .button.clear.disabled:hover, .button.clear.disabled:focus, .button.clear[disabled], .button.clear[disabled]:hover, .button.clear[disabled]:focus { border-color: transparent; background-color: transparent; }
 
-.button.clear, .button.clear.disabled, .button.clear[disabled], .button.clear.disabled:hover, .button.clear[disabled]:hover, .button.clear.disabled:focus, .button.clear[disabled]:focus { color: #45AFA0; }
+.button.clear, .button.clear.disabled, .button.clear[disabled], .button.clear.disabled:hover, .button.clear[disabled]:hover, .button.clear.disabled:focus, .button.clear[disabled]:focus { color: #6FB52B; }
 
-.button.clear:hover, .button.clear:focus { color: #235850; }
+.button.clear:hover, .button.clear:focus { color: #385b16; }
 
 .button.clear.primary, .button.clear.primary.disabled, .button.clear.primary[disabled], .button.clear.primary.disabled:hover, .button.clear.primary[disabled]:hover, .button.clear.primary.disabled:focus, .button.clear.primary[disabled]:focus { color: #1779ba; }
 
@@ -848,7 +848,7 @@ ul.no-bullet, ol.no-bullet { margin-left: 0; list-style: none; }
 
 .button.dropdown::after { display: block; width: 0; height: 0; border-style: solid; border-width: 0.4em; content: ''; border-bottom-width: 0; border-color: #fefefe transparent transparent; position: relative; top: 0.4em; display: inline-block; float: right; margin-left: 3em; }
 
-.button.dropdown.hollow::after, .button.dropdown.clear::after { border-top-color: #45AFA0; }
+.button.dropdown.hollow::after, .button.dropdown.clear::after { border-top-color: #6FB52B; }
 
 .button.dropdown.hollow.primary::after, .button.dropdown.clear.primary::after { border-top-color: #1779ba; }
 
@@ -906,9 +906,9 @@ a.button:hover, a.button:focus { text-decoration: none; }
 
 .button-group.hollow .button, .button-group.hollow .button:hover, .button-group.hollow .button:focus, .button-group.hollow .button.disabled, .button-group.hollow .button.disabled:hover, .button-group.hollow .button.disabled:focus, .button-group.hollow .button[disabled], .button-group.hollow .button[disabled]:hover, .button-group.hollow .button[disabled]:focus { background-color: transparent; }
 
-.button-group.hollow .button, .button-group.hollow .button.disabled, .button-group.hollow .button[disabled], .button-group.hollow .button.disabled:hover, .button-group.hollow .button[disabled]:hover, .button-group.hollow .button.disabled:focus, .button-group.hollow .button[disabled]:focus { border: 1px solid #45AFA0; color: #45AFA0; }
+.button-group.hollow .button, .button-group.hollow .button.disabled, .button-group.hollow .button[disabled], .button-group.hollow .button.disabled:hover, .button-group.hollow .button[disabled]:hover, .button-group.hollow .button.disabled:focus, .button-group.hollow .button[disabled]:focus { border: 1px solid #6FB52B; color: #6FB52B; }
 
-.button-group.hollow .button:hover, .button-group.hollow .button:focus { border-color: #235850; color: #235850; }
+.button-group.hollow .button:hover, .button-group.hollow .button:focus { border-color: #385b16; color: #385b16; }
 
 .button-group.hollow.primary .button, .button-group.hollow.primary .button.disabled, .button-group.hollow.primary .button[disabled], .button-group.hollow.primary .button.disabled:hover, .button-group.hollow.primary .button[disabled]:hover, .button-group.hollow.primary .button.disabled:focus, .button-group.hollow.primary .button[disabled]:focus, .button-group.hollow .button.primary, .button-group.hollow .button.primary.disabled, .button-group.hollow .button.primary[disabled], .button-group.hollow .button.primary.disabled:hover, .button-group.hollow .button.primary[disabled]:hover, .button-group.hollow .button.primary.disabled:focus, .button-group.hollow .button.primary[disabled]:focus { border: 1px solid #1779ba; color: #1779ba; }
 
@@ -932,9 +932,9 @@ a.button:hover, a.button:focus { text-decoration: none; }
 
 .button-group.clear .button, .button-group.clear .button:hover, .button-group.clear .button:focus, .button-group.clear .button.disabled, .button-group.clear .button.disabled:hover, .button-group.clear .button.disabled:focus, .button-group.clear .button[disabled], .button-group.clear .button[disabled]:hover, .button-group.clear .button[disabled]:focus { border-color: transparent; background-color: transparent; }
 
-.button-group.clear .button, .button-group.clear .button.disabled, .button-group.clear .button[disabled], .button-group.clear .button.disabled:hover, .button-group.clear .button[disabled]:hover, .button-group.clear .button.disabled:focus, .button-group.clear .button[disabled]:focus { color: #45AFA0; }
+.button-group.clear .button, .button-group.clear .button.disabled, .button-group.clear .button[disabled], .button-group.clear .button.disabled:hover, .button-group.clear .button[disabled]:hover, .button-group.clear .button.disabled:focus, .button-group.clear .button[disabled]:focus { color: #6FB52B; }
 
-.button-group.clear .button:hover, .button-group.clear .button:focus { color: #235850; }
+.button-group.clear .button:hover, .button-group.clear .button:focus { color: #385b16; }
 
 .button-group.clear.primary .button, .button-group.clear.primary .button.disabled, .button-group.clear.primary .button[disabled], .button-group.clear.primary .button.disabled:hover, .button-group.clear.primary .button[disabled]:hover, .button-group.clear.primary .button.disabled:focus, .button-group.clear.primary .button[disabled]:focus, .button-group.clear .button.primary, .button-group.clear .button.primary.disabled, .button-group.clear .button.primary[disabled], .button-group.clear .button.primary.disabled:hover, .button-group.clear .button.primary[disabled]:hover, .button-group.clear .button.primary.disabled:focus, .button-group.clear .button.primary[disabled]:focus { color: #1779ba; }
 
@@ -2561,7 +2561,7 @@ form.search-form input:focus { background: transparent; border-width: 0; outline
 
 .pagination-container .pagination li .current { border-bottom: 1px solid #44AFA0; }
 
-.review-wrapper { background: #1c5451; color: #fff; text-align: center; padding: 1.88rem 0; }
+.review-wrapper { background: #1B3D20; color: #fff; text-align: center; padding: 1.88rem 0; }
 
 .review-wrapper .review-list { list-style-type: none; margin: 0 auto; padding: 0; }
 
@@ -2619,9 +2619,9 @@ form.search-form input:focus { background: transparent; border-width: 0; outline
 
 [data-whatinput='mouse'] .acf-fields .acf-button { outline: 0; }
 
-.acf-fields .acf-button, .acf-fields .acf-button.disabled, .acf-fields .acf-button[disabled], .acf-fields .acf-button.disabled:hover, .acf-fields .acf-button[disabled]:hover, .acf-fields .acf-button.disabled:focus, .acf-fields .acf-button[disabled]:focus { background-color: #45AFA0; color: #fefefe; }
+.acf-fields .acf-button, .acf-fields .acf-button.disabled, .acf-fields .acf-button[disabled], .acf-fields .acf-button.disabled:hover, .acf-fields .acf-button[disabled]:hover, .acf-fields .acf-button.disabled:focus, .acf-fields .acf-button[disabled]:focus { background-color: #6FB52B; color: #fefefe; }
 
-.acf-fields .acf-button:hover, .acf-fields .acf-button:focus { background-color: #3b9588; color: #fefefe; }
+.acf-fields .acf-button:hover, .acf-fields .acf-button:focus { background-color: #5e9a25; color: #fefefe; }
 
 .app-links-wrapper { background: #fff; color: #707070; padding: 2.6rem 0; }
 
@@ -2631,7 +2631,7 @@ form.search-form input:focus { background: transparent; border-width: 0; outline
 
 .app-links-wrapper p.app-links img { margin: 0 .5rem; }
 
-footer { background: #1c5451; color: #fefefe; padding: 1rem 0; }
+footer { background: #188140; color: #fefefe; padding: 1rem 0; }
 
 footer .logo-cell { align-items: center; }
 
@@ -2659,7 +2659,7 @@ footer .newsletter-cell input { background: transparent; color: #fefefe; outline
 
 footer .newsletter-cell input, footer .newsletter-cell input:active, footer .newsletter-cell input:focus { box-shadow: none; border: none; }
 
-footer .newsletter-cell input:active, footer .newsletter-cell input:focus { background: #184946; outline: 0; }
+footer .newsletter-cell input:active, footer .newsletter-cell input:focus { background: #16743a; outline: 0; }
 
 footer .newsletter-cell button { background: transparent; padding: 0 1rem; margin: 0; }
 
@@ -2679,7 +2679,7 @@ footer ul.follow-menu { list-style-type: none; margin: 0; }
 
 footer ul.follow-menu li { display: inline; }
 
-footer ul.follow-menu li a { display: inline-block; background: #43AEA0; border-radius: 50%; padding: .5rem; }
+footer ul.follow-menu li a { display: inline-block; background: #188140; border-radius: 50%; padding: .5rem; }
 
 footer ul.follow-menu li a svg { height: 1em; display: block; }
 
@@ -3045,7 +3045,7 @@ body.single.single-episode .episode-transcript-excerpt .episode-transcript-text:
 
 body.single.single-episode .episode-transcript-excerpt .episode-transcript-text p:last-child { margin-bottom: 0; }
 
-body.single.single-episode .episode-transcript-excerpt .episode-transcript-loader { position: absolute; bottom: 0; left: 0; z-index: 30; margin: 0 auto; background: #fefefe; border: 1px solid #45AFA0; color: #45AFA0; }
+body.single.single-episode .episode-transcript-excerpt .episode-transcript-loader { position: absolute; bottom: 0; left: 0; z-index: 30; margin: 0 auto; background: #fefefe; border: 1px solid #6FB52B; color: #6FB52B; }
 
 body.single.single-resource .post-header { background: #04205F; padding-bottom: 1rem; }
 
