@@ -38,11 +38,16 @@
     );
 
     echo('<p class="app-links app-links-' . $style . '">');
+    $count = 0;
 
     foreach ($apps as $key => $app) {
-        if ($primary) {
+        if ($primary === true) {
             if (!isset($app['primary']) || !$app['primary']) {
                 continue;
+            }
+        } else if (is_int($primary)) {
+            if ($count == $primary) {
+                break;
             }
         }
 
@@ -77,6 +82,8 @@
                 <img src="<?php echo $img; ?>" alt="<?php esc_attr_e($app['name']); ?> icon" style="height: <?php echo $size; ?>px;">
             </a>
         <?php }
+
+        $count ++;
     }
 
     echo('</p>');
