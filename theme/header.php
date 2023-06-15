@@ -20,7 +20,7 @@
                     <div class="small-3 medium-2">
                         <ul class="menu search-and-toggle">
                             <li>
-                                <a href="#search"><i class="fi-magnifying-glass"></i></a>
+                                <a href="javascript:;" data-open="search-modal"><i class="fi-magnifying-glass"></i></a>
                             </li>
                             <li class="title-bar hide-for-medium" data-responsive-toggle="menu-primary-menu" data-hide-for="medium">
                                 <button class="menu-icon" type="button" data-toggle="menu-primary-menu"></button>

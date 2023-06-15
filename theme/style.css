@@ -2693,6 +2693,8 @@ footer .copyright { margin: 1rem auto; text-align: center; }
 
 @media print, screen and (min-width: 40em) { footer .copyright { margin: 0 auto; text-align: left; } }
 
+#search-modal { border-width: 0; border-radius: .3rem; box-shadow: 0 0 10px rgba(10, 10, 10, 0.7); }
+
 body { background: #F5F5F0; }
 
 .archive.tax-collection header.collection-header { padding: 2rem 0; text-align: center; color: #fff; }
