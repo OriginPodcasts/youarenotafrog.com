@@ -2793,7 +2793,7 @@ body.error404 .search-form { margin: 0 0 1rem; }
 
 .hero:before { position: absolute; top: 0; right: 0; bottom: 0; left: 0; content: ' '; display: block; background: #0C1D24; background: linear-gradient(0deg, #0C1D24 0%, #0C1D2400 100%); z-index: 0; }
 
-.hero .grid-container { z-index: 10; }
+.hero .grid-container { z-index: 10; width: 100%; }
 
 .hero .h1 { color: #fff; line-height: 1em; margin: 0 0 1.5rem 0; text-align: center; }
 
