@@ -8,6 +8,9 @@
             'name' => 'Spotify',
             'primary' => true
         ),
+        'youtube' => array(
+            'name' => 'YouTube'
+        ),
         'google' => array(
             'name' => 'Google Podcasts'
         ),
