@@ -2561,7 +2561,7 @@ form.search-form input:focus { background: transparent; border-width: 0; outline
 
 .pagination-container .pagination li .current { border-bottom: 1px solid #44AFA0; }
 
-.review-wrapper { background: #1B3D20; color: #fff; text-align: center; padding: 1.88rem 0; }
+.review-wrapper { background: #188140; color: #fff; text-align: center; padding: 1.88rem 0; }
 
 .review-wrapper .review-list { list-style-type: none; margin: 0 auto; padding: 0; }
 
