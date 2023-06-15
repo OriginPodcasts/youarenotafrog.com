@@ -38,7 +38,7 @@ get_header(); ?>
             <div class="grid-container">
                 <p class="h1"><?php the_field('headline'); ?></p>
                 <p class="subtitle"><?php the_field('subtitle'); ?></p>
-                <?php yanaf_subscription_buttons(true); ?>
+                <?php yanaf_subscription_buttons(3); ?>
                 <p class="scroll-link-container">
                     <a href="#main">
                         <i class="fi-arrow-down"></i>
