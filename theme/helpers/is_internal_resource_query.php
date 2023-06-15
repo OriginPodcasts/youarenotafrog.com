@@ -4,7 +4,7 @@
         $query = $wp_query;
     }
 
-    if (is_admin() || is_single()) {
+    if (is_admin() || is_single() || is_search()) {
         return false;
     }
 

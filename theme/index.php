@@ -44,7 +44,7 @@ if ($collection = yanaf_get_collection()) { ?>
                         </svg>
                     </button>
 
-                    <input type="search" name="s" placeholder="What are you looking for?">
+                    <input type="search" name="s" placeholder="What are you looking for?" value="<?php echo get_search_query(); ?>">
                 </form>
             <?php }
 
@@ -60,7 +60,9 @@ if ($collection = yanaf_get_collection()) { ?>
 
                 <?php get_template_part('includes/loop', get_post_type());
                 get_template_part('includes/pagination');
-            } ?>
+            } else if (is_search()) { ?>
+                <p>Nothing could be found matching your search cirteria.</p>
+            <?php } ?>
         </section>
     </div>
 </div>
