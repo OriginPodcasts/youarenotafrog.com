@@ -2519,7 +2519,7 @@ aside.sidebar { display: none; }
 
 aside.sidebar h2 { color: #707070; font-size: 1rem; font-weight: 400; padding-bottom: .25rem; border-bottom: 1px solid #707070; margin: 0 0 1rem; }
 
-aside.sidebar .menu { margin: 0; padding: 0; flex-direction: column; }
+aside.sidebar .menu { margin: 0 0 1em 0; padding: 0; flex-direction: column; }
 
 aside.sidebar .menu li { font-weight: 900; margin-bottom: 1rem; text-transform: uppercase; }
 
