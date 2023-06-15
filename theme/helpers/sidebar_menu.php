@@ -1,6 +1,6 @@
 <?php function yanaf_sidebar_menu($before='') {
     $categories = array();
-    $episode_list = (is_post_type_archive() && get_query_var('post_type') === 'episode') || get_query_var('tag') || is_tax('collection');
+    $episode_list = (is_post_type_archive() && get_query_var('post_type') === 'episode') || get_query_var('tag') || is_tax('collection') || is_search();
     $resource_list = is_internal_resource_query();
     $recommends_list = is_external_resource_query();
 
