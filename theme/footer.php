@@ -43,11 +43,11 @@
                     <div class="cell medium-4">
                         <ul class="legal-menu">
                             <li class="menu-item">
-                                <a href="">Terms of Use</a>
+                                <a href="/privacy/">Privacy Policy</a>
                             </li>
 
                             <li class="menu-item">
-                                <a href="">Privacy Policy</a>
+                                <a href="/cookies/">Cookie Policy</a>
                             </li>
                         </ul>
                     </div>
