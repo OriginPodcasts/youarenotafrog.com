@@ -60,10 +60,6 @@ get_header(); ?>
                     <p class="mission-subtitle">Our mission</p>
                     <h1 class="mission-heading">Welcome to <?php esc_html_e(get_bloginfo('site_name')); ?></h1>
                     <div class="mission-statement"><?php the_field('mission'); ?></div>
-
-                    <?php if ($story = get_field('story')) { ?>
-                        <a href="<?php esc_attr_e($story['page']); ?>" class="button"><?php esc_html_e($story['text']); ?></a>
-                    <?php } ?>
                 </div>
             </div>
         </section>

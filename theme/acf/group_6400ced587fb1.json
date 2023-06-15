@@ -122,66 +122,6 @@
             "delay": 0
         },
         {
-            "key": "field_6405faa58f411",
-            "label": "More info",
-            "name": "story",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_6405fa6f8f410",
-                    "label": "Button text",
-                    "name": "text",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "Our story",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_6405fa428f40f",
-                    "label": "destination",
-                    "name": "page",
-                    "aria-label": "",
-                    "type": "page_link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "page"
-                    ],
-                    "taxonomy": "",
-                    "allow_archives": 0,
-                    "multiple": 0,
-                    "allow_null": 0
-                }
-            ]
-        },
-        {
             "key": "field_641b1841f04cb",
             "label": "Episode list",
             "name": "",
@@ -488,5 +428,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1680087708
+    "modified": 1686844470
 }
