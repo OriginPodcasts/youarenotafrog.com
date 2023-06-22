@@ -2899,7 +2899,17 @@ footer .copyright { margin: 1rem auto; text-align: center; }
 
 @media print, screen and (min-width: 40em) { footer .copyright { margin: 0 auto; text-align: left; } }
 
-#search-modal { border-width: 0; border-radius: .3rem; box-shadow: 0 0 10px rgba(10, 10, 10, 0.7); }
+.reveal-overlay { background: rgba(0, 0, 0, 0.75); }
+
+#search-modal { padding: 0; background: transparent; border-width: 0; top: 50% !important; bottom: auto; width: calc(100% - 2rem); min-width: auto; max-width: auto; height: auto; min-height: auto; margin: auto; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+@media print, screen and (min-width: 40em) { #search-modal { left: auto; right: auto; } }
+
+#search-modal input, #search-modal button { margin-bottom: 0; border-radius: 2em; height: 1rem; padding: 1.5rem; line-height: 0; }
+
+@media print, screen and (min-width: 40em) { #search-modal input, #search-modal button { font-size: 1.5rem; padding: 2rem; } }
+
+#search-modal input { margin-right: .5rem; }
 
 body { background: #F5F5F0; }
 

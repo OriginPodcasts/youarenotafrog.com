@@ -1,5 +1,40 @@
+.reveal-overlay {
+    background: rgba(0, 0, 0, .75);
+}
+
 #search-modal {
+    padding: 0;
+    background: transparent;
     border-width: 0;
-    border-radius: .3rem;
-    box-shadow: $offcanvas-shadow;
+    top: 50% !important;
+    bottom: auto;
+    width: calc(100% - 2rem);
+    min-width: auto;
+    max-width: auto;
+    height: auto;
+    min-height: auto;
+    margin: auto;
+    transform: translateY(-50%);
+
+    @include breakpoint(medium) {
+        left: auto;
+        right: auto;
+    }
+
+    input, button {
+        margin-bottom: 0;
+        border-radius: $button-radius;
+        height: 1rem;
+        padding: 1.5rem;
+        line-height: 0;
+
+        @include breakpoint(medium) {
+            font-size: 1.5rem;
+            padding: 2rem;
+        }
+    }
+
+    input {
+        margin-right: .5rem;
+    }
 }
