@@ -264,11 +264,11 @@
             "delay": 0
         },
         {
-            "key": "field_640722f7d470b",
+            "key": "field_6494684ee03d4",
             "label": "Highlights",
             "name": "highlights",
             "aria-label": "",
-            "type": "repeater",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -277,57 +277,12 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "field_64072344d470d",
-            "button_label": "Add Highlight",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_64072313d470c",
-                    "label": "Timestamp",
-                    "name": "timestamp",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "Time in MM:SS or HH:MM:SS format",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "25",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": 5,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_640722f7d470b"
-                },
-                {
-                    "key": "field_64072349d470e",
-                    "label": "Description",
-                    "name": "description",
-                    "aria-label": "",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "visual",
-                    "toolbar": "basic",
-                    "media_upload": 0,
-                    "delay": 0,
-                    "parent_repeater": "field_640722f7d470b"
-                }
-            ]
+            "hide_admin": 0,
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_640723b9a45f9",
@@ -368,5 +323,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1682592421
+    "modified": 1687450477
 }
