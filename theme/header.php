@@ -14,10 +14,10 @@
                     <div class="small-3 medium-2">
                         <a href="<?php esc_attr_e(home_url()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php printf(__('%s logo', 'yanaf'), get_bloginfo('name')); ?>" class="yanaf-logo"></a>
                     </div>
-                    <div class="small-6 medium-8">
+                    <div class="small-6 medium-9">
                         <?php yanaf_main_menu(); ?>
                     </div>
-                    <div class="small-3 medium-2">
+                    <div class="small-3 medium-1">
                         <ul class="menu search-and-toggle">
                             <li>
                                 <a href="javascript:;" data-open="search-modal"><i class="fi-magnifying-glass"></i></a>
