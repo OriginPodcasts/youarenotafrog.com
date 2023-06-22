@@ -1,3 +1,6 @@
+// @codekit-prepend '../node_modules/jquery/dist/jquery.js';
+// @codekit-prepend '../node_modules/foundation-sites/dist/js/foundation.js';
+// @codekit-prepend '../node_modules/motion-ui/dist/motion-ui.js';
 // @codekit-prepend '../node_modules/owl-carousel/owl-carousel/owl.carousel.js';
 // @codekit-append '_reviews.js';
 // @codekit-append '_collections.js';
