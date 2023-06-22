@@ -4,19 +4,20 @@
     }
 
     $highlights = array();
-    if ($count = get_post_meta($post_id, 'highlights', true)) {
-        for($i = 0; $i < $count; $i ++) {
-            $highlight = array();
-            
-            if ($timestamp = get_post_meta($post_id, sprintf('highlights_%d_timestamp', $i), true)) {
-                $highlight['timestamp'] = $timestamp;
-            }
+    if ($text = get_post_meta($post_id, 'highlights', true)) {
+        $lines = explode("\n", $text);
+        $highlights = array();
 
-            if ($description = get_post_meta($post_id, sprintf('highlights_%d_description', $i), true)) {
-                $highlight['description'] = $description;
+        foreach ($lines as $line) {
+            $matches = [];
+            if (preg_match('/^-\s*\[([\d:]+)\]:\s*(.+)$/', $line, $matches)) {
+                $timestamp = $matches[1];
+                $description = $matches[2];
+                $highlights[] = [
+                    'timestamp' => $timestamp,
+                    'description' => $description
+                ];
             }
-
-            $highlights[] = $highlight;
         }
     }
 

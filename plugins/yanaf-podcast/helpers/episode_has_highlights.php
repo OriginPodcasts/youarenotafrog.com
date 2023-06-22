@@ -4,7 +4,7 @@
     }
 
     if ($highlights = get_post_meta($post_id, 'highlights', true)) {
-        return intVal($highlights) > 0;
+        return !!trim($highlights);
     }
 
     return false;
