@@ -211,7 +211,7 @@
                         "bookmark": "Bookmark",
                         "microphone": "Microphone"
                     },
-                    "default_value": false,
+                    "default_value": "bookmark",
                     "return_format": "value",
                     "multiple": 0,
                     "allow_null": 0,
@@ -323,5 +323,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687450477
+    "modified": 1688035411
 }
