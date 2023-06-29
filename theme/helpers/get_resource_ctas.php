@@ -19,6 +19,17 @@
 
             break;
 
+        case 'more':
+            if (get_post_meta($post_id, 'external', true)) {
+                $links[] = array(
+                    'url' => get_post_meta($post_id, 'download_url', true),
+                    'label' => 'Find out more',
+                    'external' => true
+                );
+            }
+
+            break;
+
         default:
             if (get_post_meta($post_id, 'external', true)) {
                 $links[] = array(

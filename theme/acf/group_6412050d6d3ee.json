@@ -74,9 +74,11 @@
                 "class": "",
                 "id": ""
             },
+            "hide_admin": 0,
             "choices": {
                 "download": "Download a file",
-                "attend": "Attend an event"
+                "attend": "Attend an event",
+                "more": "Find out more"
             },
             "default_value": "download",
             "return_format": "value",
@@ -139,6 +141,18 @@
                         "operator": "==",
                         "value": "1"
                     }
+                ],
+                [
+                    {
+                        "field": "field_642e84273c186",
+                        "operator": "==",
+                        "value": "more"
+                    },
+                    {
+                        "field": "field_642e94bcbfd1c",
+                        "operator": "==",
+                        "value": "1"
+                    }
                 ]
             ],
             "wrapper": {
@@ -146,6 +160,7 @@
                 "class": "",
                 "id": ""
             },
+            "hide_admin": 0,
             "default_value": "",
             "placeholder": ""
         },
@@ -302,5 +317,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686237873
+    "modified": 1688042376
 }
