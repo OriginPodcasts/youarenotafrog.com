@@ -13,10 +13,12 @@
 
     if ($transcript = get_post_meta($post_id, 'transcript', true)) {
         if (!$full) {
+            $transcript = apply_filters('the_transcript', $transcript);
             $transcript = wp_trim_words($transcript, 100);
             echo apply_filters('the_content', $transcript);
             return 'excerpt';
         } else {
+            $transcript = apply_filters('the_transcript', $transcript);
             echo apply_filters('the_content', $transcript);
             return 'full';
         }
