@@ -10,7 +10,7 @@
 
         foreach ($lines as $line) {
             $matches = [];
-            if (preg_match('/^-\s*\[([\d:]+)\]:\s*(.+)$/', $line, $matches)) {
+            if (preg_match('/^(?:-\s*)?\[([\d:]+)\]:?\s*(.+)$/', $line, $matches)) {
                 $timestamp = $matches[1];
                 $description = $matches[2];
                 $highlights[] = [
