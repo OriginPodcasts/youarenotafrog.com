@@ -19,7 +19,6 @@ $redirect = get_field('redirect'); ?>
         <a href="<?php if ($redirect) { echo $redirect; } else { the_permalink(); } ?>">
             <h3 class="h5 resource-title"><?php the_title(); ?></h3>
             <div class="resource-meta">
-                <span class="resource-author">Created by <?php the_author(); ?></span> /
                 <span class="resource-date"><?php the_date('j F, Y'); ?></span>
             </div>
         </a>

@@ -32,7 +32,7 @@
         'public' => true,
         'hierarchical' => false,
         'menu_icon' => 'dashicons-open-folder',
-        'supports' => array('title', 'editor', 'thumbnail', 'author', 'excerpt'),
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
         'has_archive' => true,
         'rewrite' => array(
             'slug' => 'resources',
