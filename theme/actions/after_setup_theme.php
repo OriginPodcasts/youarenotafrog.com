@@ -40,9 +40,9 @@ function yanaf_after_setup_theme() {
 
     add_image_size('f-xlarge-whole', 1420, 9999);
 
-    add_image_size('y-sm-carousel-sq', 620, 620, true);
-    add_image_size('y-md-carousel-long', 247, 342, true);
-    add_image_size('y-lg-carousel-long', 247, 342, true);
+    add_image_size('y-sm-carousel-sq', 620, 775, true);
+    add_image_size('y-md-carousel-long', 264, 330, true);
+    add_image_size('y-lg-carousel-long', 247, 308, true);
 
     if (!isset($content_width)) {
         $content_width = 1920;
