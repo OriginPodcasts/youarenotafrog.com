@@ -2835,7 +2835,7 @@ form.search-form input:focus { background: transparent; border-width: 0; outline
 
 .app-links-wrapper p.app-links { margin-top: 1rem; text-align: center; }
 
-.app-links-wrapper p.app-links img { margin: 0 .5rem; }
+.app-links-wrapper p.app-links img { margin: 0 .5rem 1rem; }
 
 footer { background: #188140; color: #fefefe; padding: 1rem 0; }
 
