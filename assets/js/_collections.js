@@ -4,7 +4,7 @@ jQuery('.collection-carousel').each(
             {
                 autoHeight: true,
                 responsiveClass: true,
-                items: 4,
+                items: 6,
                 nav: true,
                 responsive: {
                     0: {
@@ -15,7 +15,7 @@ jQuery('.collection-carousel').each(
                         loop: true
                     },
                     1025: {
-                        items: 4,
+                        items: 6,
                         loop: true
                     }
                 }
