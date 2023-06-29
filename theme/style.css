@@ -3227,13 +3227,17 @@ body.page-template-page-contact .gallery a:hover .button { opacity: 1; -webkit-t
 
 body.page-template-page-contact .gallery .cell.even:last-child { width: calc(100% - 1.875rem); }
 
-body.single.single-episode .post-header { background: #3EA19B; }
+body.single.single-episode .post-header { background: #3EA19B; margin-bottom: 1rem; padding: 2rem 0; }
+
+@media print, screen and (min-width: 40em) { body.single.single-episode .post-header { margin-bottom: 0; padding: 4rem 0; } }
 
 body.single.single-episode .post-header img.episode-image { border-radius: 50%; }
 
-body.single.single-episode .post-header .episode-guest-photos { display: flex; max-width: 294px; margin: 0 auto 1rem; align-items: center; }
+body.single.single-episode .post-header .episode-guest-photos { display: flex; max-width: 147px; margin: 0 auto 1rem; align-items: center; }
 
 body.single.single-episode .post-header .episode-guest-photos img.episode-guest-photo { border-radius: 50%; }
+
+@media print, screen and (min-width: 40em) { body.single.single-episode .post-header .episode-guest-photos img.episode-guest-photo { max-width: 294px; } }
 
 body.single.single-episode .post-section.episode-reasons { color: #707070; }
 
