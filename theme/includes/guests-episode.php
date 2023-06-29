@@ -4,7 +4,7 @@
         <div class="episode-guests">
             <?php foreach(yanaf_get_episode_guests() as $guest) { ?>
                 <div class="episode-guest grid-x grid-margin-x">
-                    <div class="episode-guest-photo cell medium-3 text-right">
+                    <div class="episode-guest-photo cell small-3 text-right">
                         <?php if (isset($guest['photo'])) {
                             yanaf_img_srcset(
                                 $guest['photo'],
@@ -23,7 +23,7 @@
                         <?php } ?>
                     </div>
 
-                    <div class="episode-link-content cell medium-9">
+                    <div class="episode-link-content cell small-9">
                         <?php if (isset($guest['bio'])) {
                             echo apply_filters('the_content', $guest['bio']);
                         }

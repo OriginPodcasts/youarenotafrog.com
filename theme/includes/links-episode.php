@@ -5,12 +5,12 @@
             <?php foreach(yanaf_get_episode_links() as $link) { ?>
                 <div class="episode-link grid-x grid-margin-x">
                     <?php if (isset($link['icon'])) { ?>
-                        <div class="episode-link-icon cell medium-3 text-right">
+                        <div class="episode-link-icon cell small-2 medium-3 text-right">
                             <?php echo apply_filters('yanaf_episode_icon', $link['icon']); ?>
                         </div>
                     <?php } ?>
 
-                    <div class="episode-link-content cell medium-9">
+                    <div class="episode-link-content cell small-10 medium-9">
                         <?php echo apply_filters('the_content', $link['content']); ?>
                     </div>
                 </div>
