@@ -2845,9 +2845,9 @@ footer img.yanaf-logo { -webkit-transform: rotate(-15deg); transform: rotate(-15
 
 @media print, screen and (min-width: 40em) { footer img.yanaf-logo { margin-top: 20px; position: relative; } }
 
-footer a.wildmonday-link img.wildmonday-logo { opacity: .75; transition: opacity .3s ease; }
+footer a.wildmonday-link img.wildmonday-logo { display: block; margin: 0 2rem; width: calc(100% - 4rem); }
 
-footer a.wildmonday-link:hover img.wildmonday-logo { opacity: 1; }
+@media print, screen and (min-width: 40em) { footer a.wildmonday-link img.wildmonday-logo { width: 200px; margin: 0; } }
 
 footer .tags { margin: auto; }
 

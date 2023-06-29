@@ -18,10 +18,6 @@
                                 <p class="subtag">Beat burnout. Work happier</p>
                             </div>
                         </div>
-
-                        <div>
-                            <a href="https://www.shapestoolkit.com" target="_blank" rel="me" class="wildmonday-link"><img src="<?php echo get_template_directory_uri(); ?>/img/wildmonday-logo.png" alt="Wild Monday" class="wildmonday-logo"></a>
-                        </div>
                     </div>
 
                     <div class="cell medium-4">
@@ -30,6 +26,12 @@
 
                     <div class="cell medium-4">
                         <?php get_sidebar('footer'); ?>
+
+                        <div>
+                            <a href="https://www.shapestoolkit.com" target="_blank" rel="me" class="wildmonday-link">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/wildmonday-logo.png" alt="Wild Monday" class="wildmonday-logo">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

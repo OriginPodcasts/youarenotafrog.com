@@ -38,13 +38,13 @@ footer {
 
     a.wildmonday-link {
         img.wildmonday-logo {
-            opacity: .75;
-            transition: opacity .3s ease;
-        }
+            display: block;
+            margin: 0 2rem;
+            width: calc(100% - 4rem);
 
-        &:hover {
-            img.wildmonday-logo {
-                opacity: 1;
+            @include breakpoint(medium) {
+                width: 200px;
+                margin: 0;
             }
         }
     }
