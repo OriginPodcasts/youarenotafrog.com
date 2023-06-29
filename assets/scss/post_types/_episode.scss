@@ -19,12 +19,12 @@ body.single.single-episode {
             margin: 0 auto 1rem;
             align-items: center;
 
+            @include breakpoint(medium) {
+                max-width: 294px;
+            }
+
             img.episode-guest-photo {
                 border-radius: 50%;
-
-                @include breakpoint(medium) {
-                    max-width: 294px;
-                }
             }
         }
     }
