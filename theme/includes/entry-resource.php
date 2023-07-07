@@ -18,9 +18,6 @@ $redirect = get_field('redirect'); ?>
     <div class="cell medium-6 align-self-middle">
         <a href="<?php if ($redirect) { echo $redirect; } else { the_permalink(); } ?>">
             <h3 class="h5 resource-title"><?php the_title(); ?></h3>
-            <div class="resource-meta">
-                <span class="resource-date"><?php the_date('j F, Y'); ?></span>
-            </div>
         </a>
 
         <div class="resource-excerpt"><?php the_excerpt(); ?></div>
