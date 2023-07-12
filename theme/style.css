@@ -2701,7 +2701,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: 'Montserrat'
 
 header.site-header { padding-top: 24px; background: #fff; border-bottom: 1px solid #707070; position: relative; }
 
-header.site-header img.yanaf-logo { width: 72px; -webkit-transform: rotate(-15deg); transform: rotate(-15deg); position: absolute; z-index: 30; }
+header.site-header img.yanaf-logo { width: 72px; -webkit-transform: rotate(-7deg); transform: rotate(-7deg); position: absolute; z-index: 30; }
 
 @media print, screen and (min-width: 40em) { header.site-header img.yanaf-logo { width: 148px; } }
 
@@ -2841,7 +2841,7 @@ footer { background: #188140; color: #fefefe; padding: 1rem 0; }
 
 footer .logo-cell { align-items: center; }
 
-footer img.yanaf-logo { -webkit-transform: rotate(-15deg); transform: rotate(-15deg); max-width: 100%; }
+footer img.yanaf-logo { max-width: 100%; }
 
 @media print, screen and (min-width: 40em) { footer img.yanaf-logo { margin-top: 20px; position: relative; } }
 

@@ -27,7 +27,6 @@ footer {
     }
 
     img.yanaf-logo {
-        transform: rotate(-15deg);
         max-width: 100%;
 
         @include breakpoint(medium) {
