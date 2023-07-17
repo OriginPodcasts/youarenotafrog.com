@@ -9,7 +9,7 @@
 if ($query->have_posts()) {
     $query->the_post(); ?>
 
-    <a href="<?php the_permalink(); ?>" class="second-resource">
+    <a href="<?php if ($redirect = get_field('redirect')) { echo $redirect; } else { the_permalink(); } ?>" class="second-resource">
         <div class="grid-x">
             <div class="cell medium-3">
                 <?php yanaf_img_srcset(

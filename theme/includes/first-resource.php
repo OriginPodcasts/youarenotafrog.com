@@ -8,7 +8,7 @@
 while ($query->have_posts()) {
     $query->the_post(); ?>
 
-    <a href="<?php the_permalink(); ?>" class="first-resource resource-<?php echo get_post_field('post_name'); ?>">
+    <a href="<?php if ($redirect = get_field('redirect')) { echo $redirect; } else { the_permalink(); } ?>" class="first-resource resource-<?php echo get_post_field('post_name'); ?>">
         <?php yanaf_img_srcset(
             get_post_thumbnail_id(get_the_ID()),
             get_the_title(),
