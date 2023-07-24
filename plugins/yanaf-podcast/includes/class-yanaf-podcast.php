@@ -19,7 +19,6 @@
 		require_once plugin_dir_path(dirname(__file__)) . 'includes/class-episode.php';
 		require_once plugin_dir_path(dirname(__file__)) . 'includes/class-collection.php';
 		require_once plugin_dir_path(dirname(__file__)) . 'includes/class-loader.php';
-		require_once plugin_dir_path(dirname(__file__)) . 'includes/class-cron.php';
 		require_once plugin_dir_path(dirname(__file__)) . 'admin/class-admin.php';
 		require_once plugin_dir_path(dirname(__file__)) . 'public/class-public.php';
 
@@ -60,9 +59,6 @@
 			$this->loader->add_action('admin_enqueue_scripts', $collection, 'admin_enqueue_scripts');
 			$this->loader->add_action('registered_taxonomy', $collection, 'registered_taxonomy');
 		}
-
-		$this->cron = new YANAF_Podcast_Cron();
-		add_action(YANAF_Podcast_Cron::$job_name, array($this->cron, 'perform'));
 	}
 
 	private function define_admin_hooks() {
