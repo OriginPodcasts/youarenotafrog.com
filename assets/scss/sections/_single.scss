@@ -59,8 +59,10 @@ body.single {
 }
 
 .cell.single {
+    margin: 1rem auto;
+
     @include breakpoint(medium) {
-        margin: 54px auto 1rem;
+        margin-top: 54px;
     }
 
     h2 {

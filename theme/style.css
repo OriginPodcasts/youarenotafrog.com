@@ -2993,7 +2993,9 @@ body.single .post-section.post-description { color: #707070; font-weight: 400; f
 
 @media print, screen and (min-width: 40em) { body.single aside.sidebar { display: block; margin: 54px 0 1rem; } }
 
-@media print, screen and (min-width: 40em) { .cell.single { margin: 54px auto 1rem; } }
+.cell.single { margin: 1rem auto; }
+
+@media print, screen and (min-width: 40em) { .cell.single { margin-top: 54px; } }
 
 .cell.single h2 { color: #707070; font-size: .81rem; font-weight: 900; text-transform: uppercase; margin: 0 0 1rem; }
 
