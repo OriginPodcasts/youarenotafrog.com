@@ -47,10 +47,15 @@ body.page-template-page-host-php {
         }
 
         p.page-greeting {
-            font-size: 7.69rem;
+            font-size: 4rem;
             font-weight: 900;
             margin: 0 0 1rem 0;
-            line-height: 1;
+            line-height: .5;
+
+            @include breakpoint(medium) {
+                font-size: 7.69rem;
+                line-height: 1;
+            }
         }
 
         ul.host-social-links {
