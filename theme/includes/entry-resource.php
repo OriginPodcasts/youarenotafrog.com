@@ -27,6 +27,8 @@ $redirect = get_field('redirect'); ?>
                     <?php esc_html_e($cta['label']); ?>
                 </a>
             <?php }
-        } ?>
+        } else { ?>
+            <a href="<?php esc_attr_e($redirect); ?>" target="_blank" class="small button">Find out more</a>
+        <?php } ?>
     </div>
 </div>

@@ -3,6 +3,26 @@
     "title": "Resources",
     "fields": [
         {
+            "key": "field_642e94bcbfd1c",
+            "label": "External",
+            "name": "external",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This is an external product\/service recommendation",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_6481f08244aeb",
             "label": "External webpage URL",
             "name": "redirect",
@@ -41,181 +61,6 @@
             "delay": 0
         },
         {
-            "key": "field_642e94bcbfd1c",
-            "label": "External",
-            "name": "external",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "This is an external product\/service recommendation",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
-            "key": "field_642e84273c186",
-            "label": "Call-to-action",
-            "name": "cta",
-            "aria-label": "",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "hide_admin": 0,
-            "choices": {
-                "download": "Download a file",
-                "attend": "Attend an event",
-                "more": "Find out more"
-            },
-            "default_value": "download",
-            "return_format": "value",
-            "multiple": 0,
-            "allow_null": 0,
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
-            "key": "field_6412050d0563f",
-            "label": "Media",
-            "name": "media",
-            "aria-label": "",
-            "type": "file",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_642e84273c186",
-                        "operator": "==",
-                        "value": "download"
-                    },
-                    {
-                        "field": "field_642e94bcbfd1c",
-                        "operator": "!=",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url",
-            "library": "uploadedTo",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_642e9564e5b7f",
-            "label": "Download URL",
-            "name": "download_url",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_642e84273c186",
-                        "operator": "==",
-                        "value": "download"
-                    },
-                    {
-                        "field": "field_642e94bcbfd1c",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ],
-                [
-                    {
-                        "field": "field_642e84273c186",
-                        "operator": "==",
-                        "value": "more"
-                    },
-                    {
-                        "field": "field_642e94bcbfd1c",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "hide_admin": 0,
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
-            "key": "field_642e849afc93e",
-            "label": "Date of event",
-            "name": "date",
-            "aria-label": "",
-            "type": "date_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_642e84273c186",
-                        "operator": "==",
-                        "value": "attend"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "display_format": "F j, Y",
-            "return_format": "F j, Y",
-            "first_day": 1
-        },
-        {
-            "key": "field_642e84e4f071b",
-            "label": "Ticket booking link",
-            "name": "booking_url",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_642e84273c186",
-                        "operator": "==",
-                        "value": "attend"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
             "key": "field_642d5ea94cfa8",
             "label": "Reasons to use",
             "name": "reasons",
@@ -237,8 +82,8 @@
         },
         {
             "key": "field_642e855c8b421",
-            "label": "Secondary calls-to-action",
-            "name": "secondary_ctas",
+            "label": "Calls-to-action",
+            "name": "ctas",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -249,6 +94,7 @@
                 "class": "",
                 "id": ""
             },
+            "hide_admin": 0,
             "layout": "table",
             "pagination": 0,
             "min": 0,
@@ -317,5 +163,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688042376
+    "modified": 1690452527
 }
