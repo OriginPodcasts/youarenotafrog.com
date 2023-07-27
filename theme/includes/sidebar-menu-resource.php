@@ -8,6 +8,4 @@
     if (get_field('reasons')) { ?>
         <li><a href="#reasons">Reasons to download</a></li>
     <?php } ?>
-
-    <li><a href="#links">Download</a></li>
 </ul>
