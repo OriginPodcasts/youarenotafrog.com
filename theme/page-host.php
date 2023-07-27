@@ -36,6 +36,7 @@ if ($image_id = get_field('image')) {
                     <div class="page-header-container">
                         <h1 class="page-title"><?php the_title(); ?></h1>
                         <p class="page-greeting"><?php the_field('greeting'); ?></p>
+                        <img alt="Dr Rachel Morris" src="<?php echo get_template_directory_uri(); ?>/img/no-guest-single.jpg" class="img-host">
                         <?php the_field('subtitle');
 
                         if (($links = get_field('socials')) && is_array($links) && count($links)) { ?>

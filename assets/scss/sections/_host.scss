@@ -58,6 +58,18 @@ body.page-template-page-host-php {
             }
         }
 
+        img.img-host {
+            display: block;
+            margin: 1rem auto;
+            width: 50vw;
+            height: 50vw;
+            border-radius: 50%;
+
+            @include breakpoint(medium) {
+                display: none;
+            }
+        }
+
         ul.host-social-links {
             margin: 2rem 0 0;
             padding: 0;

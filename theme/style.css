@@ -3169,6 +3169,10 @@ body.page-template-page-host-php header.page-header p.page-greeting { font-size:
 
 @media print, screen and (min-width: 40em) { body.page-template-page-host-php header.page-header p.page-greeting { font-size: 7.69rem; line-height: 1; } }
 
+body.page-template-page-host-php header.page-header img.img-host { display: block; margin: 1rem auto; width: 50vw; height: 50vw; border-radius: 50%; }
+
+@media print, screen and (min-width: 40em) { body.page-template-page-host-php header.page-header img.img-host { display: none; } }
+
 body.page-template-page-host-php header.page-header ul.host-social-links { margin: 2rem 0 0; padding: 0; list-style-type: none; }
 
 body.page-template-page-host-php header.page-header ul.host-social-links li { display: inline; }
