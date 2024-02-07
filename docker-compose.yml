@@ -12,7 +12,7 @@ services:
             MYSQL_USER: wordpress
             MYSQL_PASSWORD: wordpress
     wordpress:
-        image: wordpress:latest
+        image: wordpress:php7.4-apache
         restart: always
         depends_on:
             - mysql
