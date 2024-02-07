@@ -7,6 +7,17 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<?php wp_body_open(); ?>
+
+        <div class="frogfest-alert">
+            <div class="grid-container">
+                <a href="https://www.shapestoolkit.com/frogfest" target="_blank">
+                    <strong>Get your ticket to FrogFest 2024</strong>
+                    <span class="hyphen">–</span>
+                    Design the life you&rsquo;ll froggin&rsquo; love!
+                    <span class="button">Book now</span>
+                </a>
+            </div>
+        </div>
 		
         <header class="site-header">
             <div class="grid-container">
