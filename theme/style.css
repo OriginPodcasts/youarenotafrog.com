@@ -2894,17 +2894,17 @@ footer .copyright { margin: 1rem auto; text-align: center; }
 
 #search-modal input { margin-right: .5rem; }
 
-.frogfest-alert { background: #44AFA0; color: #fff; padding: 1rem 0; text-align: center; }
+.yanaf-alert { background: #44AFA0; color: #fff; padding: 1rem 0; text-align: center; }
 
-.frogfest-alert a { color: #fff; text-decoration: none; text-align: center; }
+.yanaf-alert a { color: #fff; text-decoration: none; text-align: center; }
 
-.frogfest-alert a .hyphen { display: none; margin: 0 .5rem; }
+.yanaf-alert a .hyphen { display: none; margin: 0 .5rem; }
 
-@media print, screen and (min-width: 40em) { .frogfest-alert a { display: flex; align-items: center; justify-content: center; } .frogfest-alert a .hyphen { display: inline; } }
+@media print, screen and (min-width: 40em) { .yanaf-alert a { display: flex; align-items: center; justify-content: center; } .yanaf-alert a .hyphen { display: inline; } }
 
-.frogfest-alert .button { background: #188140; font-weight: bold; margin: 1rem 0 0; }
+.yanaf-alert .button { background: #188140; font-weight: bold; margin: 1rem 0 0; }
 
-@media print, screen and (min-width: 40em) { .frogfest-alert .button { margin: 0 0 0 1rem; } }
+@media print, screen and (min-width: 40em) { .yanaf-alert .button { margin: 0 0 0 1rem; } }
 
 body { background: #F5F5F0; }
 
