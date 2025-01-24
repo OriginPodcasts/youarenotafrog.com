@@ -48,6 +48,17 @@ header.site-header {
                 color: $menu-color-active;
                 background: transparent;
             }
+
+            &.membership-cta {
+                a {
+                    &:link, &:visited,
+                    &:hover, &:active {
+                        background: #188140;
+                        color: #fff;
+                        border-radius: 5rem;
+                    }
+                }
+            }
         }
 
         &.search-and-toggle {

@@ -2698,6 +2698,8 @@ header.site-header ul.menu li a:hover, header.site-header ul.menu li a:active { 
 
 header.site-header ul.menu li.active a { color: #575757; background: transparent; }
 
+header.site-header ul.menu li.membership-cta a:link, header.site-header ul.menu li.membership-cta a:visited, header.site-header ul.menu li.membership-cta a:hover, header.site-header ul.menu li.membership-cta a:active { background: #188140; color: #fff; border-radius: 5rem; }
+
 header.site-header ul.menu.search-and-toggle { justify-content: end; text-align: right; }
 
 @media print, screen and (min-width: 40em) { header.site-header ul.menu { margin: 30px auto 5px; } }
