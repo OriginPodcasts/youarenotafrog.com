@@ -7,9 +7,9 @@ $redirect = get_field('redirect'); ?>
                 get_post_thumbnail_id(get_the_ID()),
                 get_the_title(),
                 array(
-                    'small' => 'f-sm-whole-9x16' /* Full-width on small devices */,
-                    'medium' => 'f-md-third-9x16' /* Sixth-width on medium devices */,
-                    'large' => 'f-lg-third-9x16' /* Sixth-width on large devices */
+                    'small' => 'f-sm-whole-sq' /* Full-width on small devices */,
+                    'medium' => 'f-md-third-sq' /* Sixth-width on medium devices */,
+                    'large' => 'f-lg-third-sq' /* Sixth-width on large devices */
                 ),
                 true
             ); ?>
