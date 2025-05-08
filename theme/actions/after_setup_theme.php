@@ -2,7 +2,6 @@
 function yanaf_after_setup_theme() {
     global $content_width;
 
-    load_theme_textdomain('yanaf', get_template_directory() . '/languages');
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_theme_support('responsive-embeds');
