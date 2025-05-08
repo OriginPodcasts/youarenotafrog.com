@@ -1,6 +1,6 @@
 <section class="episodes-wrapper">
     <div class="grid-container">
-        <p class="episodes-subtitle">Episodes</p>
+        <p class="episodes-subtitle"><?php the_sub_field('pretitle'); ?></p>
         <div class="episodes-heading"><?php the_sub_field('intro'); ?></div>
 
         <div class="grid-x medium-up-2 grid-margin-x">
