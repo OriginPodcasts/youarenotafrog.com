@@ -17,6 +17,58 @@
                 "id": ""
             },
             "layouts": {
+                "layout_681c9cb9de602": {
+                    "key": "layout_681c9cb9de602",
+                    "name": "episodes",
+                    "label": "Episode list",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_681c9cd7de604",
+                            "label": "Pre-title",
+                            "name": "pretitle",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Episodes",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_681c9ce8de605",
+                            "label": "Intro",
+                            "name": "intro",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Hear in-depth interviews on the first and third Tuesday, and insightful Quick Dips from Dr Rachel every other week.",
+                            "allow_in_bindings": 1,
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_681c94ac42772": {
                     "key": "layout_681c94ac42772",
                     "name": "hero",
@@ -132,316 +184,6 @@
                             "ui": 0,
                             "ui_on_text": "",
                             "ui_off_text": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_681c97e69d8b1": {
-                    "key": "layout_681c97e69d8b1",
-                    "name": "reviews",
-                    "label": "Reviews",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_681c98d49d8b4",
-                            "label": "Type",
-                            "name": "type",
-                            "aria-label": "",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "text": "Text",
-                                "video": "Video"
-                            },
-                            "default_value": "text",
-                            "return_format": "value",
-                            "multiple": 0,
-                            "allow_null": 0,
-                            "allow_in_bindings": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_681c97ee9d8b3",
-                            "label": "Reviews to show",
-                            "name": "count",
-                            "aria-label": "",
-                            "type": "number",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": 5,
-                            "min": "",
-                            "max": "",
-                            "allow_in_bindings": 0,
-                            "placeholder": "",
-                            "step": "",
-                            "prepend": "",
-                            "append": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_681c9bbf2fa18": {
-                    "key": "layout_681c9bbf2fa18",
-                    "name": "mission",
-                    "label": "Mission statement",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_681c9bdc2fa1a",
-                            "label": "Pre-title",
-                            "name": "pretitle",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Our mission",
-                            "maxlength": "",
-                            "allow_in_bindings": 0,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_681c9beb2fa1b",
-                            "label": "Title",
-                            "name": "title",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Welcome to You Are Not a Frog",
-                            "maxlength": "",
-                            "allow_in_bindings": 0,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_681c9c142fa1c",
-                            "label": "Body text",
-                            "name": "body",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "allow_in_bindings": 0,
-                            "tabs": "visual",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_681c9cb9de602": {
-                    "key": "layout_681c9cb9de602",
-                    "name": "episodes",
-                    "label": "Episode list",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_681c9cd7de604",
-                            "label": "Pre-title",
-                            "name": "pretitle",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Episodes",
-                            "maxlength": "",
-                            "allow_in_bindings": 0,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_681c9ce8de605",
-                            "label": "Intro",
-                            "name": "intro",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Hear in-depth interviews on the first and third Tuesday, and insightful Quick Dips from Dr Rachel every other week.",
-                            "allow_in_bindings": 1,
-                            "tabs": "visual",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_681c9ea55cda7": {
-                    "key": "layout_681c9ea55cda7",
-                    "name": "collections",
-                    "label": "Playlists",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_681c9ea55cda8",
-                            "label": "Pre-title",
-                            "name": "pretitle",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Episode collections",
-                            "maxlength": "",
-                            "allow_in_bindings": 0,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_681c9ea55cda9",
-                            "label": "Intro",
-                            "name": "intro",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Not sure where to start?\r\nCheck out our curated episode collections.",
-                            "allow_in_bindings": 1,
-                            "tabs": "visual",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_681ca00982881": {
-                    "key": "layout_681ca00982881",
-                    "name": "resources",
-                    "label": "Resource list",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_681ca00982882",
-                            "label": "Pre-title",
-                            "name": "pretitle",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Resources",
-                            "maxlength": "",
-                            "allow_in_bindings": 0,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
-                            "key": "field_681ca01382884",
-                            "label": "Heading",
-                            "name": "heading",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Turn podcast insights into powerful momentum!",
-                            "allow_in_bindings": 1,
-                            "tabs": "visual",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0
-                        },
-                        {
-                            "key": "field_681ca00982883",
-                            "label": "Intro",
-                            "name": "intro",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Join our monthly podcast membership giving you exclusive content, bitesize videos and CPD workbooks. Learn how to set boundaries with the 60-minute Get Your Life Back e-course. Dive deep with Beat Stress and Thrive, our signature 6-module online programme to reshape how you work. Or explore the Work Well Programme for your organisation.",
-                            "allow_in_bindings": 1,
-                            "tabs": "visual",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -608,6 +350,264 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_681c9bbf2fa18": {
+                    "key": "layout_681c9bbf2fa18",
+                    "name": "mission",
+                    "label": "Mission statement",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_681c9bdc2fa1a",
+                            "label": "Pre-title",
+                            "name": "pretitle",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Our mission",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_681c9beb2fa1b",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Welcome to You Are Not a Frog",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_681c9c142fa1c",
+                            "label": "Body text",
+                            "name": "body",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_681c9ea55cda7": {
+                    "key": "layout_681c9ea55cda7",
+                    "name": "collections",
+                    "label": "Playlists",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_681c9ea55cda8",
+                            "label": "Pre-title",
+                            "name": "pretitle",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Episode collections",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_681c9ea55cda9",
+                            "label": "Intro",
+                            "name": "intro",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Not sure where to start?\r\nCheck out our curated episode collections.",
+                            "allow_in_bindings": 1,
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_681ca00982881": {
+                    "key": "layout_681ca00982881",
+                    "name": "resources",
+                    "label": "Resource list",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_681ca00982882",
+                            "label": "Pre-title",
+                            "name": "pretitle",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Resources",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_681ca01382884",
+                            "label": "Heading",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Turn podcast insights into powerful momentum!",
+                            "allow_in_bindings": 1,
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_681ca00982883",
+                            "label": "Intro",
+                            "name": "intro",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Join our monthly podcast membership giving you exclusive content, bitesize videos and CPD workbooks. Learn how to set boundaries with the 60-minute Get Your Life Back e-course. Dive deep with Beat Stress and Thrive, our signature 6-module online programme to reshape how you work. Or explore the Work Well Programme for your organisation.",
+                            "allow_in_bindings": 1,
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_681c97e69d8b1": {
+                    "key": "layout_681c97e69d8b1",
+                    "name": "reviews",
+                    "label": "Reviews",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_681c98d49d8b4",
+                            "label": "Type",
+                            "name": "type",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "text": "Text",
+                                "video": "Video"
+                            },
+                            "default_value": "text",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_681c97ee9d8b3",
+                            "label": "Reviews to show",
+                            "name": "count",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 5,
+                            "min": "",
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -646,5 +646,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1746708110
+    "modified": 1746711841
 }
