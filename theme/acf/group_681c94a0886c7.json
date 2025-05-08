@@ -351,6 +351,115 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_681cca3bddeb6": {
+                    "key": "layout_681cca3bddeb6",
+                    "name": "membership",
+                    "label": "Membership callout",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_681cca3bddebc",
+                            "label": "Heading",
+                            "name": "heading",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Want more from the Frog?\r\nJoin our transformational FrogXtra membership",
+                            "allow_in_bindings": 1,
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_681cca3bddebd",
+                            "label": "Body",
+                            "name": "body",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "FrogXtra is the monthly membership for doctors and busy professionals in high stress jobs, who want to beat burnout and work happier. Get workbooks you can use for CPD and submit for your annual appraisal, exclusive bonus \"hot topics\" episodes and bitesize videos with ONE quick idea you can use every month, and more!",
+                            "allow_in_bindings": 1,
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_681cca3bddebe",
+                            "label": "Call-to-action",
+                            "name": "cta",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_681cca3bddebf",
+                                    "label": "URL",
+                                    "name": "url",
+                                    "aria-label": "",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "https:\/\/members.youarenotafrog.com",
+                                    "allow_in_bindings": 1,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_681cca3bddec0",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Learn more about FrogXtra",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_681c9bbf2fa18": {
                     "key": "layout_681c9bbf2fa18",
                     "name": "mission",
@@ -850,5 +959,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1746717160
+    "modified": 1746717481
 }
