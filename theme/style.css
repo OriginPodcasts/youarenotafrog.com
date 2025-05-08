@@ -3068,6 +3068,24 @@ a.first-episode.first-episode .episode-guests, a.subsequent-episode.first-episod
 
 .subsequent-episode-list hr.episode-separator:first-child { margin-top: 0; }
 
+.promos-wrapper { color: #707070; padding: 2.6rem 0; background: #188140; color: #fff; }
+
+.promos-wrapper .promos-title { text-align: center; font-family: "Montserrat", sans-serif; font-size: 1.75rem; font-weight: bold; letter-spacing: -.02em; line-height: 1.2; color: inherit; margin: 0 auto 1rem; }
+
+.promos-wrapper .promos-intro p { text-align: center; }
+
+@media print, screen and (min-width: 64em) { .promos-wrapper .promos-intro p { font-size: 1.25rem; margin: 0 auto 1rem; width: 90%; } }
+
+@media print, screen and (min-width: 40em) { .promos-wrapper { position: relative; overflow: hidden; } .promos-wrapper .grid-container { position: relative; } .promos-wrapper .grid-container:before { display: block; position: absolute; background: url("img/home/frog-with-mic.png") center left no-repeat; background-size: contain; content: ' '; width: 100%; top: 0; bottom: 0; left: 2%; z-index: 1; pointer-events: none; } .promos-wrapper .grid-container:after { display: block; position: absolute; background: url("img/home/leaf.png") center right no-repeat; background-size: contain; content: ' '; width: 100%; height: 75%; top: -15%; right: 2%; z-index: 1; pointer-events: none; } .promos-wrapper .grid-x { position: relative; z-index: 2; } }
+
+.promos-wrapper .promo-cell { text-align: center; display: flex; flex-direction: column; }
+
+.promos-wrapper .promo-cell a { display: flex; flex-direction: column; height: 100%; justify-content: space-between; color: #fff; font-weight: bold; text-decoration: none; }
+
+.promos-wrapper .promo-cell img { margin-bottom: .5rem; }
+
+.promos-wrapper .promo-cell p { margin-top: .5rem; }
+
 .collections-wrapper { background: #fff; color: #707070; padding: 2.6rem 0; }
 
 .collections-wrapper .collections-subtitle { text-align: center; text-transform: uppercase; font-size: .69rem; margin: 0 auto .5rem; color: #707070; }
