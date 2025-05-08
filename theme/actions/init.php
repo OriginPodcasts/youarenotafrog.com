@@ -14,4 +14,15 @@ function yanaf_init() {
             require_once($filename);
         }
     }
+
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
+        wp_register_script(
+            'yanaf',
+            get_stylesheet_directory_uri() . '/js/theme.js',
+            array(),
+            '2023.1',
+            true
+        );
+    }
 }
