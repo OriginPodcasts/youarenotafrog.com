@@ -1,6 +1,6 @@
 {
     "key": "group_681c94a0886c7",
-    "title": "Flexible homepage",
+    "title": "Homepage",
     "fields": [
         {
             "key": "field_681c94a000cb7",
@@ -629,9 +629,22 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1746707008
+    "modified": 1746708110
 }
