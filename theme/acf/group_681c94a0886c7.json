@@ -796,27 +796,6 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_681ca00982882",
-                            "label": "Pre-title",
-                            "name": "pretitle",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "Resources",
-                            "maxlength": "",
-                            "allow_in_bindings": 0,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
                             "key": "field_681ca01382884",
                             "label": "Heading",
                             "name": "heading",
@@ -857,6 +836,29 @@
                             "toolbar": "basic",
                             "media_upload": 0,
                             "delay": 0
+                        },
+                        {
+                            "key": "field_681cd0a5227fe",
+                            "label": "Resource count",
+                            "name": "count",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 4,
+                            "min": "",
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
                         }
                     ],
                     "min": "",
@@ -959,5 +961,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1746717481
+    "modified": 1746718898
 }
