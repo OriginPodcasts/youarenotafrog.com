@@ -1,6 +1,9 @@
 <?php class YANAF_Podcast {
 	protected $plugin_name;
 	protected $version;
+	protected $loader;
+	protected $post_types;
+	protected $collections;
 
 	public function __construct() {
 		if (defined('YANAF_PODCAST_VERSION')) {

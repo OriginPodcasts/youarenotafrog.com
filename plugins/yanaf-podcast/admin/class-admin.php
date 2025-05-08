@@ -1,6 +1,7 @@
 <?php class YANAF_Podcast_Admin {
 	private $plugin_name;
 	private $version;
+	private $importer;
 
 	public function __construct($plugin_name, $version) {
 		$this->plugin_name = $plugin_name;
