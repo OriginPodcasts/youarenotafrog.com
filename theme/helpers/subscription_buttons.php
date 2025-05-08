@@ -11,9 +11,6 @@
         'youtube' => array(
             'name' => 'YouTube'
         ),
-        'google' => array(
-            'name' => 'Google Podcasts'
-        ),
         'amazon' => array(
             'name' => 'Amazon Music'
         ),
